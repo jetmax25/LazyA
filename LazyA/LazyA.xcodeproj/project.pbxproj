@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		275513B520534278001BDBB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275513B420534278001BDBB7 /* AppDelegate.swift */; };
+		275513B720534278001BDBB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275513B620534278001BDBB7 /* ViewController.swift */; };
+		275513BA20534278001BDBB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275513B820534278001BDBB7 /* Main.storyboard */; };
+		275513BD20534278001BDBB7 /* LazyA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 275513BB20534278001BDBB7 /* LazyA.xcdatamodeld */; };
+		275513BF20534278001BDBB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275513BE20534278001BDBB7 /* Assets.xcassets */; };
+		275513C220534278001BDBB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275513C020534278001BDBB7 /* LaunchScreen.storyboard */; };
+		275513CD20534278001BDBB7 /* LazyATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275513CC20534278001BDBB7 /* LazyATests.swift */; };
+		275513D820534278001BDBB7 /* LazyAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275513D720534278001BDBB7 /* LazyAUITests.swift */; };
+		275513E720534348001BDBB7 /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275513E620534348001BDBB7 /* Assignment.swift */; };
+		275513E9205343E4001BDBB7 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275513E8205343E4001BDBB7 /* Component.swift */; };
+		275513EB20534642001BDBB7 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275513EA20534642001BDBB7 /* Course.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		275513C920534278001BDBB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 275513A920534278001BDBB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 275513B020534278001BDBB7;
+			remoteInfo = LazyA;
+		};
+		275513D420534278001BDBB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 275513A920534278001BDBB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 275513B020534278001BDBB7;
+			remoteInfo = LazyA;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		275513B120534278001BDBB7 /* LazyA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		275513B420534278001BDBB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		275513B620534278001BDBB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		275513B920534278001BDBB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		275513BC20534278001BDBB7 /* LazyA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LazyA.xcdatamodel; sourceTree = "<group>"; };
+		275513BE20534278001BDBB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		275513C120534278001BDBB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		275513C320534278001BDBB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		275513C820534278001BDBB7 /* LazyATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LazyATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		275513CC20534278001BDBB7 /* LazyATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyATests.swift; sourceTree = "<group>"; };
+		275513CE20534278001BDBB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		275513D320534278001BDBB7 /* LazyAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LazyAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		275513D720534278001BDBB7 /* LazyAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyAUITests.swift; sourceTree = "<group>"; };
+		275513D920534278001BDBB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		275513E620534348001BDBB7 /* Assignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
+		275513E8205343E4001BDBB7 /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
+		275513EA20534642001BDBB7 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		275513AE20534278001BDBB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275513C520534278001BDBB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275513D020534278001BDBB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		275513A820534278001BDBB7 = {
+			isa = PBXGroup;
+			children = (
+				275513B320534278001BDBB7 /* LazyA */,
+				275513CB20534278001BDBB7 /* LazyATests */,
+				275513D620534278001BDBB7 /* LazyAUITests */,
+				275513B220534278001BDBB7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		275513B220534278001BDBB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				275513B120534278001BDBB7 /* LazyA.app */,
+				275513C820534278001BDBB7 /* LazyATests.xctest */,
+				275513D320534278001BDBB7 /* LazyAUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		275513B320534278001BDBB7 /* LazyA */ = {
+			isa = PBXGroup;
+			children = (
+				275513E5205342CB001BDBB7 /* Models */,
+				275513B420534278001BDBB7 /* AppDelegate.swift */,
+				275513B620534278001BDBB7 /* ViewController.swift */,
+				275513B820534278001BDBB7 /* Main.storyboard */,
+				275513BE20534278001BDBB7 /* Assets.xcassets */,
+				275513C020534278001BDBB7 /* LaunchScreen.storyboard */,
+				275513C320534278001BDBB7 /* Info.plist */,
+				275513BB20534278001BDBB7 /* LazyA.xcdatamodeld */,
+			);
+			path = LazyA;
+			sourceTree = "<group>";
+		};
+		275513CB20534278001BDBB7 /* LazyATests */ = {
+			isa = PBXGroup;
+			children = (
+				275513CC20534278001BDBB7 /* LazyATests.swift */,
+				275513CE20534278001BDBB7 /* Info.plist */,
+			);
+			path = LazyATests;
+			sourceTree = "<group>";
+		};
+		275513D620534278001BDBB7 /* LazyAUITests */ = {
+			isa = PBXGroup;
+			children = (
+				275513D720534278001BDBB7 /* LazyAUITests.swift */,
+				275513D920534278001BDBB7 /* Info.plist */,
+			);
+			path = LazyAUITests;
+			sourceTree = "<group>";
+		};
+		275513E5205342CB001BDBB7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				275513E620534348001BDBB7 /* Assignment.swift */,
+				275513E8205343E4001BDBB7 /* Component.swift */,
+				275513EA20534642001BDBB7 /* Course.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		275513B020534278001BDBB7 /* LazyA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 275513DC20534278001BDBB7 /* Build configuration list for PBXNativeTarget "LazyA" */;
+			buildPhases = (
+				275513AD20534278001BDBB7 /* Sources */,
+				275513AE20534278001BDBB7 /* Frameworks */,
+				275513AF20534278001BDBB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LazyA;
+			productName = LazyA;
+			productReference = 275513B120534278001BDBB7 /* LazyA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		275513C720534278001BDBB7 /* LazyATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 275513DF20534278001BDBB7 /* Build configuration list for PBXNativeTarget "LazyATests" */;
+			buildPhases = (
+				275513C420534278001BDBB7 /* Sources */,
+				275513C520534278001BDBB7 /* Frameworks */,
+				275513C620534278001BDBB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				275513CA20534278001BDBB7 /* PBXTargetDependency */,
+			);
+			name = LazyATests;
+			productName = LazyATests;
+			productReference = 275513C820534278001BDBB7 /* LazyATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		275513D220534278001BDBB7 /* LazyAUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 275513E220534278001BDBB7 /* Build configuration list for PBXNativeTarget "LazyAUITests" */;
+			buildPhases = (
+				275513CF20534278001BDBB7 /* Sources */,
+				275513D020534278001BDBB7 /* Frameworks */,
+				275513D120534278001BDBB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				275513D520534278001BDBB7 /* PBXTargetDependency */,
+			);
+			name = LazyAUITests;
+			productName = LazyAUITests;
+			productReference = 275513D320534278001BDBB7 /* LazyAUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		275513A920534278001BDBB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Jetmax25;
+				TargetAttributes = {
+					275513B020534278001BDBB7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					275513C720534278001BDBB7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 275513B020534278001BDBB7;
+					};
+					275513D220534278001BDBB7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 275513B020534278001BDBB7;
+					};
+				};
+			};
+			buildConfigurationList = 275513AC20534278001BDBB7 /* Build configuration list for PBXProject "LazyA" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 275513A820534278001BDBB7;
+			productRefGroup = 275513B220534278001BDBB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				275513B020534278001BDBB7 /* LazyA */,
+				275513C720534278001BDBB7 /* LazyATests */,
+				275513D220534278001BDBB7 /* LazyAUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		275513AF20534278001BDBB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275513C220534278001BDBB7 /* LaunchScreen.storyboard in Resources */,
+				275513BF20534278001BDBB7 /* Assets.xcassets in Resources */,
+				275513BA20534278001BDBB7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275513C620534278001BDBB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275513D120534278001BDBB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		275513AD20534278001BDBB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275513EB20534642001BDBB7 /* Course.swift in Sources */,
+				275513E720534348001BDBB7 /* Assignment.swift in Sources */,
+				275513BD20534278001BDBB7 /* LazyA.xcdatamodeld in Sources */,
+				275513B720534278001BDBB7 /* ViewController.swift in Sources */,
+				275513B520534278001BDBB7 /* AppDelegate.swift in Sources */,
+				275513E9205343E4001BDBB7 /* Component.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275513C420534278001BDBB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275513CD20534278001BDBB7 /* LazyATests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275513CF20534278001BDBB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275513D820534278001BDBB7 /* LazyAUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		275513CA20534278001BDBB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 275513B020534278001BDBB7 /* LazyA */;
+			targetProxy = 275513C920534278001BDBB7 /* PBXContainerItemProxy */;
+		};
+		275513D520534278001BDBB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 275513B020534278001BDBB7 /* LazyA */;
+			targetProxy = 275513D420534278001BDBB7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		275513B820534278001BDBB7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				275513B920534278001BDBB7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		275513C020534278001BDBB7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				275513C120534278001BDBB7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		275513DA20534278001BDBB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		275513DB20534278001BDBB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		275513DD20534278001BDBB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 363P6K3ZSX;
+				INFOPLIST_FILE = LazyA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JetmaxStudios.LazyA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		275513DE20534278001BDBB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 363P6K3ZSX;
+				INFOPLIST_FILE = LazyA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JetmaxStudios.LazyA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		275513E020534278001BDBB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 363P6K3ZSX;
+				INFOPLIST_FILE = LazyATests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JetmaxStudios.LazyATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LazyA.app/LazyA";
+			};
+			name = Debug;
+		};
+		275513E120534278001BDBB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 363P6K3ZSX;
+				INFOPLIST_FILE = LazyATests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JetmaxStudios.LazyATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LazyA.app/LazyA";
+			};
+			name = Release;
+		};
+		275513E320534278001BDBB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 363P6K3ZSX;
+				INFOPLIST_FILE = LazyAUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JetmaxStudios.LazyAUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LazyA;
+			};
+			name = Debug;
+		};
+		275513E420534278001BDBB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 363P6K3ZSX;
+				INFOPLIST_FILE = LazyAUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JetmaxStudios.LazyAUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LazyA;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		275513AC20534278001BDBB7 /* Build configuration list for PBXProject "LazyA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				275513DA20534278001BDBB7 /* Debug */,
+				275513DB20534278001BDBB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		275513DC20534278001BDBB7 /* Build configuration list for PBXNativeTarget "LazyA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				275513DD20534278001BDBB7 /* Debug */,
+				275513DE20534278001BDBB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		275513DF20534278001BDBB7 /* Build configuration list for PBXNativeTarget "LazyATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				275513E020534278001BDBB7 /* Debug */,
+				275513E120534278001BDBB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		275513E220534278001BDBB7 /* Build configuration list for PBXNativeTarget "LazyAUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				275513E320534278001BDBB7 /* Debug */,
+				275513E420534278001BDBB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		275513BB20534278001BDBB7 /* LazyA.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				275513BC20534278001BDBB7 /* LazyA.xcdatamodel */,
+			);
+			currentVersion = 275513BC20534278001BDBB7 /* LazyA.xcdatamodel */;
+			path = LazyA.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 275513A920534278001BDBB7 /* Project object */;
+}
