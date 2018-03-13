@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2745B837205762F400485E6B /* CreateCourse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2745B836205762F400485E6B /* CreateCourse.storyboard */; };
+		2745B839205765E700485E6B /* ComponentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2745B838205765E700485E6B /* ComponentTableViewController.swift */; };
+		2745B83B2057660100485E6B /* CreateCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2745B83A2057660100485E6B /* CreateCourseViewController.swift */; };
 		275513B520534278001BDBB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275513B420534278001BDBB7 /* AppDelegate.swift */; };
 		275513B720534278001BDBB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275513B620534278001BDBB7 /* ViewController.swift */; };
 		275513BA20534278001BDBB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275513B820534278001BDBB7 /* Main.storyboard */; };
@@ -39,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2745B836205762F400485E6B /* CreateCourse.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateCourse.storyboard; sourceTree = "<group>"; };
+		2745B838205765E700485E6B /* ComponentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTableViewController.swift; sourceTree = "<group>"; };
+		2745B83A2057660100485E6B /* CreateCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCourseViewController.swift; sourceTree = "<group>"; };
 		275513B120534278001BDBB7 /* LazyA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		275513B420534278001BDBB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		275513B620534278001BDBB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2745B8332057628500485E6B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2745B838205765E700485E6B /* ComponentTableViewController.swift */,
+				2745B83A2057660100485E6B /* CreateCourseViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		275513A820534278001BDBB7 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +122,7 @@
 		275513B320534278001BDBB7 /* LazyA */ = {
 			isa = PBXGroup;
 			children = (
+				2745B8332057628500485E6B /* View Controllers */,
 				275513EC20534803001BDBB7 /* ViewModels */,
 				275513E5205342CB001BDBB7 /* Models */,
 				275513B420534278001BDBB7 /* AppDelegate.swift */,
@@ -116,6 +132,7 @@
 				275513C020534278001BDBB7 /* LaunchScreen.storyboard */,
 				275513C320534278001BDBB7 /* Info.plist */,
 				275513BB20534278001BDBB7 /* LazyA.xcdatamodeld */,
+				2745B836205762F400485E6B /* CreateCourse.storyboard */,
 			);
 			path = LazyA;
 			sourceTree = "<group>";
@@ -264,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				275513C220534278001BDBB7 /* LaunchScreen.storyboard in Resources */,
+				2745B837205762F400485E6B /* CreateCourse.storyboard in Resources */,
 				275513BF20534278001BDBB7 /* Assets.xcassets in Resources */,
 				275513BA20534278001BDBB7 /* Main.storyboard in Resources */,
 			);
@@ -291,7 +309,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				275513EB20534642001BDBB7 /* Course.swift in Sources */,
+				2745B83B2057660100485E6B /* CreateCourseViewController.swift in Sources */,
 				275513E720534348001BDBB7 /* Assignment.swift in Sources */,
+				2745B839205765E700485E6B /* ComponentTableViewController.swift in Sources */,
 				275513EE20534815001BDBB7 /* CourseViewModel.swift in Sources */,
 				275513BD20534278001BDBB7 /* LazyA.xcdatamodeld in Sources */,
 				275513B720534278001BDBB7 /* ViewController.swift in Sources */,
