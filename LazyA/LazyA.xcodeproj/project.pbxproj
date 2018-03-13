@@ -18,6 +18,7 @@
 		275513E720534348001BDBB7 /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275513E620534348001BDBB7 /* Assignment.swift */; };
 		275513E9205343E4001BDBB7 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275513E8205343E4001BDBB7 /* Component.swift */; };
 		275513EB20534642001BDBB7 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275513EA20534642001BDBB7 /* Course.swift */; };
+		275513EE20534815001BDBB7 /* CourseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275513ED20534815001BDBB7 /* CourseViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		275513E620534348001BDBB7 /* Assignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
 		275513E8205343E4001BDBB7 /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
 		275513EA20534642001BDBB7 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		275513ED20534815001BDBB7 /* CourseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		275513B320534278001BDBB7 /* LazyA */ = {
 			isa = PBXGroup;
 			children = (
+				275513EC20534803001BDBB7 /* ViewModels */,
 				275513E5205342CB001BDBB7 /* Models */,
 				275513B420534278001BDBB7 /* AppDelegate.swift */,
 				275513B620534278001BDBB7 /* ViewController.swift */,
@@ -143,6 +146,14 @@
 				275513EA20534642001BDBB7 /* Course.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		275513EC20534803001BDBB7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				275513ED20534815001BDBB7 /* CourseViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +292,7 @@
 			files = (
 				275513EB20534642001BDBB7 /* Course.swift in Sources */,
 				275513E720534348001BDBB7 /* Assignment.swift in Sources */,
+				275513EE20534815001BDBB7 /* CourseViewModel.swift in Sources */,
 				275513BD20534278001BDBB7 /* LazyA.xcdatamodeld in Sources */,
 				275513B720534278001BDBB7 /* ViewController.swift in Sources */,
 				275513B520534278001BDBB7 /* AppDelegate.swift in Sources */,

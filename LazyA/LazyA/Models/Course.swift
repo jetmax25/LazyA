@@ -7,6 +7,12 @@
 //
 
 struct Course {
-    let weight : Int
+    var name : String
     var components : [Component]
+    
+    
+    init(name : String = "", components : [Component] = [Component]()) {
+        self.name = name
+        self.components = components
+    }
 }

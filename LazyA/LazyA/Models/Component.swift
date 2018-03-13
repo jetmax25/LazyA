@@ -7,7 +7,18 @@
 //
 
 
-struct Component {
-    let weight : Int
+struct Component : Equatable {
+    static func ==(lhs: Component, rhs: Component) -> Bool {
+        return lhs.name == rhs.name
+    }
+    
+    var name : String
+    var weight : Int
     var assigments : [Assignment]
+    
+    init( name : String = "", weight : Int = 0, assigments : [Assignment] = [Assignment]()) {
+        self.name = name
+        self.weight = weight
+        self.assigments = assigments
+    }
 }
