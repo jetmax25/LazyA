@@ -2,23 +2,25 @@
 //  Component.swift
 //  LazyA
 //
-//  Created by Michael Isasi on 3/9/18.
+//  Created by Michael Isasi on 4/5/18.
 //  Copyright © 2018 Jetmax25. All rights reserved.
 //
 
+import CoreData
 
-struct Component : Equatable {
-    static func ==(lhs: Component, rhs: Component) -> Bool {
-        return lhs.name == rhs.name
-    }
-    
-    var name : String
-    var weight : Int
-    var assigments : [Assignment]
-    
-    init( name : String = "", weight : Int = 0, assigments : [Assignment] = [Assignment]()) {
-        self.name = name
-        self.weight = weight
-        self.assigments = assigments
+extension Models {
+    class Component : NSManagedObject {
+        @NSManaged var name : String
+        @NSManaged var weight : Int
+        @NSManaged var assigments : [Models.Assignment]
+        
+        init(name: String, weight: Int) {
+            let entityDescription: NSEntityDescription =  NSEntityDescription.entity(forEntityName: "Component", in: AppDelegate.viewContext)!
+            
+            super.init(entity: entityDescription, insertInto: AppDelegate.viewContext)
+            self.name = name
+            self.weight = weight
+        }
     }
 }
+

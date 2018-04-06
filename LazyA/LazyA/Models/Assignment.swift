@@ -7,19 +7,17 @@
 //
 
 import Foundation
+import CoreData
 
-struct Assignment : Equatable {
-    static func ==(lhs: Assignment, rhs: Assignment) -> Bool {
-        return lhs.name == rhs.name
-    }
-    
-    var name : String
-    let maxPoints : Int
-    var earnedPoints : Int?
-    
-    init( name : String = "", maxPoints : Int = 100, earnedPoints : Int? = nil) {
-        self.name = name
-        self.maxPoints = maxPoints
-        self.earnedPoints = earnedPoints
+extension Models {
+    class Assignment : NSManagedObject {
+        static func ==(lhs: Assignment, rhs: Assignment) -> Bool {
+            return lhs.name == rhs.name
+        }
+        
+        @NSManaged var name : String
+        @NSManaged var maxPoints : NSNumber
+        @NSManaged var earnedPoints : NSNumber?
+        
     }
 }

@@ -19,9 +19,14 @@
 		275513CD20534278001BDBB7 /* LazyATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275513CC20534278001BDBB7 /* LazyATests.swift */; };
 		275513D820534278001BDBB7 /* LazyAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275513D720534278001BDBB7 /* LazyAUITests.swift */; };
 		275513E720534348001BDBB7 /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275513E620534348001BDBB7 /* Assignment.swift */; };
-		275513E9205343E4001BDBB7 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275513E8205343E4001BDBB7 /* Component.swift */; };
 		275513EB20534642001BDBB7 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275513EA20534642001BDBB7 /* Course.swift */; };
-		275513EE20534815001BDBB7 /* CourseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275513ED20534815001BDBB7 /* CourseViewModel.swift */; };
+		275513EE20534815001BDBB7 /* CreateCourseViewModel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275513ED20534815001BDBB7 /* CreateCourseViewModel2.swift */; };
+		275D69CA20771B0D000F36DF /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275D69C920771B0D000F36DF /* Component.swift */; };
+		2773D163207826CA00E9B130 /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773D162207826CA00E9B130 /* ViewControllerExtensions.swift */; };
+		27D6CCEA20781F8900EB1DAA /* CreateCourseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D6CCE920781F8900EB1DAA /* CreateCourseTableViewController.swift */; };
+		27D6CCEC207820B600EB1DAA /* CreateCoursesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D6CCEB207820B600EB1DAA /* CreateCoursesViewModel.swift */; };
+		27FDB3242077033C00DABF0A /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FDB3232077033C00DABF0A /* UserInfo.swift */; };
+		27FDB32620770C0200DABF0A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FDB32520770C0200DABF0A /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,9 +65,14 @@
 		275513D720534278001BDBB7 /* LazyAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyAUITests.swift; sourceTree = "<group>"; };
 		275513D920534278001BDBB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		275513E620534348001BDBB7 /* Assignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
-		275513E8205343E4001BDBB7 /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
 		275513EA20534642001BDBB7 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
-		275513ED20534815001BDBB7 /* CourseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewModel.swift; sourceTree = "<group>"; };
+		275513ED20534815001BDBB7 /* CreateCourseViewModel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCourseViewModel2.swift; sourceTree = "<group>"; };
+		275D69C920771B0D000F36DF /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
+		2773D162207826CA00E9B130 /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
+		27D6CCE920781F8900EB1DAA /* CreateCourseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCourseTableViewController.swift; sourceTree = "<group>"; };
+		27D6CCEB207820B600EB1DAA /* CreateCoursesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCoursesViewModel.swift; sourceTree = "<group>"; };
+		27FDB3232077033C00DABF0A /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		27FDB32520770C0200DABF0A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				2745B838205765E700485E6B /* ComponentTableViewController.swift */,
-				2745B83A2057660100485E6B /* CreateCourseViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -122,6 +131,8 @@
 		275513B320534278001BDBB7 /* LazyA */ = {
 			isa = PBXGroup;
 			children = (
+				2773D161207826BB00E9B130 /* Extensions */,
+				27D6CCE820781F2A00EB1DAA /* CreateCourse */,
 				2745B8332057628500485E6B /* View Controllers */,
 				275513EC20534803001BDBB7 /* ViewModels */,
 				275513E5205342CB001BDBB7 /* Models */,
@@ -132,7 +143,6 @@
 				275513C020534278001BDBB7 /* LaunchScreen.storyboard */,
 				275513C320534278001BDBB7 /* Info.plist */,
 				275513BB20534278001BDBB7 /* LazyA.xcdatamodeld */,
-				2745B836205762F400485E6B /* CreateCourse.storyboard */,
 			);
 			path = LazyA;
 			sourceTree = "<group>";
@@ -159,8 +169,10 @@
 			isa = PBXGroup;
 			children = (
 				275513E620534348001BDBB7 /* Assignment.swift */,
-				275513E8205343E4001BDBB7 /* Component.swift */,
 				275513EA20534642001BDBB7 /* Course.swift */,
+				27FDB3232077033C00DABF0A /* UserInfo.swift */,
+				27FDB32520770C0200DABF0A /* Models.swift */,
+				275D69C920771B0D000F36DF /* Component.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -168,9 +180,28 @@
 		275513EC20534803001BDBB7 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				275513ED20534815001BDBB7 /* CourseViewModel.swift */,
+				275513ED20534815001BDBB7 /* CreateCourseViewModel2.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2773D161207826BB00E9B130 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2773D162207826CA00E9B130 /* ViewControllerExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		27D6CCE820781F2A00EB1DAA /* CreateCourse */ = {
+			isa = PBXGroup;
+			children = (
+				2745B836205762F400485E6B /* CreateCourse.storyboard */,
+				2745B83A2057660100485E6B /* CreateCourseViewController.swift */,
+				27D6CCE920781F8900EB1DAA /* CreateCourseTableViewController.swift */,
+				27D6CCEB207820B600EB1DAA /* CreateCoursesViewModel.swift */,
+			);
+			path = CreateCourse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,15 +339,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27D6CCEC207820B600EB1DAA /* CreateCoursesViewModel.swift in Sources */,
+				27D6CCEA20781F8900EB1DAA /* CreateCourseTableViewController.swift in Sources */,
+				27FDB32620770C0200DABF0A /* Models.swift in Sources */,
 				275513EB20534642001BDBB7 /* Course.swift in Sources */,
 				2745B83B2057660100485E6B /* CreateCourseViewController.swift in Sources */,
 				275513E720534348001BDBB7 /* Assignment.swift in Sources */,
+				2773D163207826CA00E9B130 /* ViewControllerExtensions.swift in Sources */,
+				275D69CA20771B0D000F36DF /* Component.swift in Sources */,
 				2745B839205765E700485E6B /* ComponentTableViewController.swift in Sources */,
-				275513EE20534815001BDBB7 /* CourseViewModel.swift in Sources */,
+				275513EE20534815001BDBB7 /* CreateCourseViewModel2.swift in Sources */,
 				275513BD20534278001BDBB7 /* LazyA.xcdatamodeld in Sources */,
 				275513B720534278001BDBB7 /* ViewController.swift in Sources */,
 				275513B520534278001BDBB7 /* AppDelegate.swift in Sources */,
-				275513E9205343E4001BDBB7 /* Component.swift in Sources */,
+				27FDB3242077033C00DABF0A /* UserInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

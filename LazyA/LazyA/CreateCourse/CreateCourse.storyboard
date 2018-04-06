@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cU8-FF-aIX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Create Course Table View Controller-->
+        <scene sceneID="mRQ-j7-HYJ">
+            <objects>
+                <viewController id="cU8-FF-aIX" customClass="CreateCourseTableViewController" customModule="LazyA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3XK-Fv-c8R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ax1-52-LIz">
+                                <rect key="frame" x="0.0" y="20" width="375" height="222.5"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBo-nc-Cu5">
+                                <rect key="frame" x="147" y="531" width="81" height="30"/>
+                                <state key="normal" title="Add Course"/>
+                                <connections>
+                                    <action selector="createNewCourse:" destination="cU8-FF-aIX" eventType="touchUpInside" id="eqT-c6-ABb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3P-A5-QqR">
+                                <rect key="frame" x="169" y="581" width="37" height="30"/>
+                                <state key="normal" title="Done"/>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aRE-pg-gh3">
+                                <rect key="frame" x="0.0" y="242.5" width="375" height="268.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StandardCell" textLabel="XAg-Hi-mLX" detailTextLabel="lsv-6q-zEV" style="IBUITableViewCellStyleValue1" id="mUS-vy-gGN">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mUS-vy-gGN" id="NPG-q8-lfx">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XAg-Hi-mLX">
+                                                    <rect key="frame" x="15" y="12" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lsv-6q-zEV">
+                                                    <rect key="frame" x="316" y="12" width="44" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="cU8-FF-aIX" id="5ru-WM-Gab"/>
+                                    <outlet property="delegate" destination="cU8-FF-aIX" id="sYn-bg-HmF"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EBo-nc-Cu5" firstAttribute="top" secondItem="aRE-pg-gh3" secondAttribute="bottom" constant="20" id="0he-aA-BQn"/>
+                            <constraint firstItem="aRE-pg-gh3" firstAttribute="top" secondItem="Ax1-52-LIz" secondAttribute="bottom" id="2Uy-lJ-gXs"/>
+                            <constraint firstItem="v9V-Uc-h3L" firstAttribute="bottom" secondItem="e3P-A5-QqR" secondAttribute="bottom" constant="56" id="IIg-mR-Toz"/>
+                            <constraint firstItem="e3P-A5-QqR" firstAttribute="centerX" secondItem="3XK-Fv-c8R" secondAttribute="centerX" id="L6L-Jr-yqQ"/>
+                            <constraint firstItem="aRE-pg-gh3" firstAttribute="leading" secondItem="v9V-Uc-h3L" secondAttribute="leading" id="Xtl-SP-g5E"/>
+                            <constraint firstItem="Ax1-52-LIz" firstAttribute="leading" secondItem="v9V-Uc-h3L" secondAttribute="leading" id="ZKE-yD-OBK"/>
+                            <constraint firstItem="v9V-Uc-h3L" firstAttribute="trailing" secondItem="Ax1-52-LIz" secondAttribute="trailing" id="aQ4-Ab-kbY"/>
+                            <constraint firstItem="EBo-nc-Cu5" firstAttribute="centerX" secondItem="3XK-Fv-c8R" secondAttribute="centerX" id="iOx-jd-DNj"/>
+                            <constraint firstItem="Ax1-52-LIz" firstAttribute="height" secondItem="3XK-Fv-c8R" secondAttribute="height" multiplier="1:3" id="jQH-S3-BrK"/>
+                            <constraint firstItem="e3P-A5-QqR" firstAttribute="top" secondItem="EBo-nc-Cu5" secondAttribute="bottom" constant="20" id="pfH-or-VD0"/>
+                            <constraint firstItem="aRE-pg-gh3" firstAttribute="centerX" secondItem="3XK-Fv-c8R" secondAttribute="centerX" id="ur0-KQ-Dw1"/>
+                            <constraint firstItem="Ax1-52-LIz" firstAttribute="top" secondItem="v9V-Uc-h3L" secondAttribute="top" id="vml-eL-Z9b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v9V-Uc-h3L"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="aRE-pg-gh3" id="OfU-NQ-Cj0"/>
+                        <segue destination="In0-5e-Zev" kind="presentation" identifier="EditCourse" id="f2k-c1-B99"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RwI-wA-y71" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="369" y="103"/>
+        </scene>
+        <!--Create Course View Controller-->
+        <scene sceneID="ulx-K5-PWS">
+            <objects>
+                <viewController id="In0-5e-Zev" customClass="CreateCourseViewController" customModule="LazyA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xak-KR-igw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6ma-A9-Xfo">
+                                <rect key="frame" x="0.0" y="20" width="375" height="171.5"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="iME-6w-pVp">
+                                <rect key="frame" x="8" y="211.5" width="359.5" height="245.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="rwv-eX-R4f">
+                                        <rect key="frame" x="0.0" y="0.0" width="359.5" height="155.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1ys-2y-G1l">
+                                                <rect key="frame" x="60" y="0.0" width="239.5" height="70"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Course Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Avm-mH-zwc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="239.5" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="(Optional) Course Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="waq-4A-vsH">
+                                                        <rect key="frame" x="0.0" y="40" width="239.5" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Zsy-qI-fpe">
+                                                <rect key="frame" x="0.0" y="100" width="359.5" height="55.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade You Want: 80" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phV-YZ-Nov">
+                                                        <rect key="frame" x="0.0" y="0.0" width="359.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="80" minValue="65" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="4MB-hw-HCA">
+                                                        <rect key="frame" x="-2" y="25.5" width="363.5" height="31"/>
+                                                        <connections>
+                                                            <action selector="gradeWantedChanged:" destination="In0-5e-Zev" eventType="valueChanged" id="p05-Up-RG5"/>
+                                                        </connections>
+                                                    </slider>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Zsy-qI-fpe" firstAttribute="leading" secondItem="rwv-eX-R4f" secondAttribute="leading" id="fbJ-s2-ljJ"/>
+                                            <constraint firstItem="1ys-2y-G1l" firstAttribute="width" secondItem="rwv-eX-R4f" secondAttribute="width" multiplier="2:3" id="fig-tj-bWV"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FkP-E7-GDq">
+                                        <rect key="frame" x="0.0" y="215.5" width="359.5" height="30"/>
+                                        <state key="normal" title="Done"/>
+                                        <connections>
+                                            <action selector="submit:" destination="In0-5e-Zev" eventType="touchUpInside" id="ICj-c1-Cd8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iME-6w-pVp" firstAttribute="centerY" secondItem="Xak-KR-igw" secondAttribute="centerY" id="5oD-e6-Xcs"/>
+                            <constraint firstItem="6ma-A9-Xfo" firstAttribute="leading" secondItem="tzL-PN-MET" secondAttribute="leading" id="9Tk-iO-b81"/>
+                            <constraint firstItem="iME-6w-pVp" firstAttribute="centerX" secondItem="Xak-KR-igw" secondAttribute="centerX" id="FVa-40-kte"/>
+                            <constraint firstItem="6ma-A9-Xfo" firstAttribute="top" secondItem="tzL-PN-MET" secondAttribute="top" id="S4K-23-aLe"/>
+                            <constraint firstItem="6ma-A9-Xfo" firstAttribute="centerX" secondItem="Xak-KR-igw" secondAttribute="centerX" id="cOy-3a-n2l"/>
+                            <constraint firstItem="iME-6w-pVp" firstAttribute="leading" secondItem="tzL-PN-MET" secondAttribute="leading" constant="8" id="gaM-qE-BEn"/>
+                            <constraint firstItem="iME-6w-pVp" firstAttribute="top" secondItem="6ma-A9-Xfo" secondAttribute="bottom" constant="20" id="yPt-Hf-w5j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tzL-PN-MET"/>
+                    </view>
+                    <connections>
+                        <outlet property="courseCodeTxtFld" destination="waq-4A-vsH" id="g0X-au-7Q4"/>
+                        <outlet property="courseNameTxtFld" destination="Avm-mH-zwc" id="JlT-uO-hr3"/>
+                        <outlet property="gradeSlider" destination="4MB-hw-HCA" id="UE8-gN-Q4A"/>
+                        <outlet property="gradeWantedLabel" destination="phV-YZ-Nov" id="OAb-ZP-Pef"/>
+                        <outlet property="headerImageView" destination="6ma-A9-Xfo" id="n76-vZ-gCX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8x2-XU-8dd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1122" y="103"/>
+        </scene>
+    </scenes>
+</document>
