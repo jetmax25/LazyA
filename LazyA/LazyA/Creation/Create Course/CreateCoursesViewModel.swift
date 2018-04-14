@@ -7,14 +7,14 @@
 //
 
 struct CreateCoursesViewModel {
-    var courses : [Models.Course] = [Models.Course]()
+    private var courses : [Course] = [Course]()
     var selectedRow : Int?
     
     var numCourses : Int {
         return courses.count
     }
     
-    var selectedCourse : Models.Course? {
+    var selectedCourse : Course? {
         guard let row = selectedRow, row < numCourses else {
             return nil
         }
@@ -22,14 +22,14 @@ struct CreateCoursesViewModel {
     }
     
     private mutating func createNewCourse( name : String, courseNum : String?, grade : Int) {
-        let newCourse = Models.Course.init(name: name, expectedGrade: grade, courseCode: courseNum)
+        let newCourse = Course.init(name: name, expectedGrade: grade, courseCode: courseNum)
         self.courses.append(newCourse)
     }
     
-    private mutating func editCourse(course : Models.Course, name : String, courseNum : String?, grade : Int) {
+    private mutating func editCourse(course : Course, name : String, courseNum : String?, grade : Int) {
         course.name = name
         course.courseCode = courseNum
-        course.desiredGrade = grade
+        course.desiredGrade = Int16(grade)
     }
     
     mutating func updateCourse(grade : Int, name : String, courseCode : String?) {
@@ -41,7 +41,7 @@ struct CreateCoursesViewModel {
     }
     
     func getCourseNameFor( row : Int) -> String {
-        return courses[row].name
+        return courses[row].name!
     }
     
     func getCourseGradeFor( row : Int) -> String {

@@ -23,10 +23,16 @@
 		275513EE20534815001BDBB7 /* CreateCourseViewModel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275513ED20534815001BDBB7 /* CreateCourseViewModel2.swift */; };
 		275D69CA20771B0D000F36DF /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275D69C920771B0D000F36DF /* Component.swift */; };
 		2773D163207826CA00E9B130 /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773D162207826CA00E9B130 /* ViewControllerExtensions.swift */; };
+		2784B76520784C92004FE786 /* CreateComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2784B76420784C92004FE786 /* CreateComponentViewController.swift */; };
+		2784B76920784D2F004FE786 /* CreateComponentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2784B76820784D2F004FE786 /* CreateComponentViewModel.swift */; };
+		2784B76B20785C11004FE786 /* ComponentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2784B76A20785C11004FE786 /* ComponentTableViewCell.swift */; };
 		27D6CCEA20781F8900EB1DAA /* CreateCourseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D6CCE920781F8900EB1DAA /* CreateCourseTableViewController.swift */; };
 		27D6CCEC207820B600EB1DAA /* CreateCoursesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D6CCEB207820B600EB1DAA /* CreateCoursesViewModel.swift */; };
 		27FDB3242077033C00DABF0A /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FDB3232077033C00DABF0A /* UserInfo.swift */; };
 		27FDB32620770C0200DABF0A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FDB32520770C0200DABF0A /* Models.swift */; };
+		2AF21C2D5B1DC88F17F7607E /* Pods_LazyA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29D1E6FB6FC3BD4B66DC297 /* Pods_LazyA.framework */; };
+		99EFE4DFABB192CC453330A7 /* Pods_LazyAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1939A2EE4A480FE33D37029 /* Pods_LazyAUITests.framework */; };
+		CDDD842A74035AE4435B2A2F /* Pods_LazyATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5717CD681021C81B91FB8DE3 /* Pods_LazyATests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BFE0D6B348A35E33C2F2A1A /* Pods-LazyA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LazyA/Pods-LazyA.debug.xcconfig"; sourceTree = "<group>"; };
 		2745B836205762F400485E6B /* CreateCourse.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateCourse.storyboard; sourceTree = "<group>"; };
 		2745B838205765E700485E6B /* ComponentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTableViewController.swift; sourceTree = "<group>"; };
 		2745B83A2057660100485E6B /* CreateCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCourseViewController.swift; sourceTree = "<group>"; };
@@ -69,10 +76,21 @@
 		275513ED20534815001BDBB7 /* CreateCourseViewModel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCourseViewModel2.swift; sourceTree = "<group>"; };
 		275D69C920771B0D000F36DF /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
 		2773D162207826CA00E9B130 /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
+		2784B76420784C92004FE786 /* CreateComponentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateComponentViewController.swift; sourceTree = "<group>"; };
+		2784B76820784D2F004FE786 /* CreateComponentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateComponentViewModel.swift; sourceTree = "<group>"; };
+		2784B76A20785C11004FE786 /* ComponentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTableViewCell.swift; sourceTree = "<group>"; };
 		27D6CCE920781F8900EB1DAA /* CreateCourseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCourseTableViewController.swift; sourceTree = "<group>"; };
 		27D6CCEB207820B600EB1DAA /* CreateCoursesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCoursesViewModel.swift; sourceTree = "<group>"; };
 		27FDB3232077033C00DABF0A /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		27FDB32520770C0200DABF0A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		3A287E03A66E89436E0A98C1 /* Pods-LazyAUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyAUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LazyAUITests/Pods-LazyAUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5717CD681021C81B91FB8DE3 /* Pods_LazyATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LazyATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BAE4D3DC6BFD059A2C25B5C /* Pods-LazyATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyATests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LazyATests/Pods-LazyATests.release.xcconfig"; sourceTree = "<group>"; };
+		7D0317FF77A7FA5E55393431 /* Pods-LazyAUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyAUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LazyAUITests/Pods-LazyAUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9E1F2EF94EF40F39E41197A7 /* Pods-LazyATests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyATests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LazyATests/Pods-LazyATests.debug.xcconfig"; sourceTree = "<group>"; };
+		A29D1E6FB6FC3BD4B66DC297 /* Pods_LazyA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LazyA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B58AEB8E5B993074D19322E1 /* Pods-LazyA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyA.release.xcconfig"; path = "Pods/Target Support Files/Pods-LazyA/Pods-LazyA.release.xcconfig"; sourceTree = "<group>"; };
+		D1939A2EE4A480FE33D37029 /* Pods_LazyAUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LazyAUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AF21C2D5B1DC88F17F7607E /* Pods_LazyA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDDD842A74035AE4435B2A2F /* Pods_LazyATests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99EFE4DFABB192CC453330A7 /* Pods_LazyAUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +136,8 @@
 				275513CB20534278001BDBB7 /* LazyATests */,
 				275513D620534278001BDBB7 /* LazyAUITests */,
 				275513B220534278001BDBB7 /* Products */,
+				4D0350C05F236BE26F27ECC8 /* Pods */,
+				692B33120A53A0CB45FD43F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,7 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				2773D161207826BB00E9B130 /* Extensions */,
-				27D6CCE820781F2A00EB1DAA /* CreateCourse */,
+				27D6CCE820781F2A00EB1DAA /* Creation */,
 				2745B8332057628500485E6B /* View Controllers */,
 				275513EC20534803001BDBB7 /* ViewModels */,
 				275513E5205342CB001BDBB7 /* Models */,
@@ -193,15 +216,57 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		27D6CCE820781F2A00EB1DAA /* CreateCourse */ = {
+		27D6CCE820781F2A00EB1DAA /* Creation */ = {
 			isa = PBXGroup;
 			children = (
 				2745B836205762F400485E6B /* CreateCourse.storyboard */,
-				2745B83A2057660100485E6B /* CreateCourseViewController.swift */,
-				27D6CCE920781F8900EB1DAA /* CreateCourseTableViewController.swift */,
-				27D6CCEB207820B600EB1DAA /* CreateCoursesViewModel.swift */,
+				27FD6F0B207ABE5E0012FA5C /* Create Component */,
+				27FD6F0A207ABE500012FA5C /* Create Course */,
 			);
-			path = CreateCourse;
+			path = Creation;
+			sourceTree = "<group>";
+		};
+		27FD6F0A207ABE500012FA5C /* Create Course */ = {
+			isa = PBXGroup;
+			children = (
+				27D6CCEB207820B600EB1DAA /* CreateCoursesViewModel.swift */,
+				27D6CCE920781F8900EB1DAA /* CreateCourseTableViewController.swift */,
+				2745B83A2057660100485E6B /* CreateCourseViewController.swift */,
+			);
+			path = "Create Course";
+			sourceTree = "<group>";
+		};
+		27FD6F0B207ABE5E0012FA5C /* Create Component */ = {
+			isa = PBXGroup;
+			children = (
+				2784B76420784C92004FE786 /* CreateComponentViewController.swift */,
+				2784B76820784D2F004FE786 /* CreateComponentViewModel.swift */,
+				2784B76A20785C11004FE786 /* ComponentTableViewCell.swift */,
+			);
+			path = "Create Component";
+			sourceTree = "<group>";
+		};
+		4D0350C05F236BE26F27ECC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BFE0D6B348A35E33C2F2A1A /* Pods-LazyA.debug.xcconfig */,
+				B58AEB8E5B993074D19322E1 /* Pods-LazyA.release.xcconfig */,
+				9E1F2EF94EF40F39E41197A7 /* Pods-LazyATests.debug.xcconfig */,
+				6BAE4D3DC6BFD059A2C25B5C /* Pods-LazyATests.release.xcconfig */,
+				3A287E03A66E89436E0A98C1 /* Pods-LazyAUITests.debug.xcconfig */,
+				7D0317FF77A7FA5E55393431 /* Pods-LazyAUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		692B33120A53A0CB45FD43F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A29D1E6FB6FC3BD4B66DC297 /* Pods_LazyA.framework */,
+				5717CD681021C81B91FB8DE3 /* Pods_LazyATests.framework */,
+				D1939A2EE4A480FE33D37029 /* Pods_LazyAUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,9 +276,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 275513DC20534278001BDBB7 /* Build configuration list for PBXNativeTarget "LazyA" */;
 			buildPhases = (
+				F4F391A618E5CCC0FBF6C969 /* [CP] Check Pods Manifest.lock */,
 				275513AD20534278001BDBB7 /* Sources */,
 				275513AE20534278001BDBB7 /* Frameworks */,
 				275513AF20534278001BDBB7 /* Resources */,
+				95204684D11B0C3EB733A75D /* [CP] Embed Pods Frameworks */,
+				EC56BD30E754F75F60A70B2E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,9 +296,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 275513DF20534278001BDBB7 /* Build configuration list for PBXNativeTarget "LazyATests" */;
 			buildPhases = (
+				F56F1E27C13225B5EA3BC5CF /* [CP] Check Pods Manifest.lock */,
 				275513C420534278001BDBB7 /* Sources */,
 				275513C520534278001BDBB7 /* Frameworks */,
 				275513C620534278001BDBB7 /* Resources */,
+				E0FAE3D7CB182CEF2A4070AE /* [CP] Embed Pods Frameworks */,
+				7C037F2B99C7A2C74EB5A2D5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,9 +317,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 275513E220534278001BDBB7 /* Build configuration list for PBXNativeTarget "LazyAUITests" */;
 			buildPhases = (
+				02305382868646E981BC6B1D /* [CP] Check Pods Manifest.lock */,
 				275513CF20534278001BDBB7 /* Sources */,
 				275513D020534278001BDBB7 /* Frameworks */,
 				275513D120534278001BDBB7 /* Resources */,
+				F1F80CD9C0C5D15E9BC0C31E /* [CP] Embed Pods Frameworks */,
+				923E96FAF7B687F12391D87D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -334,6 +408,156 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02305382868646E981BC6B1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LazyAUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C037F2B99C7A2C74EB5A2D5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LazyATests/Pods-LazyATests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		923E96FAF7B687F12391D87D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LazyAUITests/Pods-LazyAUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95204684D11B0C3EB733A75D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LazyA/Pods-LazyA-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LazyA/Pods-LazyA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0FAE3D7CB182CEF2A4070AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LazyATests/Pods-LazyATests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC56BD30E754F75F60A70B2E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LazyA/Pods-LazyA-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1F80CD9C0C5D15E9BC0C31E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LazyAUITests/Pods-LazyAUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4F391A618E5CCC0FBF6C969 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LazyA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F56F1E27C13225B5EA3BC5CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LazyATests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		275513AD20534278001BDBB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -350,8 +574,11 @@
 				2745B839205765E700485E6B /* ComponentTableViewController.swift in Sources */,
 				275513EE20534815001BDBB7 /* CreateCourseViewModel2.swift in Sources */,
 				275513BD20534278001BDBB7 /* LazyA.xcdatamodeld in Sources */,
+				2784B76520784C92004FE786 /* CreateComponentViewController.swift in Sources */,
+				2784B76920784D2F004FE786 /* CreateComponentViewModel.swift in Sources */,
 				275513B720534278001BDBB7 /* ViewController.swift in Sources */,
 				275513B520534278001BDBB7 /* AppDelegate.swift in Sources */,
+				2784B76B20785C11004FE786 /* ComponentTableViewCell.swift in Sources */,
 				27FDB3242077033C00DABF0A /* UserInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +743,7 @@
 		};
 		275513DD20534278001BDBB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BFE0D6B348A35E33C2F2A1A /* Pods-LazyA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -531,6 +759,7 @@
 		};
 		275513DE20534278001BDBB7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B58AEB8E5B993074D19322E1 /* Pods-LazyA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +775,7 @@
 		};
 		275513E020534278001BDBB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E1F2EF94EF40F39E41197A7 /* Pods-LazyATests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -563,6 +793,7 @@
 		};
 		275513E120534278001BDBB7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BAE4D3DC6BFD059A2C25B5C /* Pods-LazyATests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -580,6 +811,7 @@
 		};
 		275513E320534278001BDBB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A287E03A66E89436E0A98C1 /* Pods-LazyAUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -596,6 +828,7 @@
 		};
 		275513E420534278001BDBB7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D0317FF77A7FA5E55393431 /* Pods-LazyAUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

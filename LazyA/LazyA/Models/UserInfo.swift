@@ -13,8 +13,8 @@ class UserInfo {
     static let shared = UserInfo.init()
     
     private init(){
-        self.courses = [Models.Course]()
+        self.courses = [Course]()
     }
     
-    var courses : [Models.Course]
+    var courses : [Course]
 }

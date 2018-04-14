@@ -9,14 +9,14 @@
 import UIKit
 
 protocol createCourseDelegate {
-    var course : Models.Course? {get}
+    var course : Course? {get}
     func updateCourse(grade : Int, name : String, courseCode : String?)
 }
 
 
 class CreateCourseTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, createCourseDelegate{
     
-    var course: Models.Course? {
+    var course: Course? {
         return viewModel.selectedCourse
     }
     
@@ -48,12 +48,10 @@ class CreateCourseTableViewController: UIViewController, UITableViewDelegate, UI
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return self.viewModel.numCourses
     }
     

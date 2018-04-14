@@ -8,21 +8,21 @@
 
 import CoreData
 
-extension Models {
+
     class Course :  NSManagedObject  {
-        @NSManaged var name : String
+       /* @NSManaged var name : String
         @NSManaged var desiredGrade : Int
         @NSManaged var courseCode : String?
-        @NSManaged var components : [Models.Component]?
+        @NSManaged var components : [Models.Component]?*/
 
         init(name: String, expectedGrade : Int, courseCode : String? = nil) {
             let entityDescription: NSEntityDescription =  NSEntityDescription.entity(forEntityName: "Course", in: AppDelegate.viewContext)!
 
             super.init(entity: entityDescription, insertInto: AppDelegate.viewContext)
             self.name = name
-            self.desiredGrade = expectedGrade
+            self.desiredGrade = Int16(expectedGrade)
             self.courseCode = courseCode
             self.components = nil
         }
     }
-}
+

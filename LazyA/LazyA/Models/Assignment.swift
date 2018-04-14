@@ -9,15 +9,15 @@
 import Foundation
 import CoreData
 
-extension Models {
+//extension Models {
     class Assignment : NSManagedObject {
         static func ==(lhs: Assignment, rhs: Assignment) -> Bool {
             return lhs.name == rhs.name
         }
-        
+        /*
         @NSManaged var name : String
         @NSManaged var maxPoints : NSNumber
-        @NSManaged var earnedPoints : NSNumber?
+        @NSManaged var earnedPoints : NSNumber? */
         
     }
-}
+//}
