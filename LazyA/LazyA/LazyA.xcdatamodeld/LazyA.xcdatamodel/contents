@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14133" systemVersion="17E199" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Assignment" representedClassName=".Assignment" syncable="YES" codeGenerationType="category">
+    <entity name="Assignment" representedClassName=".Assignment" syncable="YES">
         <attribute name="earnedPoints" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="maxPoints" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="course" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Course" inverseName="assignments" inverseEntity="Course" syncable="YES"/>
     </entity>
-    <entity name="Component" representedClassName=".Component" syncable="YES" codeGenerationType="category">
+    <entity name="Component" representedClassName=".Component" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="weight" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <relationship name="courses" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Course" inverseName="components" inverseEntity="Course" syncable="YES"/>
     </entity>
-    <entity name="Course" representedClassName=".Course" syncable="YES" codeGenerationType="category">
+    <entity name="Course" representedClassName=".Course" syncable="YES">
         <attribute name="courseCode" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="desiredGrade" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="assignments" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Assignment" inverseName="course" inverseEntity="Assignment" syncable="YES"/>
-        <relationship name="components" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Component" inverseName="courses" inverseEntity="Component" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Course" positionX="-36" positionY="-18" width="128" height="120"/>
-        <element name="Component" positionX="0" positionY="45" width="128" height="90"/>
-        <element name="Assignment" positionX="27" positionY="63" width="128" height="105"/>
+        <element name="Assignment" positionX="-360" positionY="-90" width="128" height="88"/>
+        <element name="Component" positionX="-621" positionY="45" width="128" height="73"/>
+        <element name="Course" positionX="-567" positionY="-288" width="128" height="88"/>
     </elements>
 </model>

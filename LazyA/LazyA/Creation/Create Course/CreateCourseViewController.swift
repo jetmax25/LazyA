@@ -40,6 +40,7 @@ class CreateCourseViewController: UIViewController {
     @IBAction func submit(_ sender: Any) {
         if courseNameTxtFld.text?.isEmpty ?? true {
             self.messageAlert(title: "Missing Field", message: "Missing Course Name")
+            return
         }
         
         delegate.updateCourse(grade: Int(gradeSlider.value), name: courseNameTxtFld.text!, courseCode: courseCodeTxtFld.text)

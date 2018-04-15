@@ -10,11 +10,12 @@ import CoreData
 
 
     class Course :  NSManagedObject  {
-       /* @NSManaged var name : String
-        @NSManaged var desiredGrade : Int
+        @NSManaged var name : String
+        @NSManaged var desiredGrade : Int16
         @NSManaged var courseCode : String?
-        @NSManaged var components : [Models.Component]?*/
+        var components : [Component] = [Component]()
 
+        
         init(name: String, expectedGrade : Int, courseCode : String? = nil) {
             let entityDescription: NSEntityDescription =  NSEntityDescription.entity(forEntityName: "Course", in: AppDelegate.viewContext)!
 
@@ -22,7 +23,7 @@ import CoreData
             self.name = name
             self.desiredGrade = Int16(expectedGrade)
             self.courseCode = courseCode
-            self.components = nil
+            self.components = [Component]()
         }
     }
 

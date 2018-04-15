@@ -10,16 +10,16 @@ import CoreData
 
 
     class Component : NSManagedObject {
-       /* @NSManaged var name : String
+        @NSManaged var name : String
         @NSManaged var weight : Int
-        @NSManaged var assigments : [Models.Assignment]?*/
+        var assigments : [Assignment] = [Assignment]()
         
         init(name: String = "" , weight: Int) {
             let entityDescription: NSEntityDescription =  NSEntityDescription.entity(forEntityName: "Component", in: AppDelegate.viewContext)!
             
             super.init(entity: entityDescription, insertInto: AppDelegate.viewContext)
             self.name = name
-            self.weight = Int64(weight)
+            self.weight = weight
         }
     }
 

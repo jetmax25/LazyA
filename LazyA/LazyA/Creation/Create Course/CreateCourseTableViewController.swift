@@ -22,14 +22,7 @@ class CreateCourseTableViewController: UIViewController, UITableViewDelegate, UI
     
     
     @IBOutlet weak var tableView: UITableView!
-    var editCourseSegueName : String {
-        return "EditCourse"
-    }
-    
-    var cellName : String {
-        return "StandardCell"
-    }
-    
+
     func updateCourse(grade: Int, name: String, courseCode: String?) {
         self.viewModel.updateCourse(grade: grade, name: name, courseCode: courseCode)
         self.tableView.reloadData()
@@ -37,7 +30,6 @@ class CreateCourseTableViewController: UIViewController, UITableViewDelegate, UI
 
     var viewModel : CreateCoursesViewModel!
 
-    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.viewModel = CreateCoursesViewModel.init()
@@ -52,11 +44,14 @@ class CreateCourseTableViewController: UIViewController, UITableViewDelegate, UI
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.viewModel.numCourses
+        return self.viewModel.numCourses + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellName)!
+        if indexPath.row == viewModel.numCourses {
+            return tableView.dequeueReusableCell(withIdentifier: AppStrings.tablecells.createCell.rawValue)!
+        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: AppStrings.tablecells.courseCell.rawValue)!
         cell.textLabel?.text = viewModel.getCourseNameFor(row: indexPath.row)
         cell.detailTextLabel?.text = viewModel.getCourseGradeFor(row: indexPath.row)
         return cell
@@ -65,17 +60,18 @@ class CreateCourseTableViewController: UIViewController, UITableViewDelegate, UI
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         viewModel.selectedRow = indexPath.row
-        self.performSegue(withIdentifier: editCourseSegueName, sender: nil)
+        self.performSegue(withIdentifier: AppStrings.segues.editCourse.rawValue, sender: nil)
     }
     
     @IBAction func createNewCourse(_ sender: Any) {
         self.viewModel.selectedRow = nil
-        self.performSegue(withIdentifier: editCourseSegueName, sender: nil)
+        self.performSegue(withIdentifier:  AppStrings.segues.editCourse.rawValue, sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! CreateCourseViewController
-        vc.delegate = self
+        if segue.identifier == AppStrings.segues.editCourse.rawValue {
+            let vc = segue.destination as! CreateCourseViewController
+            vc.delegate = self
+        }
     }
-    
 }

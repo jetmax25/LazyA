@@ -23,16 +23,9 @@ class CreateComponentViewController: UIViewController, CreateComponentDelegate, 
     
     @IBOutlet weak var weightChart: PieChartView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var nameLabel: UILabel!
     
     var viewModel : CreateComponentViewModel!
-    
-    var cellName : String {
-        return "ComponentCell"
-    }
-    
-    var addCellName : String {
-        return "AddComponent"
-    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.numComponents + 1
@@ -41,10 +34,10 @@ class CreateComponentViewController: UIViewController, CreateComponentDelegate, 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.row == viewModel.numComponents {
-            return tableView.dequeueReusableCell(withIdentifier: addCellName)!
+            return tableView.dequeueReusableCell(withIdentifier: AppStrings.tablecells.createCell.rawValue)!
         }
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellName) as! ComponentTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: AppStrings.tablecells.componentCell.rawValue) as! ComponentTableViewCell
         cell.delegate = self
         cell.rowNum = indexPath.row
         
@@ -53,8 +46,8 @@ class CreateComponentViewController: UIViewController, CreateComponentDelegate, 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         self.viewModel = CreateComponentViewModel()
+        self.nameLabel.text = viewModel.courseName
         weightChart.data = viewModel.chartData
         let description = Description.init()
         description.text = "Class Breakdown"
@@ -77,4 +70,12 @@ class CreateComponentViewController: UIViewController, CreateComponentDelegate, 
         return true
     }
  
+    @IBAction func nextCourse(_ sender: Any) {
+        self.viewModel.nextCourse()
+        if viewModel.currentCourse != nil {
+            self.nameLabel.text = viewModel.courseName
+        } else {
+            print("done")
+        }
+    }
 }
