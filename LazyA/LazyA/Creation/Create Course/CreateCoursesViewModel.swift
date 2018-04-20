@@ -22,14 +22,17 @@ struct CreateCoursesViewModel {
     }
     
     private mutating func createNewCourse( name : String, courseNum : String?, grade : Int) {
-        let newCourse = Course.init(name: name, expectedGrade: grade, courseCode: courseNum)
+        let newCourse = Course()
+        newCourse.name = name
+        newCourse.courseCode = courseNum
+        newCourse.desiredGrade = grade
         UserInfo.shared.courses.append(newCourse)
     }
     
     private mutating func editCourse(course : Course, name : String, courseNum : String?, grade : Int) {
         course.name = name
         course.courseCode = courseNum
-        course.desiredGrade = Int16(grade)
+        course.desiredGrade = grade
     }
     
     mutating func updateCourse(grade : Int, name : String, courseCode : String?) {

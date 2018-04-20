@@ -17,7 +17,7 @@ class HomeMenuViewController: UIViewController {
     }
 }
 
-
+/*
 extension HomeMenuViewController : UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         <#code#>
@@ -27,3 +27,4 @@ extension HomeMenuViewController : UICollectionViewDataSource, UICollectionViewD
         <#code#>
     }
 }
+*/

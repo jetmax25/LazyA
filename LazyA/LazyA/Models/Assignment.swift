@@ -7,17 +7,38 @@
 //
 
 import Foundation
-import CoreData
+import RealmSwift
 
 //extension Models {
-    class Assignment : NSManagedObject {
+    class Assignment : Object {
         static func ==(lhs: Assignment, rhs: Assignment) -> Bool {
             return lhs.name == rhs.name
         }
         
-        @NSManaged var name : String
-        @NSManaged var maxPoints : NSNumber
-        @NSManaged var earnedPoints : NSNumber?
+        @objc dynamic var normalizeTo100 : Bool = false
+        @objc dynamic var name : String = ""
+        @objc dynamic var maxPoints : Int = 100
+        var earnedPoints = RealmOptional<Float>()
+        @objc dynamic var dueDate : Date? = nil
         
+        
+        var didTake : Bool {
+            return earnedPoints.value != nil
+        }
+        
+        var percentGrade : Float {
+            return earnedPoints.value == nil ? 0 : earnedPoints.value! / Float(maxPoints)
+        }
+        
+        var weightedEarnedPoints : Float {
+            guard let earnedPoints = self.earnedPoints.value else {
+                return 0
+            }
+            return normalizeTo100 ? percentGrade * 100 : earnedPoints
+        }
+        
+        var weightedMaxPoints : Int {
+            return normalizeTo100 ? 100 : maxPoints
+        }
     }
 //}

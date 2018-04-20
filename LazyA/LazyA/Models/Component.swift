@@ -7,19 +7,44 @@
 //
 
 import CoreData
+import RealmSwift
 
-
-    class Component : NSManagedObject {
-        @NSManaged var name : String
-        @NSManaged var weight : Int
+    class Component : Object {
+        @objc dynamic var name : String = ""
+        @objc dynamic var weight : Int = 25
+        @objc dynamic var isFinal : Bool = false
         var assigments : [Assignment] = [Assignment]()
         
-        init(name: String = "" , weight: Int) {
-            let entityDescription: NSEntityDescription =  NSEntityDescription.entity(forEntityName: "Component", in: AppDelegate.viewContext)!
-            
-            super.init(entity: entityDescription, insertInto: AppDelegate.viewContext)
-            self.name = name
-            self.weight = weight
+        var completedAssignments : [Assignment] {
+            return self.assigments.filter { $0.didTake }
+        }
+        
+        var remainingAssignemnts : [Assignment] {
+            return self.assigments.filter { !$0.didTake }
+        }
+        
+        var earnedSum : Float {
+            return completedAssignments.compactMap { $0.weightedEarnedPoints }.reduce(0,+)
+        }
+        
+        var earnedMaxSum : Int {
+            return completedAssignments.compactMap { $0.weightedMaxPoints }.reduce(0,+)
+        }
+        
+        var totalMaxSum : Int {
+            return self.assigments.compactMap { $0.weightedMaxPoints }.reduce(0,+)
+        }
+        
+        var currentPercentGrade : Float {
+            return earnedSum / Float(earnedMaxSum)
+        }
+        
+        var earnedWeight : Float {
+            return earnedSum / Float(totalMaxSum) * Float(weight)
+        }
+        
+        var projectedEarnedWeight : Float {
+            return currentPercentGrade * Float(weight)
         }
     }
 

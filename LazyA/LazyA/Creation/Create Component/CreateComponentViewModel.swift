@@ -43,7 +43,7 @@ struct CreateComponentViewModel {
     }
     
     mutating func createNewComponent() {
-        currentCourse!.components.append( Component.init(weight: 20))
+        currentCourse!.components.append( Component() )
     }
     
     mutating func editComponent(for row : Int, name : String, weight : Int) {
