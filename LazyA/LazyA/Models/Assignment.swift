@@ -18,6 +18,8 @@ import RealmSwift
         @objc dynamic var normalizeTo100 : Bool = false
         @objc dynamic var name : String = ""
         @objc dynamic var maxPoints : Int = 100
+        @objc dynamic var weight : Int = 100
+        @objc dynamic var desiredGrade : Int = 90
         var earnedPoints = RealmOptional<Float>()
         @objc dynamic var dueDate : Date? = nil
         

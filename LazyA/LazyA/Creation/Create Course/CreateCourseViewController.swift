@@ -37,6 +37,9 @@ class CreateCourseViewController: UIViewController {
         self.gradeWantedLabel.text = "Grade You Want: \(gradeSlider.value)"
     }
     
+    @IBAction func close(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     @IBAction func submit(_ sender: Any) {
         if courseNameTxtFld.text?.isEmpty ?? true {
             self.messageAlert(title: "Missing Field", message: "Missing Course Name")

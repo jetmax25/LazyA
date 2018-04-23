@@ -13,10 +13,10 @@ import RealmSwift
         @objc dynamic var name : String = ""
         @objc dynamic var desiredGrade : Int = 90
         @objc dynamic var courseCode : String? = nil
-        @objc dynamic var components : [Component] = [Component]()
+        let catagories = List<Component>()
 
         var totalWeight : Int {
-            return self.components.compactMap { $0.weight }.reduce(0,+)
+            return self.catagories.compactMap { $0.weight }.reduce(0,+)
         }
         
         var neededWeight : Float {
@@ -24,7 +24,7 @@ import RealmSwift
         }
         
         var projectedEarnedWeight : Float {
-            return self.components.compactMap { $0.projectedEarnedWeight  }.reduce(0,+)
+            return self.catagories.compactMap { $0.projectedEarnedWeight  }.reduce(0,+)
         }
         
         var projectedRemainingWeight : Float {
@@ -36,7 +36,7 @@ import RealmSwift
         }
         
         var finalScoreNeeded : Float {
-            let finalComponent = self.components.filter { $0.isFinal }.first!
+            let finalComponent = self.catagories.filter { $0.isFinal }.first!
             return projectedRemainingWeight / Float(finalComponent.weight)
         }
     }

@@ -29,6 +29,8 @@
 		2784B76B20785C11004FE786 /* ComponentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2784B76A20785C11004FE786 /* ComponentTableViewCell.swift */; };
 		27D6CCEA20781F8900EB1DAA /* CreateCourseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D6CCE920781F8900EB1DAA /* CreateCourseTableViewController.swift */; };
 		27D6CCEC207820B600EB1DAA /* CreateCoursesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D6CCEB207820B600EB1DAA /* CreateCoursesViewModel.swift */; };
+		27E096A8208D0FAE00E57171 /* CreateAssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E096A7208D0FAE00E57171 /* CreateAssignmentViewController.swift */; };
+		27E096AC208D135D00E57171 /* CreateAssignmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E096AB208D135D00E57171 /* CreateAssignmentViewModel.swift */; };
 		27E3005E208407F700528725 /* HomeMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27E3005D208407F700528725 /* HomeMenu.storyboard */; };
 		27E3006220840CE100528725 /* HomeMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E3006120840CE100528725 /* HomeMenuViewController.swift */; };
 		27E3006420840D4D00528725 /* HomeMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E3006320840D4D00528725 /* HomeMenuViewModel.swift */; };
@@ -86,6 +88,8 @@
 		2784B76A20785C11004FE786 /* ComponentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTableViewCell.swift; sourceTree = "<group>"; };
 		27D6CCE920781F8900EB1DAA /* CreateCourseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCourseTableViewController.swift; sourceTree = "<group>"; };
 		27D6CCEB207820B600EB1DAA /* CreateCoursesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCoursesViewModel.swift; sourceTree = "<group>"; };
+		27E096A7208D0FAE00E57171 /* CreateAssignmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAssignmentViewController.swift; sourceTree = "<group>"; };
+		27E096AB208D135D00E57171 /* CreateAssignmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAssignmentViewModel.swift; sourceTree = "<group>"; };
 		27E3005D208407F700528725 /* HomeMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeMenu.storyboard; sourceTree = "<group>"; };
 		27E3006120840CE100528725 /* HomeMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuViewController.swift; sourceTree = "<group>"; };
 		27E3006320840D4D00528725 /* HomeMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuViewModel.swift; sourceTree = "<group>"; };
@@ -218,6 +222,15 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		27696BB7208BE6CB008B1068 /* Create Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				27E096A7208D0FAE00E57171 /* CreateAssignmentViewController.swift */,
+				27E096AB208D135D00E57171 /* CreateAssignmentViewModel.swift */,
+			);
+			path = "Create Assignment";
+			sourceTree = "<group>";
+		};
 		2773D161207826BB00E9B130 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +242,7 @@
 		27D6CCE820781F2A00EB1DAA /* Creation */ = {
 			isa = PBXGroup;
 			children = (
+				27696BB7208BE6CB008B1068 /* Create Assignment */,
 				2745B836205762F400485E6B /* CreateCourse.storyboard */,
 				27FD6F0B207ABE5E0012FA5C /* Create Component */,
 				27FD6F0A207ABE500012FA5C /* Create Course */,
@@ -603,7 +617,9 @@
 				275513EE20534815001BDBB7 /* CreateCourseViewModel2.swift in Sources */,
 				275513BD20534278001BDBB7 /* LazyA.xcdatamodeld in Sources */,
 				2784B76520784C92004FE786 /* CreateComponentViewController.swift in Sources */,
+				27E096A8208D0FAE00E57171 /* CreateAssignmentViewController.swift in Sources */,
 				2784B76920784D2F004FE786 /* CreateComponentViewModel.swift in Sources */,
+				27E096AC208D135D00E57171 /* CreateAssignmentViewModel.swift in Sources */,
 				275513B720534278001BDBB7 /* ViewController.swift in Sources */,
 				275513B520534278001BDBB7 /* AppDelegate.swift in Sources */,
 				2784B76B20785C11004FE786 /* ComponentTableViewCell.swift in Sources */,

@@ -10,6 +10,13 @@ import UIKit
 
 class ComponentTableViewCell: UITableViewCell {
     
+    var component : Component! {
+        didSet {
+            self.nameTextField.text = component.name
+            self.weightTextField.text = "\(component.weight)"
+        }
+    }
+    
     @IBOutlet weak var weightTextField: UITextField! {
         didSet {
             weightTextField.keyboardType = .numberPad
@@ -27,12 +34,11 @@ class ComponentTableViewCell: UITableViewCell {
     }
     
     @IBAction func editComponent(_ sender: Any) {
-                delegate.editComponent(for: rowNum, name: nameTextField.text ?? "", weight: weightNum)
+        delegate.editComponent(for: rowNum, name: nameTextField.text ?? "", weight: weightNum)
     }
     
     @IBAction func updateComponent(_ sender: Any) {
         delegate.editComponent(for: rowNum, name: nameTextField.text ?? "", weight: weightNum)
-        
         weightTextField.text = "\(weightNum)"
     }
     

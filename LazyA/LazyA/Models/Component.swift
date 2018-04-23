@@ -13,7 +13,7 @@ import RealmSwift
         @objc dynamic var name : String = ""
         @objc dynamic var weight : Int = 25
         @objc dynamic var isFinal : Bool = false
-        var assigments : [Assignment] = [Assignment]()
+        var assigments = List<Assignment>()
         
         var completedAssignments : [Assignment] {
             return self.assigments.filter { $0.didTake }

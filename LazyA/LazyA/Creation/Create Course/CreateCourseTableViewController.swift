@@ -73,5 +73,9 @@ class CreateCourseTableViewController: UIViewController, UITableViewDelegate, UI
             let vc = segue.destination as! CreateCourseViewController
             vc.delegate = self
         }
+        
+        if segue.identifier == AppStrings.segues.createComponents.rawValue {
+            viewModel.saveCourses()
+        }
     }
 }

@@ -9,16 +9,17 @@
 struct CreateCoursesViewModel {
     
     var selectedRow : Int?
+    var courses = [Course]()
     
     var numCourses : Int {
-        return UserInfo.shared.courses.count
+        return self.courses.count
     }
     
     var selectedCourse : Course? {
         guard let row = selectedRow, row < numCourses else {
             return nil
         }
-        return UserInfo.shared.courses[row]
+        return self.courses[row]
     }
     
     private mutating func createNewCourse( name : String, courseNum : String?, grade : Int) {
@@ -26,7 +27,7 @@ struct CreateCoursesViewModel {
         newCourse.name = name
         newCourse.courseCode = courseNum
         newCourse.desiredGrade = grade
-        UserInfo.shared.courses.append(newCourse)
+        self.courses.append(newCourse)
     }
     
     private mutating func editCourse(course : Course, name : String, courseNum : String?, grade : Int) {
@@ -36,18 +37,24 @@ struct CreateCoursesViewModel {
     }
     
     mutating func updateCourse(grade : Int, name : String, courseCode : String?) {
-        if let selectedRow = selectedRow, selectedRow < UserInfo.shared.courses.count{
-            editCourse(course: UserInfo.shared.courses[selectedRow], name: name, courseNum: courseCode, grade: grade)
+        if let selectedRow = selectedRow, selectedRow < self.courses.count{
+            editCourse(course: self.courses[selectedRow], name: name, courseNum: courseCode, grade: grade)
         } else {
             createNewCourse(name: name, courseNum: courseCode, grade: grade)
         }
     }
     
     func getCourseNameFor( row : Int) -> String {
-        return UserInfo.shared.courses[row].name
+        return self.courses[row].name
     }
     
     func getCourseGradeFor( row : Int) -> String {
-        return "\(UserInfo.shared.courses[row].desiredGrade)"
+        return "\(self.courses[row].desiredGrade)"
+    }
+    
+    func saveCourses() {
+        self.courses.forEach { course in try! AppDelegate.realm.write {
+                AppDelegate.realm.add(course)
+            } }
     }
 }

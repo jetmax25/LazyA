@@ -39,6 +39,7 @@ class CreateComponentViewController: UIViewController, CreateComponentDelegate, 
         
         let cell = tableView.dequeueReusableCell(withIdentifier: AppStrings.tablecells.componentCell.rawValue) as! ComponentTableViewCell
         cell.delegate = self
+        cell.component = viewModel.componentFor(row: indexPath.row)
         cell.rowNum = indexPath.row
         
         return cell
@@ -48,16 +49,19 @@ class CreateComponentViewController: UIViewController, CreateComponentDelegate, 
         super.viewDidLoad()
         self.viewModel = CreateComponentViewModel()
         self.nameLabel.text = viewModel.courseName
+    }
+    
+    func setUpChart() {
         weightChart.data = viewModel.chartData
         let description = Description.init()
         description.text = "Class Breakdown"
         weightChart.chartDescription = description
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func addComponent(_ sender: Any) {
         self.viewModel.createNewComponent()
         self.tableView.insertRows(at: [IndexPath(row: viewModel.numComponents - 1, section: 0)], with: .automatic)
+        //self.tableView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -71,9 +75,11 @@ class CreateComponentViewController: UIViewController, CreateComponentDelegate, 
     }
  
     @IBAction func nextCourse(_ sender: Any) {
+        self.tableView.reloadData()
         self.viewModel.nextCourse()
         if viewModel.currentCourse != nil {
             self.nameLabel.text = viewModel.courseName
+            self.tableView.reloadData()
         } else {
             print("done")
         }

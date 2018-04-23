@@ -8,23 +8,22 @@
 
 import UIKit
 import CoreData
+import RealmSwift
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    static var persistantContainer : NSPersistentContainer {
-        return (UIApplication.shared.delegate as! AppDelegate).persistentContainer
+    static var realm : Realm {
+        return try! Realm()
     }
-    
-    static var viewContext : NSManagedObjectContext {
-        return persistantContainer.viewContext
-    }
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {_,_ in })
         return true
     }
 
