@@ -14,7 +14,7 @@ protocol createCourseDelegate {
 }
 
 
-class CreateCourseTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, createCourseDelegate{
+class CreateCourseTableViewController: LazyAViewController, UITableViewDelegate, UITableViewDataSource, createCourseDelegate{
     
     var course: Course? {
         return viewModel.selectedCourse
@@ -44,13 +44,10 @@ class CreateCourseTableViewController: UIViewController, UITableViewDelegate, UI
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.viewModel.numCourses + 1
+        return self.viewModel.numCourses
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row == viewModel.numCourses {
-            return tableView.dequeueReusableCell(withIdentifier: AppStrings.tablecells.createCell.rawValue)!
-        }
         let cell = tableView.dequeueReusableCell(withIdentifier: AppStrings.tablecells.courseCell.rawValue)!
         cell.textLabel?.text = viewModel.getCourseNameFor(row: indexPath.row)
         cell.detailTextLabel?.text = viewModel.getCourseGradeFor(row: indexPath.row)

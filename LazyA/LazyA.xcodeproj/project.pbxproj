@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27395CE9219789830040366A /* LazyAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27395CE8219789830040366A /* LazyAViewController.swift */; };
+		27395CEB219796C50040366A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27395CEA219796C50040366A /* Colors.xcassets */; };
+		27395CED21979A1E0040366A /* Pallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27395CEC21979A1E0040366A /* Pallet.swift */; };
+		27395CF121979B370040366A /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27395CF021979B370040366A /* StringExtensions.swift */; };
 		2745B837205762F400485E6B /* CreateCourse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2745B836205762F400485E6B /* CreateCourse.storyboard */; };
 		2745B839205765E700485E6B /* ComponentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2745B838205765E700485E6B /* ComponentTableViewController.swift */; };
 		2745B83B2057660100485E6B /* CreateCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2745B83A2057660100485E6B /* CreateCourseViewController.swift */; };
@@ -20,6 +24,7 @@
 		275513EB20534642001BDBB7 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275513EA20534642001BDBB7 /* Course.swift */; };
 		275513EE20534815001BDBB7 /* CreateCourseViewModel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275513ED20534815001BDBB7 /* CreateCourseViewModel2.swift */; };
 		275D69CA20771B0D000F36DF /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275D69C920771B0D000F36DF /* Component.swift */; };
+		276D80DF2197815A00108304 /* LazyAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276D80DE2197815A00108304 /* LazyAButton.swift */; };
 		276EB4222081AA9D00EA86D7 /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EB4212081AA9D00EA86D7 /* AppStrings.swift */; };
 		2773D163207826CA00E9B130 /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773D162207826CA00E9B130 /* ViewControllerExtensions.swift */; };
 		2784B76520784C92004FE786 /* CreateComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2784B76420784C92004FE786 /* CreateComponentViewController.swift */; };
@@ -38,6 +43,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27395CE8219789830040366A /* LazyAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyAViewController.swift; sourceTree = "<group>"; };
+		27395CEA219796C50040366A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		27395CEC21979A1E0040366A /* Pallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pallet.swift; sourceTree = "<group>"; };
+		27395CF021979B370040366A /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		2745B836205762F400485E6B /* CreateCourse.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateCourse.storyboard; sourceTree = "<group>"; };
 		2745B838205765E700485E6B /* ComponentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTableViewController.swift; sourceTree = "<group>"; };
 		2745B83A2057660100485E6B /* CreateCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCourseViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +66,7 @@
 		275513EA20534642001BDBB7 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		275513ED20534815001BDBB7 /* CreateCourseViewModel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCourseViewModel2.swift; sourceTree = "<group>"; };
 		275D69C920771B0D000F36DF /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
+		276D80DE2197815A00108304 /* LazyAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyAButton.swift; sourceTree = "<group>"; };
 		276EB4212081AA9D00EA86D7 /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
 		2773D162207826CA00E9B130 /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
 		2784B76420784C92004FE786 /* CreateComponentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateComponentViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +98,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27395CEE21979A220040366A /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				27395CEC21979A1E0040366A /* Pallet.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
 		2745B8332057628500485E6B /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +137,8 @@
 		275513B320534278001BDBB7 /* LazyA */ = {
 			isa = PBXGroup;
 			children = (
+				27395CEE21979A220040366A /* Colors */,
+				276D80DD2197811700108304 /* Reusable Elements */,
 				27E3005C208407E600528725 /* Home Menu */,
 				2773D161207826BB00E9B130 /* Extensions */,
 				27D6CCE820781F2A00EB1DAA /* Creation */,
@@ -133,6 +153,7 @@
 				275513C320534278001BDBB7 /* Info.plist */,
 				275513BB20534278001BDBB7 /* LazyA.xcdatamodeld */,
 				276EB4212081AA9D00EA86D7 /* AppStrings.swift */,
+				27395CEA219796C50040366A /* Colors.xcassets */,
 			);
 			path = LazyA;
 			sourceTree = "<group>";
@@ -184,10 +205,20 @@
 			path = "Create Assignment";
 			sourceTree = "<group>";
 		};
+		276D80DD2197811700108304 /* Reusable Elements */ = {
+			isa = PBXGroup;
+			children = (
+				276D80DE2197815A00108304 /* LazyAButton.swift */,
+				27395CE8219789830040366A /* LazyAViewController.swift */,
+			);
+			path = "Reusable Elements";
+			sourceTree = "<group>";
+		};
 		2773D161207826BB00E9B130 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				2773D162207826CA00E9B130 /* ViewControllerExtensions.swift */,
+				27395CF021979B370040366A /* StringExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -314,6 +345,7 @@
 				275513C220534278001BDBB7 /* LaunchScreen.storyboard in Resources */,
 				2745B837205762F400485E6B /* CreateCourse.storyboard in Resources */,
 				275513BF20534278001BDBB7 /* Assets.xcassets in Resources */,
+				27395CEB219796C50040366A /* Colors.xcassets in Resources */,
 				275513BA20534278001BDBB7 /* Main.storyboard in Resources */,
 				27E3005E208407F700528725 /* HomeMenu.storyboard in Resources */,
 			);
@@ -383,11 +415,14 @@
 				27FDB32620770C0200DABF0A /* Models.swift in Sources */,
 				275513EB20534642001BDBB7 /* Course.swift in Sources */,
 				2745B83B2057660100485E6B /* CreateCourseViewController.swift in Sources */,
+				27395CED21979A1E0040366A /* Pallet.swift in Sources */,
 				275513E720534348001BDBB7 /* Assignment.swift in Sources */,
 				2773D163207826CA00E9B130 /* ViewControllerExtensions.swift in Sources */,
 				27E3006420840D4D00528725 /* HomeMenuViewModel.swift in Sources */,
+				276D80DF2197815A00108304 /* LazyAButton.swift in Sources */,
 				275D69CA20771B0D000F36DF /* Component.swift in Sources */,
 				27E3006220840CE100528725 /* HomeMenuViewController.swift in Sources */,
+				27395CE9219789830040366A /* LazyAViewController.swift in Sources */,
 				2745B839205765E700485E6B /* ComponentTableViewController.swift in Sources */,
 				275513EE20534815001BDBB7 /* CreateCourseViewModel2.swift in Sources */,
 				275513BD20534278001BDBB7 /* LazyA.xcdatamodeld in Sources */,
@@ -398,6 +433,7 @@
 				275513B720534278001BDBB7 /* ViewController.swift in Sources */,
 				275513B520534278001BDBB7 /* AppDelegate.swift in Sources */,
 				2784B76B20785C11004FE786 /* ComponentTableViewCell.swift in Sources */,
+				27395CF121979B370040366A /* StringExtensions.swift in Sources */,
 				27FDB3242077033C00DABF0A /* UserInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,6 +15,6 @@ enum AppStrings {
     }
     
     enum tablecells : String {
-        case courseCell, componentCell, createCell
+        case courseCell, componentCell
     }
 }

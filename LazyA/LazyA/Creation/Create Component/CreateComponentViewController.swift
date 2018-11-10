@@ -28,14 +28,10 @@ class CreateComponentViewController: UIViewController, CreateComponentDelegate, 
     var viewModel : CreateComponentViewModel!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.numComponents + 1
+        return viewModel.numComponents
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        if indexPath.row == viewModel.numComponents {
-            return tableView.dequeueReusableCell(withIdentifier: AppStrings.tablecells.createCell.rawValue)!
-        }
         
         let cell = tableView.dequeueReusableCell(withIdentifier: AppStrings.tablecells.componentCell.rawValue) as! ComponentTableViewCell
         cell.delegate = self
@@ -60,8 +56,7 @@ class CreateComponentViewController: UIViewController, CreateComponentDelegate, 
     
     @IBAction func addComponent(_ sender: Any) {
         self.viewModel.createNewComponent()
-        self.tableView.insertRows(at: [IndexPath(row: viewModel.numComponents - 1, section: 0)], with: .automatic)
-        //self.tableView.reloadData()
+        self.tableView.insertRows(at: [IndexPath(row: viewModel.numComponents, section: 0)], with: .automatic)
     }
     
     override func didReceiveMemoryWarning() {
