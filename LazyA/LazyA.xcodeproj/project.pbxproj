@@ -34,11 +34,10 @@
 		27E3006420840D4D00528725 /* HomeMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E3006320840D4D00528725 /* HomeMenuViewModel.swift */; };
 		27FDB3242077033C00DABF0A /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FDB3232077033C00DABF0A /* UserInfo.swift */; };
 		27FDB32620770C0200DABF0A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FDB32520770C0200DABF0A /* Models.swift */; };
-		2AF21C2D5B1DC88F17F7607E /* Pods_LazyA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29D1E6FB6FC3BD4B66DC297 /* Pods_LazyA.framework */; };
+		8B72D7E057154E960CD53DD5 /* Pods_LazyA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1B5FAB08A8602F2F47D934 /* Pods_LazyA.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1BFE0D6B348A35E33C2F2A1A /* Pods-LazyA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LazyA/Pods-LazyA.debug.xcconfig"; sourceTree = "<group>"; };
 		2745B836205762F400485E6B /* CreateCourse.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateCourse.storyboard; sourceTree = "<group>"; };
 		2745B838205765E700485E6B /* ComponentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTableViewController.swift; sourceTree = "<group>"; };
 		2745B83A2057660100485E6B /* CreateCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCourseViewController.swift; sourceTree = "<group>"; };
@@ -72,14 +71,9 @@
 		27E3006320840D4D00528725 /* HomeMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuViewModel.swift; sourceTree = "<group>"; };
 		27FDB3232077033C00DABF0A /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		27FDB32520770C0200DABF0A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		3A287E03A66E89436E0A98C1 /* Pods-LazyAUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyAUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LazyAUITests/Pods-LazyAUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		5717CD681021C81B91FB8DE3 /* Pods_LazyATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LazyATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BAE4D3DC6BFD059A2C25B5C /* Pods-LazyATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyATests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LazyATests/Pods-LazyATests.release.xcconfig"; sourceTree = "<group>"; };
-		7D0317FF77A7FA5E55393431 /* Pods-LazyAUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyAUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LazyAUITests/Pods-LazyAUITests.release.xcconfig"; sourceTree = "<group>"; };
-		9E1F2EF94EF40F39E41197A7 /* Pods-LazyATests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyATests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LazyATests/Pods-LazyATests.debug.xcconfig"; sourceTree = "<group>"; };
-		A29D1E6FB6FC3BD4B66DC297 /* Pods_LazyA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LazyA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B58AEB8E5B993074D19322E1 /* Pods-LazyA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyA.release.xcconfig"; path = "Pods/Target Support Files/Pods-LazyA/Pods-LazyA.release.xcconfig"; sourceTree = "<group>"; };
-		D1939A2EE4A480FE33D37029 /* Pods_LazyAUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LazyAUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2902C638F8EC4AA1F63637E8 /* Pods-LazyA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyA.release.xcconfig"; path = "Pods/Target Support Files/Pods-LazyA/Pods-LazyA.release.xcconfig"; sourceTree = "<group>"; };
+		5D1B5FAB08A8602F2F47D934 /* Pods_LazyA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LazyA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD2B344A0E6DAE86CCCC617 /* Pods-LazyA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LazyA/Pods-LazyA.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AF21C2D5B1DC88F17F7607E /* Pods_LazyA.framework in Frameworks */,
+				8B72D7E057154E960CD53DD5 /* Pods_LazyA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,8 +103,8 @@
 				275513CB20534278001BDBB7 /* LazyATests */,
 				275513D620534278001BDBB7 /* LazyAUITests */,
 				275513B220534278001BDBB7 /* Products */,
-				4D0350C05F236BE26F27ECC8 /* Pods */,
-				692B33120A53A0CB45FD43F8 /* Frameworks */,
+				C9BF4437A42D7992A470F8F6 /* Pods */,
+				B22364C29F1827E601859524 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -239,27 +233,21 @@
 			path = "Create Component";
 			sourceTree = "<group>";
 		};
-		4D0350C05F236BE26F27ECC8 /* Pods */ = {
+		B22364C29F1827E601859524 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1BFE0D6B348A35E33C2F2A1A /* Pods-LazyA.debug.xcconfig */,
-				B58AEB8E5B993074D19322E1 /* Pods-LazyA.release.xcconfig */,
-				9E1F2EF94EF40F39E41197A7 /* Pods-LazyATests.debug.xcconfig */,
-				6BAE4D3DC6BFD059A2C25B5C /* Pods-LazyATests.release.xcconfig */,
-				3A287E03A66E89436E0A98C1 /* Pods-LazyAUITests.debug.xcconfig */,
-				7D0317FF77A7FA5E55393431 /* Pods-LazyAUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		692B33120A53A0CB45FD43F8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A29D1E6FB6FC3BD4B66DC297 /* Pods_LazyA.framework */,
-				5717CD681021C81B91FB8DE3 /* Pods_LazyATests.framework */,
-				D1939A2EE4A480FE33D37029 /* Pods_LazyAUITests.framework */,
+				5D1B5FAB08A8602F2F47D934 /* Pods_LazyA.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9BF4437A42D7992A470F8F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCD2B344A0E6DAE86CCCC617 /* Pods-LazyA.debug.xcconfig */,
+				2902C638F8EC4AA1F63637E8 /* Pods-LazyA.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,11 +257,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 275513DC20534278001BDBB7 /* Build configuration list for PBXNativeTarget "LazyA" */;
 			buildPhases = (
-				F4F391A618E5CCC0FBF6C969 /* [CP] Check Pods Manifest.lock */,
+				483BADE4ABA99411280FB25C /* [CP] Check Pods Manifest.lock */,
 				275513AD20534278001BDBB7 /* Sources */,
 				275513AE20534278001BDBB7 /* Frameworks */,
 				275513AF20534278001BDBB7 /* Resources */,
-				95204684D11B0C3EB733A75D /* [CP] Embed Pods Frameworks */,
+				442E287CC6EC288DFFB4AC73 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -334,10 +322,12 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		95204684D11B0C3EB733A75D /* [CP] Embed Pods Frameworks */ = {
+		442E287CC6EC288DFFB4AC73 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LazyA/Pods-LazyA-frameworks.sh",
@@ -346,6 +336,8 @@
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
@@ -356,16 +348,20 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LazyA/Pods-LazyA-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F4F391A618E5CCC0FBF6C969 /* [CP] Check Pods Manifest.lock */ = {
+		483BADE4ABA99411280FB25C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-LazyA-checkManifestLockResult.txt",
 			);
@@ -482,6 +478,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -531,13 +528,14 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		275513DD20534278001BDBB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BFE0D6B348A35E33C2F2A1A /* Pods-LazyA.debug.xcconfig */;
+			baseConfigurationReference = DCD2B344A0E6DAE86CCCC617 /* Pods-LazyA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,14 +544,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JetmaxStudios.LazyA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		275513DE20534278001BDBB7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B58AEB8E5B993074D19322E1 /* Pods-LazyA.release.xcconfig */;
+			baseConfigurationReference = 2902C638F8EC4AA1F63637E8 /* Pods-LazyA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -562,7 +560,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JetmaxStudios.LazyA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
