@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27350426219FD0C600ABE2FB /* NibFileLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27350425219FD0C600ABE2FB /* NibFileLoadable.swift */; };
+		27350428219FD0FD00ABE2FB /* NumberPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27350427219FD0FD00ABE2FB /* NumberPicker.swift */; };
+		2735042A219FD16600ABE2FB /* NumberPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27350429219FD16600ABE2FB /* NumberPicker.xib */; };
 		27395CE9219789830040366A /* LazyAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27395CE8219789830040366A /* LazyAViewController.swift */; };
 		27395CEB219796C50040366A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27395CEA219796C50040366A /* Colors.xcassets */; };
 		27395CED21979A1E0040366A /* UIColor_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27395CEC21979A1E0040366A /* UIColor_Extensions.swift */; };
@@ -14,7 +17,8 @@
 		2745B837205762F400485E6B /* CreateCourse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2745B836205762F400485E6B /* CreateCourse.storyboard */; };
 		2745B839205765E700485E6B /* ComponentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2745B838205765E700485E6B /* ComponentTableViewController.swift */; };
 		2745B83B2057660100485E6B /* CreateCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2745B83A2057660100485E6B /* CreateCourseViewController.swift */; };
-		274C9E5F219FC3CC00C06BF0 /* NumberPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274C9E5E219FC3CC00C06BF0 /* NumberPicker.swift */; };
+		275451C221A07FDB002E3C8B /* TextNumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275451C021A07FDB002E3C8B /* TextNumTableViewCell.swift */; };
+		275451C321A07FDB002E3C8B /* TextNumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 275451C121A07FDB002E3C8B /* TextNumTableViewCell.xib */; };
 		275513B520534278001BDBB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275513B420534278001BDBB7 /* AppDelegate.swift */; };
 		275513B720534278001BDBB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275513B620534278001BDBB7 /* ViewController.swift */; };
 		275513BA20534278001BDBB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275513B820534278001BDBB7 /* Main.storyboard */; };
@@ -47,6 +51,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27350425219FD0C600ABE2FB /* NibFileLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibFileLoadable.swift; sourceTree = "<group>"; };
+		27350427219FD0FD00ABE2FB /* NumberPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPicker.swift; sourceTree = "<group>"; };
+		27350429219FD16600ABE2FB /* NumberPicker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberPicker.xib; sourceTree = "<group>"; };
 		27395CE8219789830040366A /* LazyAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyAViewController.swift; sourceTree = "<group>"; };
 		27395CEA219796C50040366A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		27395CEC21979A1E0040366A /* UIColor_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_Extensions.swift; sourceTree = "<group>"; };
@@ -54,7 +61,8 @@
 		2745B836205762F400485E6B /* CreateCourse.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateCourse.storyboard; sourceTree = "<group>"; };
 		2745B838205765E700485E6B /* ComponentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTableViewController.swift; sourceTree = "<group>"; };
 		2745B83A2057660100485E6B /* CreateCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCourseViewController.swift; sourceTree = "<group>"; };
-		274C9E5E219FC3CC00C06BF0 /* NumberPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPicker.swift; sourceTree = "<group>"; };
+		275451C021A07FDB002E3C8B /* TextNumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNumTableViewCell.swift; sourceTree = "<group>"; };
+		275451C121A07FDB002E3C8B /* TextNumTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextNumTableViewCell.xib; sourceTree = "<group>"; };
 		275513B120534278001BDBB7 /* LazyA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		275513B420534278001BDBB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		275513B620534278001BDBB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,9 +133,19 @@
 		274C9E5D219FC37900C06BF0 /* NumberPicker */ = {
 			isa = PBXGroup;
 			children = (
-				274C9E5E219FC3CC00C06BF0 /* NumberPicker.swift */,
+				27350427219FD0FD00ABE2FB /* NumberPicker.swift */,
+				27350429219FD16600ABE2FB /* NumberPicker.xib */,
 			);
 			path = NumberPicker;
+			sourceTree = "<group>";
+		};
+		275451BF21A07FA8002E3C8B /* TextNumCell */ = {
+			isa = PBXGroup;
+			children = (
+				275451C021A07FDB002E3C8B /* TextNumTableViewCell.swift */,
+				275451C121A07FDB002E3C8B /* TextNumTableViewCell.xib */,
+			);
+			path = TextNumCell;
 			sourceTree = "<group>";
 		};
 		275513A820534278001BDBB7 = {
@@ -238,6 +256,7 @@
 			children = (
 				2773D162207826CA00E9B130 /* ViewControllerExtensions.swift */,
 				27395CF021979B370040366A /* StringExtensions.swift */,
+				27350425219FD0C600ABE2FB /* NibFileLoadable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -245,6 +264,7 @@
 		27B481C5219F9BD800C9D251 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				275451BF21A07FA8002E3C8B /* TextNumCell */,
 				27B481CA219F9C2100C9D251 /* TextDetail */,
 			);
 			path = Cells;
@@ -378,6 +398,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				275451C321A07FDB002E3C8B /* TextNumTableViewCell.xib in Resources */,
+				2735042A219FD16600ABE2FB /* NumberPicker.xib in Resources */,
 				275513C220534278001BDBB7 /* LaunchScreen.storyboard in Resources */,
 				2745B837205762F400485E6B /* CreateCourse.storyboard in Resources */,
 				27B481C9219F9C1E00C9D251 /* LazyATextDetailViewCell.xib in Resources */,
@@ -451,7 +473,6 @@
 				27D6CCEA20781F8900EB1DAA /* CreateCourseTableViewController.swift in Sources */,
 				27FDB32620770C0200DABF0A /* Models.swift in Sources */,
 				275513EB20534642001BDBB7 /* Course.swift in Sources */,
-				274C9E5F219FC3CC00C06BF0 /* NumberPicker.swift in Sources */,
 				2745B83B2057660100485E6B /* CreateCourseViewController.swift in Sources */,
 				27395CED21979A1E0040366A /* UIColor_Extensions.swift in Sources */,
 				275513E720534348001BDBB7 /* Assignment.swift in Sources */,
@@ -463,7 +484,9 @@
 				27395CE9219789830040366A /* LazyAViewController.swift in Sources */,
 				2745B839205765E700485E6B /* ComponentTableViewController.swift in Sources */,
 				275513EE20534815001BDBB7 /* CreateCourseViewModel2.swift in Sources */,
+				27350426219FD0C600ABE2FB /* NibFileLoadable.swift in Sources */,
 				275513BD20534278001BDBB7 /* LazyA.xcdatamodeld in Sources */,
+				275451C221A07FDB002E3C8B /* TextNumTableViewCell.swift in Sources */,
 				2784B76520784C92004FE786 /* CreateComponentViewController.swift in Sources */,
 				27B481C4219F9A1A00C9D251 /* LazyALabel.swift in Sources */,
 				27E096A8208D0FAE00E57171 /* CreateAssignmentViewController.swift in Sources */,
@@ -472,6 +495,7 @@
 				275513B720534278001BDBB7 /* ViewController.swift in Sources */,
 				275513B520534278001BDBB7 /* AppDelegate.swift in Sources */,
 				27B481C8219F9C1E00C9D251 /* LazyATextDetailViewCell.swift in Sources */,
+				27350428219FD0FD00ABE2FB /* NumberPicker.swift in Sources */,
 				2784B76B20785C11004FE786 /* ComponentTableViewCell.swift in Sources */,
 				27395CF121979B370040366A /* StringExtensions.swift in Sources */,
 				27FDB3242077033C00DABF0A /* UserInfo.swift in Sources */,

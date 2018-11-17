@@ -38,7 +38,9 @@ class LazyAButton: UIButton {
         self.setTitleColor(UIColor.Pallet.Text, for: .normal)
         self.backgroundColor = UIColor.Pallet.Touch
         
-        self.titleLabel?.font = self.titleLabel?.font.withSize(24)
+        //self.titleLabel?.font = self.titleLabel?.font.withSize(24)
+        self.titleLabel?.numberOfLines = 0
+        self.titleLabel?.textAlignment = .center
     }
 
     override func layoutSubviews() {

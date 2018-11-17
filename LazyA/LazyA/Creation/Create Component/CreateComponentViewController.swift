@@ -10,73 +10,62 @@ import UIKit
 import Charts
 
 
-protocol CreateComponentDelegate {
-    func editComponent(for row : Int, name : String, weight : Int)
-}
+//protocol CreateComponentDelegate {
+//    func editComponent(for row : Int, name : String, weight : Int)
+//}
 
-class CreateComponentViewController: UIViewController, CreateComponentDelegate, UITableViewDelegate, UITableViewDataSource {
+class CreateComponentViewController: LazyAViewController {
+    
+    @IBOutlet weak var sectionTableView: UITableView!
+    @IBOutlet weak var classTitleLabel: LazyALabel!
+    @IBOutlet weak var goalValueLabel: LazyALabel!
+    
     
     func editComponent(for row: Int, name: String, weight: Int) {
         self.viewModel.editComponent(for: row, name: name, weight: weight)
-        self.weightChart.data = viewModel.chartData
     }
-    
-    @IBOutlet weak var weightChart: PieChartView!
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var nameLabel: UILabel!
     
     var viewModel : CreateComponentViewModel!
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.numComponents
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: AppStrings.tablecells.componentCell.rawValue) as! ComponentTableViewCell
-        cell.delegate = self
-        cell.component = viewModel.componentFor(row: indexPath.row)
-        cell.rowNum = indexPath.row
-        
-        return cell
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.viewModel = CreateComponentViewModel()
-        self.nameLabel.text = viewModel.courseName
+        self.classTitleLabel.text = viewModel.courseName
+        
+        sectionTableView.register( cell : TextNumTableViewCell.self)
     }
-    
-    func setUpChart() {
-        weightChart.data = viewModel.chartData
-        let description = Description.init()
-        description.text = "Class Breakdown"
-        weightChart.chartDescription = description
-    }
-    
+
     @IBAction func addComponent(_ sender: Any) {
         self.viewModel.createNewComponent()
-        self.tableView.insertRows(at: [IndexPath(row: viewModel.numComponents, section: 0)], with: .automatic)
+        self.sectionTableView.insertRows(at: [IndexPath(row: viewModel.numComponents, section: 0)], with: .automatic)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
- 
     @IBAction func nextCourse(_ sender: Any) {
-        self.tableView.reloadData()
+        self.sectionTableView.reloadData()
         self.viewModel.nextCourse()
         if viewModel.currentCourse != nil {
-            self.nameLabel.text = viewModel.courseName
-            self.tableView.reloadData()
+            self.classTitleLabel.text = viewModel.courseName
+            self.sectionTableView.reloadData()
         } else {
             print("done")
         }
+    }
+    
+    @IBAction func skipForNow(_ sender: Any) {
+    }
+    
+    @IBAction func nextWithNoSections(_ sender: Any) {
+    }
+}
+
+
+extension  CreateComponentViewController : UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: TextNumTableViewCell.name) as! TextNumTableViewCell
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.numComponents
     }
 }

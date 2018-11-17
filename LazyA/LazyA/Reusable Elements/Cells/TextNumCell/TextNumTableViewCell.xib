@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="68" id="KGk-i7-Jjw" customClass="TextNumTableViewCell" customModule="LazyA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="67.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0zN-sI-1xT">
+                        <rect key="frame" x="0.0" y="8" width="320" height="51.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="t9A-nD-8vL">
+                                <rect key="frame" x="4" y="2" width="312" height="47.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Physics" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vj1-ok-1nZ">
+                                        <rect key="frame" x="0.0" y="9" width="156" height="30"/>
+                                        <color key="textColor" name="Text"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ARX-lb-Pwp" customClass="NumberPicker" customModule="LazyA" customModuleProvider="target">
+                                        <rect key="frame" x="252" y="9" width="60" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ARX-lb-Pwp" secondAttribute="height" multiplier="2" id="B4Z-dr-Gam"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ARX-lb-Pwp" firstAttribute="height" secondItem="Vj1-ok-1nZ" secondAttribute="height" id="0Ib-Uf-KKY"/>
+                                    <constraint firstItem="Vj1-ok-1nZ" firstAttribute="width" secondItem="t9A-nD-8vL" secondAttribute="width" multiplier="1:2" id="3ax-T4-I52"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="Primary"/>
+                        <constraints>
+                            <constraint firstItem="t9A-nD-8vL" firstAttribute="leading" secondItem="0zN-sI-1xT" secondAttribute="leading" constant="4" id="3lu-GB-TfG"/>
+                            <constraint firstItem="t9A-nD-8vL" firstAttribute="top" secondItem="0zN-sI-1xT" secondAttribute="top" constant="2" id="OlY-62-cEN"/>
+                            <constraint firstItem="t9A-nD-8vL" firstAttribute="centerX" secondItem="0zN-sI-1xT" secondAttribute="centerX" id="xhz-k7-ZWD"/>
+                            <constraint firstItem="t9A-nD-8vL" firstAttribute="centerY" secondItem="0zN-sI-1xT" secondAttribute="centerY" id="yDK-Ig-eaJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="0zN-sI-1xT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="FYQ-Sg-s4f"/>
+                    <constraint firstItem="0zN-sI-1xT" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Fba-zI-wtx"/>
+                    <constraint firstItem="0zN-sI-1xT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xSZ-aZ-ouz"/>
+                    <constraint firstItem="0zN-sI-1xT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ziV-Hh-eOW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="containerView" destination="t9A-nD-8vL" id="DdZ-w6-KF7"/>
+                <outlet property="numberPicker" destination="ARX-lb-Pwp" id="yRy-s3-m58"/>
+                <outlet property="textField" destination="Vj1-ok-1nZ" id="NfN-Rx-RrD"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="59.370314842578715"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Primary">
+            <color red="0.45899999141693115" green="0.86699998378753662" blue="0.86699998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text">
+            <color red="0.035000000149011612" green="0.7369999885559082" blue="0.54100000858306885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -13,17 +13,10 @@ protocol CreateCourseDelegate {
     func updateCourse(grade : Int, name : String, courseCode : String?)
 }
 
-
-
 class CreateCourseTableViewController: LazyAViewController {
-    
-    
-    
     
     @IBOutlet weak var doneButton: LazyAButton!
     @IBOutlet weak var tableView: UITableView!
-
-    
 
     var viewModel : CreateCoursesViewModel!
 
@@ -38,10 +31,6 @@ class CreateCourseTableViewController: LazyAViewController {
         tableView.register( cell : LazyATextDetailViewCell.self)
     }
 
-    
-
-    
-    
     @IBAction func createNewCourse(_ sender: Any) {
         self.viewModel.selectedRow = nil
         self.performSegue(withIdentifier:  AppStrings.segues.editCourse.rawValue, sender: nil)
