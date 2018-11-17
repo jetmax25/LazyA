@@ -11,11 +11,17 @@ import UIKit
 @IBDesignable
 class LazyAViewController: UIViewController {
 
+    var doesUseBlurryImage : Bool {
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.hideKeyboardWhenTappedAround()
-        self.insertBlurryImage(of: UIImage(named: "forrest")! )
+        if doesUseBlurryImage {
+            self.insertBlurryImage(of: UIImage(named: "wood texture")! )
+        }
     }
     
     func hideKeyboardWhenTappedAround() {

@@ -10,15 +10,18 @@ import UIKit
 
 
 
-class CreateCourseViewController: UIViewController {
+class CreateCourseViewController: LazyAViewController {
 
-    @IBOutlet weak var headerImageView: UIImageView!
     @IBOutlet weak var courseNameTxtFld: UITextField!
     @IBOutlet weak var courseCodeTxtFld: UITextField!
     @IBOutlet weak var gradeWantedLabel: UILabel!
     @IBOutlet weak var gradeSlider: UISlider!
     
-    var delegate : createCourseDelegate!
+    var delegate : CreateCourseDelegate!
+    
+    override var doesUseBlurryImage: Bool {
+        return false
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,13 +31,13 @@ class CreateCourseViewController: UIViewController {
             courseNameTxtFld.text = course.name
             courseCodeTxtFld.text = course.courseCode
             gradeSlider.value = Float(course.desiredGrade)
-            self.gradeWantedLabel.text = "Grade You Want: \(gradeSlider.value)"
+            self.gradeWantedLabel.text = "Goal: \(gradeSlider.value)"
         }
     }
     
     @IBAction func gradeWantedChanged(_ sender: Any) {
         self.gradeSlider.value = self.gradeSlider.value.rounded()
-        self.gradeWantedLabel.text = "Grade You Want: \(gradeSlider.value)"
+        self.gradeWantedLabel.text = "Goal: \(gradeSlider.value)"
     }
     
     @IBAction func close(_ sender: Any) {

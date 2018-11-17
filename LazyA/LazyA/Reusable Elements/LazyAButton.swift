@@ -10,6 +10,13 @@ import UIKit
 
 @IBDesignable
 class LazyAButton: UIButton {
+    
+    override var isEnabled: Bool {
+        didSet {
+            self.alpha = self.isEnabled ? 1.0 : 0.3
+        }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setUp()
@@ -20,14 +27,18 @@ class LazyAButton: UIButton {
         setUp()
     }
     
-    func setUp() {
+    private func setUp() {
         self.layer.borderColor = UIColor.black.cgColor
-        self.layer.borderWidth = 1
-        self.setTitleColor(Pallet.text.color, for: .normal)
+        self.layer.borderWidth = 2
+        
         self.layer.cornerRadius = 10
-        self.backgroundColor = Pallet.touch.color
+    
         self.setTitleShadowColor(UIColor.black, for: .normal)
-        self.titleLabel?.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        self.titleLabel?.shadowOffset = CGSize(width: 1.0, height: 1.0)
+        self.setTitleColor(UIColor.Pallet.Text, for: .normal)
+        self.backgroundColor = UIColor.Pallet.Touch
+        
+        self.titleLabel?.font = self.titleLabel?.font.withSize(24)
     }
 
     override func layoutSubviews() {
