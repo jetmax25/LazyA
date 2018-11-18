@@ -27,17 +27,15 @@ struct CreateComponentViewModel {
     
     init() {
         self.currentCourseNum = 0
-        self.courses = Array(AppDelegate.realm.objects(Course.self))
+        self.courses = CourseHandler.shared.getAll()
         setUpDefaultCourses()
     }
     
     func setUpDefaultCourses() {
         if currentCourse?.catagories.count == 0 {
-        standardComponents.forEach { catagory in
-        try! AppDelegate.realm.write {
-        currentCourse!.catagories.append(catagory)
-        }
-        }
+            standardComponents.forEach { catagory in
+                CourseHandler.shared.add(component: catagory, to: currentCourse)
+            }
         }
     }
     
@@ -57,17 +55,12 @@ struct CreateComponentViewModel {
     }
     
     mutating func createNewComponent() {
-        try! AppDelegate.realm.write {
-            currentCourse!.catagories.append( Component() )
-        }
+        CourseHandler.shared.addNewComponent(to: self.currentCourse)
     }
     
     mutating func editComponent(for row : Int, name : String, weight : Int) {
-        try! AppDelegate.realm.write {
-            let course = currentCourse!.catagories[row]
-            course.name = name
-            course.weight = weight
-        }
+        let component = currentCourse!.catagories[row]
+        CourseHandler.shared.update(component: component, name: name, weight: weight)
     }
     
     mutating func nextCourse() {

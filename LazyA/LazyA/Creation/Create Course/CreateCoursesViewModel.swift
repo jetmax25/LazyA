@@ -53,8 +53,8 @@ struct CreateCoursesViewModel {
     }
     
     func saveCourses() {
-        self.courses.forEach { course in try! AppDelegate.realm.write {
-                AppDelegate.realm.add(course)
-            } }
+        self.courses.forEach { course in
+            CourseHandler.shared.add(course)
+        }
     }
 }

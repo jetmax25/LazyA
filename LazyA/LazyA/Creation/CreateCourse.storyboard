@@ -195,29 +195,34 @@
                                         <rect key="frame" x="0.0" y="511.33333333333337" width="398" height="298.66666666666663"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uP7-Or-DxM">
-                                                <rect key="frame" x="0.0" y="151.66666666666663" width="398" height="147"/>
+                                                <rect key="frame" x="0.0" y="132.66666666666663" width="398" height="166"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANj-K8-aCz" customClass="LazyAButton" customModule="LazyA" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="398" height="41"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                        <state key="normal" title="New Section"/>
-                                                        <connections>
-                                                            <action selector="addComponent:" destination="8bu-ch-toG" eventType="touchUpInside" id="fcZ-5q-fwl"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ui0-Ct-baf" customClass="LazyAButton" customModule="LazyA" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="49" width="398" height="60"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="60" id="njP-X6-2v1"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                        <state key="normal" title="This Class Doesn't Have Sections"/>
-                                                        <connections>
-                                                            <action selector="nextWithNoSections:" destination="8bu-ch-toG" eventType="touchUpInside" id="P6D-dS-Vuf"/>
-                                                        </connections>
-                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CFC-Ni-U8k">
+                                                        <rect key="frame" x="0.0" y="0.0" width="398" height="128"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANj-K8-aCz" customClass="LazyAButton" customModule="LazyA" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="60"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <state key="normal" title="New Section"/>
+                                                                <connections>
+                                                                    <action selector="addComponent:" destination="8bu-ch-toG" eventType="touchUpInside" id="fcZ-5q-fwl"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ui0-Ct-baf" customClass="LazyAButton" customModule="LazyA" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="68" width="398" height="60"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="60" id="njP-X6-2v1"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <state key="normal" title="This Class Doesn't Have Sections"/>
+                                                                <connections>
+                                                                    <action selector="nextWithNoSections:" destination="8bu-ch-toG" eventType="touchUpInside" id="P6D-dS-Vuf"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="KcH-LP-AGd">
-                                                        <rect key="frame" x="0.0" y="117" width="398" height="30"/>
+                                                        <rect key="frame" x="0.0" y="136" width="398" height="30"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGm-g5-6GZ" customClass="LazyAButton" customModule="LazyA" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
@@ -551,16 +556,16 @@
                                         <rect key="frame" x="4" y="4" width="240.66666666666666" height="290.66666666666669"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="gvc-nc-c0U">
-                                                <rect key="frame" x="0.0" y="0.0" width="240.66666666666666" height="115.33333333333333"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="240.66666666666666" height="116"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Course Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Avm-mH-zwc">
-                                                        <rect key="frame" x="0.0" y="0.0" width="240.66666666666666" height="55.666666666666664"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="240.66666666666666" height="56"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="(Optional) Course Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="waq-4A-vsH">
-                                                        <rect key="frame" x="0.0" y="59.666666666666629" width="240.66666666666666" height="55.666666666666657"/>
+                                                        <rect key="frame" x="0.0" y="60" width="240.66666666666666" height="56"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -568,16 +573,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8tf-yM-viY">
-                                                <rect key="frame" x="0.0" y="123.33333333333331" width="240.66666666666666" height="92.333333333333314"/>
+                                                <rect key="frame" x="0.0" y="124" width="240.66666666666666" height="91.333333333333314"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal: 80" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phV-YZ-Nov" customClass="LazyALabel" customModule="LazyA" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="240.66666666666666" height="21.333333333333332"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="240.66666666666666" height="20.333333333333332"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" name="Text"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="80" minValue="65" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="4MB-hw-HCA">
-                                                        <rect key="frame" x="-2" y="21.333333333333314" width="244.66666666666666" height="72"/>
+                                                        <rect key="frame" x="-2" y="20.333333333333314" width="244.66666666666666" height="72"/>
                                                         <color key="tintColor" name="Primary"/>
                                                         <connections>
                                                             <action selector="gradeWantedChanged:" destination="In0-5e-Zev" eventType="valueChanged" id="p05-Up-RG5"/>
@@ -586,7 +591,7 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FkP-E7-GDq" customClass="LazyAButton" customModule="LazyA" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="223.66666666666669" width="240.66666666666666" height="67"/>
+                                                <rect key="frame" x="0.0" y="223.33333333333334" width="240.66666666666666" height="67.333333333333343"/>
                                                 <state key="normal" title="Done"/>
                                                 <connections>
                                                     <action selector="submit:" destination="In0-5e-Zev" eventType="touchUpInside" id="ICj-c1-Cd8"/>

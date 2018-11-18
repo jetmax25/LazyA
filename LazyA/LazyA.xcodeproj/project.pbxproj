@@ -45,6 +45,8 @@
 		27E3005E208407F700528725 /* HomeMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27E3005D208407F700528725 /* HomeMenu.storyboard */; };
 		27E3006220840CE100528725 /* HomeMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E3006120840CE100528725 /* HomeMenuViewController.swift */; };
 		27E3006420840D4D00528725 /* HomeMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E3006320840D4D00528725 /* HomeMenuViewModel.swift */; };
+		27F845D321A2000400103E45 /* RealmHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F845D221A2000400103E45 /* RealmHandler.swift */; };
+		27F845D521A201A700103E45 /* CourseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F845D421A201A700103E45 /* CourseHandler.swift */; };
 		27FDB3242077033C00DABF0A /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FDB3232077033C00DABF0A /* UserInfo.swift */; };
 		27FDB32620770C0200DABF0A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FDB32520770C0200DABF0A /* Models.swift */; };
 		8B72D7E057154E960CD53DD5 /* Pods_LazyA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1B5FAB08A8602F2F47D934 /* Pods_LazyA.framework */; };
@@ -95,6 +97,8 @@
 		27E3005D208407F700528725 /* HomeMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeMenu.storyboard; sourceTree = "<group>"; };
 		27E3006120840CE100528725 /* HomeMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuViewController.swift; sourceTree = "<group>"; };
 		27E3006320840D4D00528725 /* HomeMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuViewModel.swift; sourceTree = "<group>"; };
+		27F845D221A2000400103E45 /* RealmHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHandler.swift; sourceTree = "<group>"; };
+		27F845D421A201A700103E45 /* CourseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "\U0010CourseHandler.swift"; sourceTree = "<group>"; };
 		27FDB3232077033C00DABF0A /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		27FDB32520770C0200DABF0A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		2902C638F8EC4AA1F63637E8 /* Pods-LazyA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyA.release.xcconfig"; path = "Pods/Target Support Files/Pods-LazyA/Pods-LazyA.release.xcconfig"; sourceTree = "<group>"; };
@@ -188,6 +192,8 @@
 				275513BB20534278001BDBB7 /* LazyA.xcdatamodeld */,
 				276EB4212081AA9D00EA86D7 /* AppStrings.swift */,
 				27395CEA219796C50040366A /* Colors.xcassets */,
+				27F845D221A2000400103E45 /* RealmHandler.swift */,
+				27F845D421A201A700103E45 /* CourseHandler.swift */,
 			);
 			path = LazyA;
 			sourceTree = "<group>";
@@ -479,6 +485,7 @@
 				2773D163207826CA00E9B130 /* ViewControllerExtensions.swift in Sources */,
 				27E3006420840D4D00528725 /* HomeMenuViewModel.swift in Sources */,
 				276D80DF2197815A00108304 /* LazyAButton.swift in Sources */,
+				27F845D521A201A700103E45 /* CourseHandler.swift in Sources */,
 				275D69CA20771B0D000F36DF /* Component.swift in Sources */,
 				27E3006220840CE100528725 /* HomeMenuViewController.swift in Sources */,
 				27395CE9219789830040366A /* LazyAViewController.swift in Sources */,
@@ -496,6 +503,7 @@
 				275513B520534278001BDBB7 /* AppDelegate.swift in Sources */,
 				27B481C8219F9C1E00C9D251 /* LazyATextDetailViewCell.swift in Sources */,
 				27350428219FD0FD00ABE2FB /* NumberPicker.swift in Sources */,
+				27F845D321A2000400103E45 /* RealmHandler.swift in Sources */,
 				2784B76B20785C11004FE786 /* ComponentTableViewCell.swift in Sources */,
 				27395CF121979B370040366A /* StringExtensions.swift in Sources */,
 				27FDB3242077033C00DABF0A /* UserInfo.swift in Sources */,
