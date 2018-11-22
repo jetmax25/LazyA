@@ -27,7 +27,11 @@ struct CreateCoursesViewModel {
         newCourse.name = name
         newCourse.courseCode = courseNum
         newCourse.desiredGrade = grade
-        self.courses.append(newCourse)
+        self.courses.insert(newCourse, at: 0)
+    }
+    
+    mutating func deleteCourse( at row : Int) {
+        self.courses.remove(at: row)
     }
     
     private mutating func editCourse(course : Course, name : String, courseNum : String?, grade : Int) {
@@ -54,7 +58,7 @@ struct CreateCoursesViewModel {
     
     func saveCourses() {
         self.courses.forEach { course in
-            CourseHandler.shared.add(course)
+            course.save()
         }
     }
 }

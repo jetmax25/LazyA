@@ -16,40 +16,44 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="68" id="KGk-i7-Jjw" customClass="TextNumTableViewCell" customModule="LazyA" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="67.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0zN-sI-1xT">
-                        <rect key="frame" x="0.0" y="8" width="320" height="51.5"/>
+                        <rect key="frame" x="0.0" y="8" width="320" height="50"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="t9A-nD-8vL">
-                                <rect key="frame" x="4" y="2" width="312" height="47.5"/>
+                                <rect key="frame" x="4" y="4" width="312" height="42"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Physics" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vj1-ok-1nZ">
-                                        <rect key="frame" x="0.0" y="9" width="156" height="30"/>
+                                        <rect key="frame" x="0.0" y="6" width="156" height="30"/>
                                         <color key="textColor" name="Text"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="updateText:" destination="KGk-i7-Jjw" eventType="editingDidEnd" id="GFb-Iz-7iG"/>
+                                        </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ARX-lb-Pwp" customClass="NumberPicker" customModule="LazyA" customModuleProvider="target">
-                                        <rect key="frame" x="252" y="9" width="60" height="30"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="frame" x="236" y="2" width="76" height="38"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="ARX-lb-Pwp" secondAttribute="height" multiplier="2" id="B4Z-dr-Gam"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="ARX-lb-Pwp" firstAttribute="height" secondItem="Vj1-ok-1nZ" secondAttribute="height" id="0Ib-Uf-KKY"/>
                                     <constraint firstItem="Vj1-ok-1nZ" firstAttribute="width" secondItem="t9A-nD-8vL" secondAttribute="width" multiplier="1:2" id="3ax-T4-I52"/>
+                                    <constraint firstItem="ARX-lb-Pwp" firstAttribute="top" secondItem="t9A-nD-8vL" secondAttribute="top" constant="2" id="u6c-rJ-74w"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" name="Primary"/>
                         <constraints>
                             <constraint firstItem="t9A-nD-8vL" firstAttribute="leading" secondItem="0zN-sI-1xT" secondAttribute="leading" constant="4" id="3lu-GB-TfG"/>
-                            <constraint firstItem="t9A-nD-8vL" firstAttribute="top" secondItem="0zN-sI-1xT" secondAttribute="top" constant="2" id="OlY-62-cEN"/>
+                            <constraint firstItem="t9A-nD-8vL" firstAttribute="top" secondItem="0zN-sI-1xT" secondAttribute="top" constant="4" id="OlY-62-cEN"/>
+                            <constraint firstAttribute="height" constant="50" id="e2Y-3F-DfH"/>
                             <constraint firstItem="t9A-nD-8vL" firstAttribute="centerX" secondItem="0zN-sI-1xT" secondAttribute="centerX" id="xhz-k7-ZWD"/>
                             <constraint firstItem="t9A-nD-8vL" firstAttribute="centerY" secondItem="0zN-sI-1xT" secondAttribute="centerY" id="yDK-Ig-eaJ"/>
                         </constraints>

@@ -8,15 +8,9 @@
 
 import UIKit
 
-protocol EasilyRegisterableCell where Self : UITableViewCell {
+protocol EasilyRegisterableCell where Self : UIView {
     static var name : String { get }
     static var nib: UINib  { get }
-}
-
-extension UITableView {
-    func register( cell : EasilyRegisterableCell.Type ) {
-        self.register(cell.nib, forCellReuseIdentifier: cell.name)
-    }
 }
 
 extension EasilyRegisterableCell {
@@ -26,6 +20,18 @@ extension EasilyRegisterableCell {
     
     static var nib : UINib {
         return UINib(nibName: name, bundle: nil)
+    }
+}
+
+extension UITableView {
+    func register( cell : EasilyRegisterableCell.Type ) {
+        self.register(cell.nib, forCellReuseIdentifier: cell.name)
+    }
+}
+
+extension UICollectionView {
+    func register( cell : EasilyRegisterableCell.Type ) {
+        self.register(cell.nib, forCellWithReuseIdentifier: cell.name)
     }
 }
 

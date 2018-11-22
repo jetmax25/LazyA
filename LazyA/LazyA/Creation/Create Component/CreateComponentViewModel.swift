@@ -11,6 +11,7 @@ import Charts
 
 struct CreateComponentViewModel {
     var courses : [Course]
+    var components : [Component] = [Component]()
     
     var currentCourse : Course? {
         if currentCourseNum < courses.count {
@@ -31,12 +32,8 @@ struct CreateComponentViewModel {
         setUpDefaultCourses()
     }
     
-    func setUpDefaultCourses() {
-        if currentCourse?.catagories.count == 0 {
-            standardComponents.forEach { catagory in
-                CourseHandler.shared.add(component: catagory, to: currentCourse)
-            }
-        }
+    mutating func setUpDefaultCourses() {
+        components = self.standardComponents
     }
     
     var chartData : PieChartData {
@@ -47,25 +44,37 @@ struct CreateComponentViewModel {
     }
 
     var numComponents : Int {
-        return currentCourse!.catagories.count
+        return self.components.count
     }
     
     func componentFor( row : Int ) -> Component? {
-        return currentCourse?.catagories[row]
+        return self.components[row]
     }
     
     mutating func createNewComponent() {
-        CourseHandler.shared.addNewComponent(to: self.currentCourse)
+        self.components.insert(Component(), at: 0)
+    }
+    
+    mutating func deleteComponent( at row : Int) {
+        self.components.remove(at: row)
     }
     
     mutating func editComponent(for row : Int, name : String, weight : Int) {
         let component = currentCourse!.catagories[row]
-        CourseHandler.shared.update(component: component, name: name, weight: weight)
+        component.name = name
+        component.weight = weight
     }
     
     mutating func nextCourse() {
+        saveComponents()
         self.currentCourseNum = self.currentCourseNum + 1
         setUpDefaultCourses()
+    }
+    
+    func saveComponents() {
+        for component in self.components {
+            self.currentCourse?.add(component: component)
+        }
     }
     
     var standardComponents : [Component] {

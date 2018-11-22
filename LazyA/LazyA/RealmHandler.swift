@@ -21,14 +21,34 @@ class RealmHandler {
             self.realm.add(object)
         }
     }
+    
+    public func delete<T>(object : T) where T : Object {
+        try! realm.write {
+            self.realm.delete(object)
+        }
+    }
 
     public func getAll<T>() -> [T] where T : Object {
         return Array(self.realm.objects(T.self))
     }
     
+    public func get<T>( where filter : NSPredicate) -> T? where T : Object {
+        return self.realm.objects(T.self).filter(filter).first
+    }
+    
     public func perform(_ action : ()->() ) {
         try! self.realm.write {
             action()
+        }
+    }
+    
+    public func get<T>(_ key : String) -> T? where T : Object {
+        return realm.object(ofType: T.self, forPrimaryKey: key)
+    }
+    
+    public func deleteAll() {
+        try! self.realm.write {
+            self.realm.deleteAll()
         }
     }
 }

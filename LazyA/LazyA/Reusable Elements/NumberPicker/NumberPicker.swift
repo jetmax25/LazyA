@@ -9,7 +9,7 @@
 import UIKit
 
 protocol NumberPickerDelegate : class {
-    func NumberPicker( numberPicker : NumberPicker, didChange value : Int)
+    func numberPicker( numberPicker : NumberPicker, didChange value : Int)
 }
 
 @IBDesignable
@@ -29,6 +29,9 @@ class NumberPicker: UIView, NibFileOwnerLoadable {
                 _value += self.value(of: index)
             }
             return _value
+        } set {
+            self.InitialValue = newValue
+            self.setInitialValue()
         }
     }
 
@@ -56,7 +59,6 @@ class NumberPicker: UIView, NibFileOwnerLoadable {
     
     private func setUp() {
         loadNibContent()
-        self.backgroundColor = UIColor.red
         setInitialValue()
     }
     
@@ -79,17 +81,28 @@ extension NumberPicker : UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return 10
     }
-
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return String(row)
-    }
     
     func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
         return (self.bounds.width / CGFloat(NumDigits)) - 1
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        delegate?.NumberPicker(numberPicker: self, didChange: self.value)
+        delegate?.numberPicker(numberPicker: self, didChange: self.value)
+    }
+    
+//    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+//        return self.bounds.height
+//    }
+    
+//    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+//        let frame = CGRect(x: 0, y: 0, width: pickerView.rowSize(forComponent: component).width, height: pickerView.rowSize(forComponent: component).height)
+//        let pickerView = UIView(frame: frame)
+//        pickerView.backgroundColor = UIColor.blue
+//        return pickerView
+//    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return String(row)
     }
 }
 

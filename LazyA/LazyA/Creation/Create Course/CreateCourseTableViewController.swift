@@ -26,6 +26,7 @@ class CreateCourseTableViewController: LazyAViewController {
     }
     
     override func viewDidLoad() {
+        RealmHandler.shared.deleteAll()
         super.viewDidLoad()
         self.doneButton.isEnabled = false
         tableView.register( cell : LazyATextDetailViewCell.self)
@@ -66,6 +67,7 @@ extension CreateCourseTableViewController : UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: LazyATextDetailViewCell.name) as! LazyATextDetailViewCell
         cell.mainTextLabel?.text = viewModel.getCourseNameFor(row: indexPath.row)
         cell.subTextLabel?.text = viewModel.getCourseGradeFor(row: indexPath.row)
+        cell.selectionStyle = .none
         return cell
     }
     
@@ -73,6 +75,16 @@ extension CreateCourseTableViewController : UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         viewModel.selectedRow = indexPath.row
         self.performSegue(withIdentifier: AppStrings.segues.editCourse.rawValue, sender: nil)
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        switch editingStyle {
+        case .delete:
+            viewModel.deleteCourse(at: indexPath.row)
+            doneButton.isEnabled = viewModel.courses.count > 0
+            tableView.deleteRows(at: [IndexPath(row: indexPath.row, section: 0)], with: .automatic)
+        default: return
+        }
     }
 }
 

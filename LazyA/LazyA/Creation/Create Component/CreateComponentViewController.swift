@@ -37,24 +37,28 @@ class CreateComponentViewController: LazyAViewController {
 
     @IBAction func addComponent(_ sender: Any) {
         self.viewModel.createNewComponent()
-        self.sectionTableView.insertRows(at: [IndexPath(row: viewModel.numComponents, section: 0)], with: .automatic)
+        self.sectionTableView.insertRows(at: [IndexPath(row: 0, section: 0)], with: .automatic)
     }
     
     @IBAction func nextCourse(_ sender: Any) {
-        self.sectionTableView.reloadData()
         self.viewModel.nextCourse()
         if viewModel.currentCourse != nil {
             self.classTitleLabel.text = viewModel.courseName
             self.sectionTableView.reloadData()
         } else {
-            print("done")
+            Storyboard.HomeMenu.launch()
         }
     }
     
     @IBAction func skipForNow(_ sender: Any) {
+        self.viewModel.nextCourse()
+        self.sectionTableView.reloadData()
     }
     
     @IBAction func nextWithNoSections(_ sender: Any) {
+        self.viewModel.currentCourse?.hasCatagories = false
+        self.viewModel.nextCourse()
+        self.sectionTableView.reloadData()
     }
 }
 
@@ -62,10 +66,35 @@ class CreateComponentViewController: LazyAViewController {
 extension  CreateComponentViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: TextNumTableViewCell.name) as! TextNumTableViewCell
+        cell.textField.text = viewModel.components[indexPath.row].name
+        cell.numberPicker.value = viewModel.components[indexPath.row].weight
+        cell.indexPath = indexPath
+        cell.delegate = self
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.numComponents
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        switch editingStyle {
+        case .delete:
+            viewModel.deleteComponent(at: indexPath.row)
+            self.sectionTableView.deleteRows(at: [IndexPath(row: indexPath.row, section: 0)], with: .automatic)
+        default: return
+        }
+    }
+}
+
+extension CreateComponentViewController : TextNumTableViewCellDelegate {
+    func textNumTableViewCell(didUpdateCellAt indexPath: IndexPath, text: String, num: Int) {
+        let component = self.viewModel.componentFor(row: indexPath.row)
+        component?.name = text
+        component?.weight = num
     }
 }

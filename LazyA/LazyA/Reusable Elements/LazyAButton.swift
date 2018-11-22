@@ -32,7 +32,6 @@ class LazyAButton: UIButton {
         self.layer.borderWidth = 2
         
         self.layer.cornerRadius = 10
-    
         self.setTitleShadowColor(UIColor.black, for: .normal)
         self.titleLabel?.shadowOffset = CGSize(width: 1.0, height: 1.0)
         self.setTitleColor(UIColor.Pallet.Text, for: .normal)

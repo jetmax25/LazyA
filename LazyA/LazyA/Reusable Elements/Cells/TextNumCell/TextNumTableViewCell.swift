@@ -8,24 +8,46 @@
 
 import UIKit
 
+protocol TextNumTableViewCellDelegate : class {
+    func textNumTableViewCell( didUpdateCellAt indexPath : IndexPath, text : String, num : Int )
+}
+
 class TextNumTableViewCell: UITableViewCell, EasilyRegisterableCell {
 
     @IBOutlet weak var containerView: UIStackView!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var numberPicker: NumberPicker!
+    var indexPath : IndexPath?
+    
+    weak var delegate : TextNumTableViewCellDelegate?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.numberPicker.delegate = self
+        self.selectionStyle = .none
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
+    @IBAction func updateText(_ sender: Any) {
+        update()
+    }
+    
+    func update() {
+        guard let indexPath = indexPath else {
+            return
+        }
+        let text = (self.textField.text ?? "").capitalizingFirstLetter()
+        self.textField.text = text
+        delegate?.textNumTableViewCell(didUpdateCellAt: indexPath, text: text, num: numberPicker.value)
+    }
     
 }
 
 extension TextNumTableViewCell : NumberPickerDelegate {
-    func NumberPicker(numberPicker: NumberPicker, didChange value: Int) {
-        print(value)
+    func numberPicker(numberPicker: NumberPicker, didChange value: Int) {
+        update()
     }
 }

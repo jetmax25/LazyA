@@ -49,7 +49,7 @@ class CreateCourseViewController: LazyAViewController {
             return
         }
         
-        delegate.updateCourse(grade: Int(gradeSlider.value), name: courseNameTxtFld.text!, courseCode: courseCodeTxtFld.text)
+        delegate.updateCourse(grade: Int(gradeSlider.value), name: courseNameTxtFld.text!.capitalizingFirstLetter(), courseCode: courseCodeTxtFld.text)
         self.dismiss(animated: true, completion: nil)
     }
 }

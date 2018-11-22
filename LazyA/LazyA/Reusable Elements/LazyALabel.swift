@@ -24,7 +24,7 @@ class LazyALabel: UILabel {
     private func setUp() {
         self.shadowColor = UIColor.black
         self.shadowOffset = CGSize(width: 1.0, height: 1.0)
-        //self.textColor = UIColor.Pallet.Text
+        self.textColor = UIColor.Pallet.Text
     }
     
     override func layoutSubviews() {
