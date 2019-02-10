@@ -44,6 +44,7 @@ class CreateAssignmentViewController: UIViewController {
     @IBAction func updateDesiredGrade(_ sender: Any) {
         self.viewModel.setDesiredGrade(desiredGrade: Int(self.desiredGradeTextField.text ?? ""))
     }
+    
     var allSwitches : [UISwitch] {
         return [self.hourSwitch, self.daySwitch,self.threeDaySwitch, self.weekSwitch]
     }

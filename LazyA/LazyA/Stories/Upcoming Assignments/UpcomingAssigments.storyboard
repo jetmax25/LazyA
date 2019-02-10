@@ -71,9 +71,9 @@
                                                                 </segments>
                                                             </segmentedControl>
                                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="m2B-sU-wcH">
-                                                                <rect key="frame" x="182" y="0.0" width="193" height="29"/>
+                                                                <rect key="frame" x="212" y="0.0" width="163" height="29"/>
                                                                 <segments>
-                                                                    <segment title="Uncompleted"/>
+                                                                    <segment title="incomplete"/>
                                                                     <segment title="All"/>
                                                                 </segments>
                                                             </segmentedControl>

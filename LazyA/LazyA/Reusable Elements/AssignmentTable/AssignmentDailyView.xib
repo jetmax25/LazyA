@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AssignmentDailyView" customModule="LazyA" customModuleProvider="target">
+            <connections>
+                <outlet property="assignmentFilterView" destination="hSS-5d-WgG" id="fIh-hr-YDJ"/>
+                <outlet property="assignmentTableView" destination="PPd-kh-czL" id="kba-iu-PiF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="9Du-97-0bi">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hSS-5d-WgG" customClass="AssigmentFilterView" customModule="LazyA" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PPd-kh-czL">
+                            <rect key="frame" x="0.0" y="128" width="375" height="539"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="M4N-EP-5NL"/>
+                                <outlet property="delegate" destination="-1" id="sYg-WC-mHZ"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9Du-97-0bi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="G1R-YF-jSc"/>
+                <constraint firstItem="9Du-97-0bi" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ken-kX-PMg"/>
+                <constraint firstItem="9Du-97-0bi" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="cub-Rt-FC5"/>
+                <constraint firstAttribute="bottom" secondItem="9Du-97-0bi" secondAttribute="bottom" id="l4a-4P-LuJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

@@ -46,7 +46,7 @@ class CreateComponentViewController: LazyAViewController {
             self.classTitleLabel.text = viewModel.courseName
             self.sectionTableView.reloadData()
         } else {
-            Storyboard.HomeMenu.launch()
+            Storyboard.TabContainer.launch()
         }
     }
     

@@ -77,4 +77,8 @@ extension Course {
     func add( component : Component ) {
         CourseHandler.shared.add(component: component, to: self)
     }
+    
+    var assignments : Set<Assignment> {
+        return Set(self.catagories.compactMap{ $0.assigments }.joined())
+    }
 }

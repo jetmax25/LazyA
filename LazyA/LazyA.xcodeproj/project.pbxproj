@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		27027E7D21A3ADD500C81778 /* CourseGlanceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27027E7B21A3ADD500C81778 /* CourseGlanceCollectionViewCell.swift */; };
 		27027E7E21A3ADD500C81778 /* CourseGlanceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27027E7C21A3ADD500C81778 /* CourseGlanceCollectionViewCell.xib */; };
+		270C803C21B3611600FBD336 /* HorizontalPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270C803B21B3611600FBD336 /* HorizontalPicker.swift */; };
+		270C803E21B4C90D00FBD336 /* CalandarSimpleViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 270C803D21B4C90D00FBD336 /* CalandarSimpleViewCell.xib */; };
+		270C804021B4C99C00FBD336 /* CalandarSimpleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270C803F21B4C99C00FBD336 /* CalandarSimpleViewCell.swift */; };
 		27350426219FD0C600ABE2FB /* NibFileLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27350425219FD0C600ABE2FB /* NibFileLoadable.swift */; };
 		27350428219FD0FD00ABE2FB /* NumberPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27350427219FD0FD00ABE2FB /* NumberPicker.swift */; };
 		2735042A219FD16600ABE2FB /* NumberPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27350429219FD16600ABE2FB /* NumberPicker.xib */; };
@@ -40,9 +43,26 @@
 		2784B76520784C92004FE786 /* CreateComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2784B76420784C92004FE786 /* CreateComponentViewController.swift */; };
 		2784B76920784D2F004FE786 /* CreateComponentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2784B76820784D2F004FE786 /* CreateComponentViewModel.swift */; };
 		2784B76B20785C11004FE786 /* ComponentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2784B76A20785C11004FE786 /* ComponentTableViewCell.swift */; };
+		27872F20220EAC7F00EECE82 /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27872F1F220EAC7F00EECE82 /* Month.swift */; };
+		27872F22220EB0FF00EECE82 /* SimpleDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27872F21220EB0FF00EECE82 /* SimpleDate.swift */; };
 		27B481C4219F9A1A00C9D251 /* LazyALabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B481C3219F9A1A00C9D251 /* LazyALabel.swift */; };
 		27B481C8219F9C1E00C9D251 /* LazyATextDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B481C6219F9C1E00C9D251 /* LazyATextDetailViewCell.swift */; };
 		27B481C9219F9C1E00C9D251 /* LazyATextDetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27B481C7219F9C1E00C9D251 /* LazyATextDetailViewCell.xib */; };
+		27B7056F21B211B400457620 /* CollapseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B7056E21B211B400457620 /* CollapseButton.swift */; };
+		27B7057121B301B800457620 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B7057021B301B800457620 /* DateExtensions.swift */; };
+		27B7057421B35B4F00457620 /* CalandarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27B7057321B35B4F00457620 /* CalandarView.xib */; };
+		27B7057621B35B6400457620 /* CalandarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B7057521B35B6400457620 /* CalandarView.swift */; };
+		27C12AD321B1FC5A0080FB6B /* AssignmentDailyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27C12AD221B1FC5A0080FB6B /* AssignmentDailyView.xib */; };
+		27C12AD521B1FCAF0080FB6B /* AssignmentDailyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C12AD421B1FCAF0080FB6B /* AssignmentDailyView.swift */; };
+		27C12AD721B1FD130080FB6B /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C12AD621B1FD130080FB6B /* ReusableView.swift */; };
+		27C12ADA21B1FDE40080FB6B /* AssignmentMonthlyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C12AD921B1FDE40080FB6B /* AssignmentMonthlyView.swift */; };
+		27C12ADC21B1FDEE0080FB6B /* AssignmentMonthlyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27C12ADB21B1FDEE0080FB6B /* AssignmentMonthlyView.xib */; };
+		27C12ADF21B1FF710080FB6B /* LazyASegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C12ADE21B1FF710080FB6B /* LazyASegmentedControl.swift */; };
+		27C12AE221B2040E0080FB6B /* LazyASearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C12AE121B2040E0080FB6B /* LazyASearchBar.swift */; };
+		27C12AE421B2050E0080FB6B /* AssignmentFilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27C12AE321B2050E0080FB6B /* AssignmentFilterView.xib */; };
+		27C12AE621B205330080FB6B /* AssigmentFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C12AE521B205330080FB6B /* AssigmentFilterView.swift */; };
+		27C12AE821B207E00080FB6B /* CompletionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C12AE721B207E00080FB6B /* CompletionStatus.swift */; };
+		27C12AEA21B208F00080FB6B /* CompletionSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C12AE921B208F00080FB6B /* CompletionSegmentedControl.swift */; };
 		27D6CCEA20781F8900EB1DAA /* CreateCourseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D6CCE920781F8900EB1DAA /* CreateCourseTableViewController.swift */; };
 		27D6CCEC207820B600EB1DAA /* CreateCoursesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D6CCEB207820B600EB1DAA /* CreateCoursesViewModel.swift */; };
 		27E096A8208D0FAE00E57171 /* CreateAssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E096A7208D0FAE00E57171 /* CreateAssignmentViewController.swift */; };
@@ -70,6 +90,9 @@
 /* Begin PBXFileReference section */
 		27027E7B21A3ADD500C81778 /* CourseGlanceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseGlanceCollectionViewCell.swift; sourceTree = "<group>"; };
 		27027E7C21A3ADD500C81778 /* CourseGlanceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseGlanceCollectionViewCell.xib; sourceTree = "<group>"; };
+		270C803B21B3611600FBD336 /* HorizontalPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPicker.swift; sourceTree = "<group>"; };
+		270C803D21B4C90D00FBD336 /* CalandarSimpleViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalandarSimpleViewCell.xib; sourceTree = "<group>"; };
+		270C803F21B4C99C00FBD336 /* CalandarSimpleViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalandarSimpleViewCell.swift; sourceTree = "<group>"; };
 		27350425219FD0C600ABE2FB /* NibFileLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibFileLoadable.swift; sourceTree = "<group>"; };
 		27350427219FD0FD00ABE2FB /* NumberPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPicker.swift; sourceTree = "<group>"; };
 		27350429219FD16600ABE2FB /* NumberPicker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberPicker.xib; sourceTree = "<group>"; };
@@ -107,9 +130,26 @@
 		2784B76420784C92004FE786 /* CreateComponentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateComponentViewController.swift; sourceTree = "<group>"; };
 		2784B76820784D2F004FE786 /* CreateComponentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateComponentViewModel.swift; sourceTree = "<group>"; };
 		2784B76A20785C11004FE786 /* ComponentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTableViewCell.swift; sourceTree = "<group>"; };
+		27872F1F220EAC7F00EECE82 /* Month.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Month.swift; sourceTree = "<group>"; };
+		27872F21220EB0FF00EECE82 /* SimpleDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDate.swift; sourceTree = "<group>"; };
 		27B481C3219F9A1A00C9D251 /* LazyALabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyALabel.swift; sourceTree = "<group>"; };
 		27B481C6219F9C1E00C9D251 /* LazyATextDetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyATextDetailViewCell.swift; sourceTree = "<group>"; };
 		27B481C7219F9C1E00C9D251 /* LazyATextDetailViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LazyATextDetailViewCell.xib; sourceTree = "<group>"; };
+		27B7056E21B211B400457620 /* CollapseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapseButton.swift; sourceTree = "<group>"; };
+		27B7057021B301B800457620 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		27B7057321B35B4F00457620 /* CalandarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalandarView.xib; sourceTree = "<group>"; };
+		27B7057521B35B6400457620 /* CalandarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalandarView.swift; sourceTree = "<group>"; };
+		27C12AD221B1FC5A0080FB6B /* AssignmentDailyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssignmentDailyView.xib; sourceTree = "<group>"; };
+		27C12AD421B1FCAF0080FB6B /* AssignmentDailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentDailyView.swift; sourceTree = "<group>"; };
+		27C12AD621B1FD130080FB6B /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		27C12AD921B1FDE40080FB6B /* AssignmentMonthlyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentMonthlyView.swift; sourceTree = "<group>"; };
+		27C12ADB21B1FDEE0080FB6B /* AssignmentMonthlyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssignmentMonthlyView.xib; sourceTree = "<group>"; };
+		27C12ADE21B1FF710080FB6B /* LazyASegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyASegmentedControl.swift; sourceTree = "<group>"; };
+		27C12AE121B2040E0080FB6B /* LazyASearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyASearchBar.swift; sourceTree = "<group>"; };
+		27C12AE321B2050E0080FB6B /* AssignmentFilterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssignmentFilterView.xib; sourceTree = "<group>"; };
+		27C12AE521B205330080FB6B /* AssigmentFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssigmentFilterView.swift; sourceTree = "<group>"; };
+		27C12AE721B207E00080FB6B /* CompletionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionStatus.swift; sourceTree = "<group>"; };
+		27C12AE921B208F00080FB6B /* CompletionSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionSegmentedControl.swift; sourceTree = "<group>"; };
 		27D6CCE920781F8900EB1DAA /* CreateCourseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCourseTableViewController.swift; sourceTree = "<group>"; };
 		27D6CCEB207820B600EB1DAA /* CreateCoursesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCoursesViewModel.swift; sourceTree = "<group>"; };
 		27E096A7208D0FAE00E57171 /* CreateAssignmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAssignmentViewController.swift; sourceTree = "<group>"; };
@@ -220,7 +260,6 @@
 				276D80DD2197811700108304 /* Reusable Elements */,
 				27E3005C208407E600528725 /* Home Menu */,
 				2773D161207826BB00E9B130 /* Extensions */,
-				27D6CCE820781F2A00EB1DAA /* Creation */,
 				2745B8332057628500485E6B /* View Controllers */,
 				275513EC20534803001BDBB7 /* ViewModels */,
 				275513E5205342CB001BDBB7 /* Models */,
@@ -289,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				276CA91021A6237400B0B00E /* Storyboard.swift */,
+				27C12AE721B207E00080FB6B /* CompletionStatus.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -305,13 +345,19 @@
 		276D80DD2197811700108304 /* Reusable Elements */ = {
 			isa = PBXGroup;
 			children = (
+				27B7057221B35AC400457620 /* Calandar */,
+				27C12AE021B203E50080FB6B /* Assignment Filter */,
+				27C12ADD21B1FF1F0080FB6B /* Basic Objects */,
+				27C12AD821B1FDC90080FB6B /* AssignmentCalandar */,
+				27C12AD121B1FC320080FB6B /* AssignmentTable */,
 				27F27DAA21A5019F001CC8B8 /* LazyAPickerRow */,
 				27F27DA521A4FDB9001CC8B8 /* Pickers */,
 				274C9E5D219FC37900C06BF0 /* NumberPicker */,
 				27B481C5219F9BD800C9D251 /* Cells */,
-				276D80DE2197815A00108304 /* LazyAButton.swift */,
-				27395CE8219789830040366A /* LazyAViewController.swift */,
-				27B481C3219F9A1A00C9D251 /* LazyALabel.swift */,
+				27C12AD621B1FD130080FB6B /* ReusableView.swift */,
+				27C12AE921B208F00080FB6B /* CompletionSegmentedControl.swift */,
+				27B7056E21B211B400457620 /* CollapseButton.swift */,
+				270C803B21B3611600FBD336 /* HorizontalPicker.swift */,
 			);
 			path = "Reusable Elements";
 			sourceTree = "<group>";
@@ -322,6 +368,7 @@
 				2773D162207826CA00E9B130 /* ViewControllerExtensions.swift */,
 				27395CF021979B370040366A /* StringExtensions.swift */,
 				27350425219FD0C600ABE2FB /* NibFileLoadable.swift */,
+				27B7057021B301B800457620 /* DateExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -343,6 +390,58 @@
 				27B481C7219F9C1E00C9D251 /* LazyATextDetailViewCell.xib */,
 			);
 			path = TextDetail;
+			sourceTree = "<group>";
+		};
+		27B7057221B35AC400457620 /* Calandar */ = {
+			isa = PBXGroup;
+			children = (
+				27B7057321B35B4F00457620 /* CalandarView.xib */,
+				27B7057521B35B6400457620 /* CalandarView.swift */,
+				270C803D21B4C90D00FBD336 /* CalandarSimpleViewCell.xib */,
+				270C803F21B4C99C00FBD336 /* CalandarSimpleViewCell.swift */,
+				27872F1F220EAC7F00EECE82 /* Month.swift */,
+				27872F21220EB0FF00EECE82 /* SimpleDate.swift */,
+			);
+			path = Calandar;
+			sourceTree = "<group>";
+		};
+		27C12AD121B1FC320080FB6B /* AssignmentTable */ = {
+			isa = PBXGroup;
+			children = (
+				27C12AD221B1FC5A0080FB6B /* AssignmentDailyView.xib */,
+				27C12AD421B1FCAF0080FB6B /* AssignmentDailyView.swift */,
+			);
+			path = AssignmentTable;
+			sourceTree = "<group>";
+		};
+		27C12AD821B1FDC90080FB6B /* AssignmentCalandar */ = {
+			isa = PBXGroup;
+			children = (
+				27C12AD921B1FDE40080FB6B /* AssignmentMonthlyView.swift */,
+				27C12ADB21B1FDEE0080FB6B /* AssignmentMonthlyView.xib */,
+			);
+			path = AssignmentCalandar;
+			sourceTree = "<group>";
+		};
+		27C12ADD21B1FF1F0080FB6B /* Basic Objects */ = {
+			isa = PBXGroup;
+			children = (
+				27C12AE121B2040E0080FB6B /* LazyASearchBar.swift */,
+				276D80DE2197815A00108304 /* LazyAButton.swift */,
+				27395CE8219789830040366A /* LazyAViewController.swift */,
+				27B481C3219F9A1A00C9D251 /* LazyALabel.swift */,
+				27C12ADE21B1FF710080FB6B /* LazyASegmentedControl.swift */,
+			);
+			path = "Basic Objects";
+			sourceTree = "<group>";
+		};
+		27C12AE021B203E50080FB6B /* Assignment Filter */ = {
+			isa = PBXGroup;
+			children = (
+				27C12AE321B2050E0080FB6B /* AssignmentFilterView.xib */,
+				27C12AE521B205330080FB6B /* AssigmentFilterView.swift */,
+			);
+			path = "Assignment Filter";
 			sourceTree = "<group>";
 		};
 		27D6CCE820781F2A00EB1DAA /* Creation */ = {
@@ -369,6 +468,7 @@
 		27F27D9821A4E6FD001CC8B8 /* Stories */ = {
 			isa = PBXGroup;
 			children = (
+				27D6CCE820781F2A00EB1DAA /* Creation */,
 				276CA91421A643CA00B0B00E /* TabContainer */,
 				27F27D9C21A4F20B001CC8B8 /* Upcoming Assignments */,
 				27F27D9B21A4E71F001CC8B8 /* Course Menu */,
@@ -519,7 +619,11 @@
 				2745B837205762F400485E6B /* CreateCourse.storyboard in Resources */,
 				27B481C9219F9C1E00C9D251 /* LazyATextDetailViewCell.xib in Resources */,
 				27F27DA921A500BE001CC8B8 /* LazyAPickerViewRow.xib in Resources */,
+				270C803E21B4C90D00FBD336 /* CalandarSimpleViewCell.xib in Resources */,
+				27B7057421B35B4F00457620 /* CalandarView.xib in Resources */,
+				27C12ADC21B1FDEE0080FB6B /* AssignmentMonthlyView.xib in Resources */,
 				276CA91921A6441200B0B00E /* TabContainer.storyboard in Resources */,
+				27C12AE421B2050E0080FB6B /* AssignmentFilterView.xib in Resources */,
 				275513BF20534278001BDBB7 /* Assets.xcassets in Resources */,
 				27395CEB219796C50040366A /* Colors.xcassets in Resources */,
 				27027E7E21A3ADD500C81778 /* CourseGlanceCollectionViewCell.xib in Resources */,
@@ -527,6 +631,7 @@
 				27F27D9721A4E6DA001CC8B8 /* CourseMenu.storyboard in Resources */,
 				275513BA20534278001BDBB7 /* Main.storyboard in Resources */,
 				27E3005E208407F700528725 /* HomeMenu.storyboard in Resources */,
+				27C12AD321B1FC5A0080FB6B /* AssignmentDailyView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,23 +694,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				276EB4222081AA9D00EA86D7 /* AppStrings.swift in Sources */,
+				27C12AE621B205330080FB6B /* AssigmentFilterView.swift in Sources */,
+				270C804021B4C99C00FBD336 /* CalandarSimpleViewCell.swift in Sources */,
 				27D6CCEC207820B600EB1DAA /* CreateCoursesViewModel.swift in Sources */,
 				27F27DA721A4FF2F001CC8B8 /* CoursePicker.swift in Sources */,
 				27D6CCEA20781F8900EB1DAA /* CreateCourseTableViewController.swift in Sources */,
 				27FDB32620770C0200DABF0A /* Models.swift in Sources */,
 				275513EB20534642001BDBB7 /* Course.swift in Sources */,
 				2745B83B2057660100485E6B /* CreateCourseViewController.swift in Sources */,
+				27872F22220EB0FF00EECE82 /* SimpleDate.swift in Sources */,
 				27395CED21979A1E0040366A /* UIColor_Extensions.swift in Sources */,
 				276CA91B21A6442A00B0B00E /* TabContainerViewController.swift in Sources */,
 				275513E720534348001BDBB7 /* Assignment.swift in Sources */,
+				27C12AE821B207E00080FB6B /* CompletionStatus.swift in Sources */,
+				27C12ADA21B1FDE40080FB6B /* AssignmentMonthlyView.swift in Sources */,
 				2773D163207826CA00E9B130 /* ViewControllerExtensions.swift in Sources */,
+				27B7056F21B211B400457620 /* CollapseButton.swift in Sources */,
 				27E3006420840D4D00528725 /* HomeMenuViewModel.swift in Sources */,
 				276D80DF2197815A00108304 /* LazyAButton.swift in Sources */,
 				27F845D521A201A700103E45 /* CourseHandler.swift in Sources */,
 				275D69CA20771B0D000F36DF /* Component.swift in Sources */,
 				27F27DAE21A5191C001CC8B8 /* ComponentPicker.swift in Sources */,
+				27B7057621B35B6400457620 /* CalandarView.swift in Sources */,
+				27C12AD521B1FCAF0080FB6B /* AssignmentDailyView.swift in Sources */,
 				27E3006220840CE100528725 /* HomeMenuViewController.swift in Sources */,
 				27395CE9219789830040366A /* LazyAViewController.swift in Sources */,
+				27C12ADF21B1FF710080FB6B /* LazyASegmentedControl.swift in Sources */,
 				2745B839205765E700485E6B /* ComponentTableViewController.swift in Sources */,
 				27F27DA421A4F320001CC8B8 /* MonthlyAssignmentViewController.swift in Sources */,
 				27350426219FD0C600ABE2FB /* NibFileLoadable.swift in Sources */,
@@ -623,10 +737,16 @@
 				27027E7D21A3ADD500C81778 /* CourseGlanceCollectionViewCell.swift in Sources */,
 				27F27DA021A4F263001CC8B8 /* UpcomingAssignmentsViewController.swift in Sources */,
 				275513B720534278001BDBB7 /* ViewController.swift in Sources */,
+				27B7057121B301B800457620 /* DateExtensions.swift in Sources */,
+				27872F20220EAC7F00EECE82 /* Month.swift in Sources */,
+				27C12AD721B1FD130080FB6B /* ReusableView.swift in Sources */,
 				275513B520534278001BDBB7 /* AppDelegate.swift in Sources */,
 				27B481C8219F9C1E00C9D251 /* LazyATextDetailViewCell.swift in Sources */,
+				27C12AEA21B208F00080FB6B /* CompletionSegmentedControl.swift in Sources */,
 				27350428219FD0FD00ABE2FB /* NumberPicker.swift in Sources */,
+				270C803C21B3611600FBD336 /* HorizontalPicker.swift in Sources */,
 				27F845D321A2000400103E45 /* RealmHandler.swift in Sources */,
+				27C12AE221B2040E0080FB6B /* LazyASearchBar.swift in Sources */,
 				276CA91321A6327000B0B00E /* CourseMenuViewModel.swift in Sources */,
 				2784B76B20785C11004FE786 /* ComponentTableViewCell.swift in Sources */,
 				27395CF121979B370040366A /* StringExtensions.swift in Sources */,

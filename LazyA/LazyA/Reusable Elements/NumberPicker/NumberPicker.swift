@@ -13,8 +13,8 @@ protocol NumberPickerDelegate : class {
 }
 
 @IBDesignable
-class NumberPicker: UIView, NibFileOwnerLoadable {
-
+class NumberPicker: ReusableView{
+    
     @IBOutlet weak private var picker: UIPickerView!
     
     @IBInspectable var NumDigits : Int = 2
@@ -47,18 +47,8 @@ class NumberPicker: UIView, NibFileOwnerLoadable {
         return picker.selectedRow(inComponent: component) * exponent(for: component)
     }
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setUp()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setUp()
-    }
-    
-    private func setUp() {
-        loadNibContent()
+    override internal func setUp() {
+        super.setUp()
         setInitialValue()
     }
     
@@ -66,10 +56,6 @@ class NumberPicker: UIView, NibFileOwnerLoadable {
         for index in 0..<NumDigits {
             picker.selectRow(row(of: InitialValue, for: index), inComponent: index, animated: false)
         }
-    }
-    
-    override func layoutSubviews() {
-        setUp()
     }
 }
 

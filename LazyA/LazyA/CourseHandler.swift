@@ -74,3 +74,9 @@ extension CourseHandler {
         return RealmHandler.shared.getAll()
     }
 }
+
+extension CourseHandler {
+    func getAllAssignments() -> [Assignment] {
+        return RealmHandler.shared.getAll()
+    }
+}
