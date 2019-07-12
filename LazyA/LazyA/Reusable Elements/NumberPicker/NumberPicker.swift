@@ -12,7 +12,6 @@ protocol NumberPickerDelegate : class {
     func numberPicker( numberPicker : NumberPicker, didChange value : Int)
 }
 
-@IBDesignable
 class NumberPicker: ReusableView{
     
     @IBOutlet weak private var picker: UIPickerView!

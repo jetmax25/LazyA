@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+/// UIPickerview but horizontal
 class HorizontalPicker: UIPickerView {
     override init(frame: CGRect) {
         super.init(frame: frame)

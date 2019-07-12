@@ -12,6 +12,8 @@ protocol CompletionSegmentedControlDelegate : AnyObject {
     func completionSegmentedControl( completionSegmentedControl : CompletionSegmentedControl, didSelectCompletionStatus status : CompletionStatus?)
 }
 
+
+/// Segment control for filtering completion status of an assignment
 final class CompletionSegmentedControl: LazyASegmentedControl {
     
     var value : CompletionStatus? {
@@ -26,12 +28,12 @@ final class CompletionSegmentedControl: LazyASegmentedControl {
         super.setUp()
         var segments = [String]()
         segments.append("All")
-//
+
         CompletionStatus.allCases.forEach {
             segments.append($0.rawValue)
         }
         self.replaceSegments(with : segments)
-//
+
         self.addTarget(self, action: #selector(CompletionSegmentedControl.segmentedControlValueChanged), for:.valueChanged)
         self.layoutSubviews()
         self.updateConstraints()

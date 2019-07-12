@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+/// Easy setup for a view to be created from a nib of hte same name
 open class ReusableView: UIView {
     public static var nibName: String {
         return String(describing: self)

@@ -8,7 +8,6 @@
 
 import UIKit
 
-@IBDesignable
 class LazyAViewController: UIViewController {
 
     var doesUseBlurryImage : Bool {

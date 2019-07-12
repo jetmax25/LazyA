@@ -43,11 +43,14 @@ public enum Month : Int {
         return Date().month
     }
     
+    
+    /// The next month ( does not adjust year )
     var next : Month {
         let nextIndex = ((self.rawValue + 12) % 12 ) + 1
         return Month(rawValue: nextIndex)!
     }
     
+    /// The previous month ( does not adjust year )
     var previous : Month {
         let previousIndex = ((self.rawValue + 10) % 12) + 1
         return Month(rawValue: previousIndex)!
@@ -60,3 +63,4 @@ extension Date {
         return Month(rawValue: month)!
     }
 }
+

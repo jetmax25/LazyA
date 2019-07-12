@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable
+
 class LazyASegmentedControl: UISegmentedControl {
 
     override init(frame: CGRect) {

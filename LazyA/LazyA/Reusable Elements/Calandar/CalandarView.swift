@@ -28,11 +28,14 @@ class CalandarView : ReusableView {
     var dataSource : CalandarViewDataSource?
     var delegate : CalandarViewDelegate?
     
+    
+    /// Maps the date to the number of items set on that date
     private var itemsForDate = [SimpleDate : Int]()
     
     private func updateDayOffset() {
         self.dayOffset = SimpleDate(day: 1, month: self.date.month, year: self.date.year).date.dayOfTheWeek - 1
     }
+    
     ///Store the offset of the starting day of the month
     private var dayOffset : Int = 0
 
@@ -59,14 +62,17 @@ class CalandarView : ReusableView {
         self.date = SimpleDate.today
     }
     
+    ///Go to previous month
     @IBAction func previousMonth(_ sender: Any) {
         self.date = self.date.get(direction: .previous, component: .month)
     }
     
+    ///Go to next month
     @IBAction func nextMonth(_ sender: Any) {
         self.date = self.date.get(direction: .next, component: .month)
     }
     
+    ///Go to today
     @IBAction func goToToday(_ sender: Any) {
         self.date = SimpleDate.today
     }

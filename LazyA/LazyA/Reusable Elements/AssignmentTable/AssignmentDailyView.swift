@@ -24,7 +24,7 @@ extension AssignmentCalandarDataSource {
 import UIKit
 
 final class AssignmentDailyView: ReusableView, AssignmentCalandarDataSource {
-    @IBOutlet weak var assignmentFilterView: AssigmentFilterView!
+    @IBOutlet weak var assignmentFilterView: AssignmentFilterView!
     @IBOutlet weak var assignmentTableView: UITableView!
     
     var filter : ((Assignment) -> Bool)?
@@ -42,7 +42,7 @@ final class AssignmentDailyView: ReusableView, AssignmentCalandarDataSource {
 
 
 extension AssignmentDailyView : AssignmentFilterDelegate {
-    func assignmentFilterView(assignmentFilterView: AssigmentFilterView, didChangeFilter closure: (Assignment) -> Bool) {
+    func assignmentFilterView(assignmentFilterView: AssignmentFilterView, didChangeFilter closure: (Assignment) -> Bool) {
         self.dataSource?.updateAssignments()
         self.assignmentTableView.reloadData()
     }

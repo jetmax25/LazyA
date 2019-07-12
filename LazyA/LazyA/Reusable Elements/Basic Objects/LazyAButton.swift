@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable
+
 class LazyAButton: UIButton {
     
     override var isEnabled: Bool {

@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable
+
 class LazyALabel: UILabel {
 
     override init(frame: CGRect) {

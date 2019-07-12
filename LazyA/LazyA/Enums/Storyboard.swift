@@ -8,6 +8,15 @@
 
 import UIKit
 
+
+/// Enum of all possible storyboards for easy initialization
+///
+/// - UpcomingAssignments: <#UpcomingAssignments description#>
+/// - CourseMenu: <#CourseMenu description#>
+/// - HomeMenu: <#HomeMenu description#>
+/// - CreateCourse: <#CreateCourse description#>
+/// - Main: <#Main description#>
+/// - TabContainer: <#TabContainer description#>
 enum Storyboard : String {
     case UpcomingAssignments, CourseMenu, HomeMenu, CreateCourse, Main, TabContainer
     

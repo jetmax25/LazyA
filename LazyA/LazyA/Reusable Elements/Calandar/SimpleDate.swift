@@ -7,6 +7,9 @@
 //
 
 import Foundation
+
+
+/// A date in terms of a day, month and year
 struct SimpleDate {
     var month : Month
     var year : Int
@@ -34,6 +37,7 @@ struct SimpleDate {
         self.month = date.month
     }
 }
+
 
 extension SimpleDate : Comparable, Hashable {
     static func < (lhs: SimpleDate, rhs: SimpleDate) -> Bool {

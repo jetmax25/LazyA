@@ -11,12 +11,14 @@ import UIKit
 
 
 protocol AssignmentFilterDelegate : AnyObject {
-    func assignmentFilterView( assignmentFilterView : AssigmentFilterView, didChangeFilter closure : (Assignment) -> Bool )
+    func assignmentFilterView( assignmentFilterView : AssignmentFilterView, didChangeFilter closure : (Assignment) -> Bool )
 }
 
-@IBDesignable
-final class AssigmentFilterView: ReusableView {
+final class AssignmentFilterView: ReusableView {
     
+    override func setUp() {
+        super.setUp()
+    }
     var assignmentFilter : ((Assignment) -> Bool) {
         return { assignment in
             
@@ -65,6 +67,10 @@ final class AssigmentFilterView: ReusableView {
             delegate?.assignmentFilterView(assignmentFilterView: self, didChangeFilter: assignmentFilter)
         }
     }
+    @IBAction func collapseToggle(_ sender: Any) {
+        self.fliterStack.isHidden.toggle()
+    }
+    @IBOutlet weak var fliterStack: UIStackView!
     
     weak var delegate : AssignmentFilterDelegate?
     
@@ -74,25 +80,25 @@ final class AssigmentFilterView: ReusableView {
     @IBOutlet weak var assignmentSearchBar: UISearchBar!
 }
 
-extension AssigmentFilterView : CoursePickerDelegate {
+extension AssignmentFilterView : CoursePickerDelegate {
     func CoursePicker(coursePicker: CoursePicker, didSelect course: Course?) {
         self.course = course
     }
 }
 
-extension AssigmentFilterView : ComponentPickerDelegate {
+extension AssignmentFilterView : ComponentPickerDelegate {
     func ComponentPicker(componentPicker: ComponentPicker, didSelect component: String) {
         self.componentString = component
     }
 }
 
-extension AssigmentFilterView : CompletionSegmentedControlDelegate {
+extension AssignmentFilterView : CompletionSegmentedControlDelegate {
     func completionSegmentedControl(completionSegmentedControl: CompletionSegmentedControl, didSelectCompletionStatus status: CompletionStatus?) {
         self.completionStatus = status
     }
 }
 
-extension AssigmentFilterView : UISearchBarDelegate {
+extension AssignmentFilterView : UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         self.searchText = searchText
     }

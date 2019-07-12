@@ -60,7 +60,7 @@
 		27C12ADF21B1FF710080FB6B /* LazyASegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C12ADE21B1FF710080FB6B /* LazyASegmentedControl.swift */; };
 		27C12AE221B2040E0080FB6B /* LazyASearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C12AE121B2040E0080FB6B /* LazyASearchBar.swift */; };
 		27C12AE421B2050E0080FB6B /* AssignmentFilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27C12AE321B2050E0080FB6B /* AssignmentFilterView.xib */; };
-		27C12AE621B205330080FB6B /* AssigmentFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C12AE521B205330080FB6B /* AssigmentFilterView.swift */; };
+		27C12AE621B205330080FB6B /* AssignmentFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C12AE521B205330080FB6B /* AssignmentFilterView.swift */; };
 		27C12AE821B207E00080FB6B /* CompletionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C12AE721B207E00080FB6B /* CompletionStatus.swift */; };
 		27C12AEA21B208F00080FB6B /* CompletionSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C12AE921B208F00080FB6B /* CompletionSegmentedControl.swift */; };
 		27D6CCEA20781F8900EB1DAA /* CreateCourseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D6CCE920781F8900EB1DAA /* CreateCourseTableViewController.swift */; };
@@ -147,7 +147,7 @@
 		27C12ADE21B1FF710080FB6B /* LazyASegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyASegmentedControl.swift; sourceTree = "<group>"; };
 		27C12AE121B2040E0080FB6B /* LazyASearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyASearchBar.swift; sourceTree = "<group>"; };
 		27C12AE321B2050E0080FB6B /* AssignmentFilterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssignmentFilterView.xib; sourceTree = "<group>"; };
-		27C12AE521B205330080FB6B /* AssigmentFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssigmentFilterView.swift; sourceTree = "<group>"; };
+		27C12AE521B205330080FB6B /* AssignmentFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentFilterView.swift; sourceTree = "<group>"; };
 		27C12AE721B207E00080FB6B /* CompletionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionStatus.swift; sourceTree = "<group>"; };
 		27C12AE921B208F00080FB6B /* CompletionSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionSegmentedControl.swift; sourceTree = "<group>"; };
 		27D6CCE920781F8900EB1DAA /* CreateCourseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCourseTableViewController.swift; sourceTree = "<group>"; };
@@ -261,7 +261,6 @@
 				27E3005C208407E600528725 /* Home Menu */,
 				2773D161207826BB00E9B130 /* Extensions */,
 				2745B8332057628500485E6B /* View Controllers */,
-				275513EC20534803001BDBB7 /* ViewModels */,
 				275513E5205342CB001BDBB7 /* Models */,
 				275513B420534278001BDBB7 /* AppDelegate.swift */,
 				275513B620534278001BDBB7 /* ViewController.swift */,
@@ -306,13 +305,6 @@
 				275D69C920771B0D000F36DF /* Component.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		275513EC20534803001BDBB7 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		27696BB7208BE6CB008B1068 /* Create Assignment */ = {
@@ -439,7 +431,7 @@
 			isa = PBXGroup;
 			children = (
 				27C12AE321B2050E0080FB6B /* AssignmentFilterView.xib */,
-				27C12AE521B205330080FB6B /* AssigmentFilterView.swift */,
+				27C12AE521B205330080FB6B /* AssignmentFilterView.swift */,
 			);
 			path = "Assignment Filter";
 			sourceTree = "<group>";
@@ -694,7 +686,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				276EB4222081AA9D00EA86D7 /* AppStrings.swift in Sources */,
-				27C12AE621B205330080FB6B /* AssigmentFilterView.swift in Sources */,
+				27C12AE621B205330080FB6B /* AssignmentFilterView.swift in Sources */,
 				270C804021B4C99C00FBD336 /* CalandarSimpleViewCell.swift in Sources */,
 				27D6CCEC207820B600EB1DAA /* CreateCoursesViewModel.swift in Sources */,
 				27F27DA721A4FF2F001CC8B8 /* CoursePicker.swift in Sources */,

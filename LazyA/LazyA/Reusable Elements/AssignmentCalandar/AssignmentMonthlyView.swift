@@ -10,7 +10,7 @@ import UIKit
 
 
 final class AssignmentMonthlyView: ReusableView, AssignmentCalandarDataSource {
-    @IBOutlet weak var filterView: AssigmentFilterView!
+    @IBOutlet weak var filterView: AssignmentFilterView!
     @IBOutlet weak var assignmentCollectionView: UICollectionView!
     
     var filter : ((Assignment) -> Bool)?
@@ -39,7 +39,7 @@ extension AssignmentMonthlyView : UICollectionViewDataSource, UICollectionViewDe
 
 
 extension AssignmentMonthlyView : AssignmentFilterDelegate {
-    func assignmentFilterView(assignmentFilterView: AssigmentFilterView, didChangeFilter closure: (Assignment) -> Bool) {
+    func assignmentFilterView(assignmentFilterView: AssignmentFilterView, didChangeFilter closure: (Assignment) -> Bool) {
         self.dataSource?.updateAssignments()
         self.assignmentCollectionView.reloadData()
     }

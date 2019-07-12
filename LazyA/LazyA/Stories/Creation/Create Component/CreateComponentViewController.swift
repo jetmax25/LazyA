@@ -63,7 +63,7 @@ class CreateComponentViewController: LazyAViewController {
 }
 
 
-extension  CreateComponentViewController : UITableViewDelegate, UITableViewDataSource {
+extension CreateComponentViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: TextNumTableViewCell.name) as! TextNumTableViewCell
         cell.textField.text = viewModel.components[indexPath.row].name
