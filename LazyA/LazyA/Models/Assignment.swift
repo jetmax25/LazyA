@@ -11,8 +11,8 @@ import RealmSwift
 
 
 //extension Models {
-class Assignment : Object, Comparable {
-    static func < (lhs: Assignment, rhs: Assignment) -> Bool {
+public class Assignment : Object, Comparable {
+    public static func < (lhs: Assignment, rhs: Assignment) -> Bool {
         return lhs.name < rhs.name
     }
     

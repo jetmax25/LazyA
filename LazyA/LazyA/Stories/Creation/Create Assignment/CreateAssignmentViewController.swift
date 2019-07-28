@@ -79,7 +79,5 @@ class CreateAssignmentViewController: UIViewController {
         self.viewModel.setWeight(weight: Int(self.weightTextField.text ?? ""))
         self.viewModel.setDesiredGrade(desiredGrade: Int(self.desiredGradeTextField.text ?? ""))
         self.viewModel.setNotifications()
-        
-        
     }
 }

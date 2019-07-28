@@ -15,4 +15,8 @@ class UpcomingAssignmentsViewController: LazyAViewController {
         super.viewDidLoad()
         self.filterView.translatesAutoresizingMaskIntoConstraints = false
     }
+    
+    @IBAction func toggleFilter(_ sender: Any) {
+        self.filterView.isHidden.toggle()
+    }
 }

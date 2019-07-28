@@ -10,7 +10,10 @@ import UIKit
 
 class MonthlyAssignmentViewController: UIViewController {
 
+    @IBOutlet var assignmentMonthlyView: AssignmentMonthlyView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 }
+

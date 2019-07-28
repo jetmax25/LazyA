@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Upcoming Assignments View Controller-->
+        <!--Title-->
         <scene sceneID="88s-bN-eS7">
             <objects>
                 <viewController id="4XL-lb-MCJ" customClass="UpcomingAssignmentsViewController" customModule="LazyA" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,14 +20,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bIe-f0-t9c">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="510"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="200" translatesAutoresizingMaskIntoConstraints="NO" id="4Ff-my-fcP" customClass="AssignmentFilterView" customModule="LazyA" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                    <view hidden="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="200" translatesAutoresizingMaskIntoConstraints="NO" id="4Ff-my-fcP" customClass="AssignmentFilterView" customModule="LazyA" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
                                         <color key="backgroundColor" name="Text"/>
                                     </view>
                                     <containerView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="lYA-aJ-Zer">
-                                        <rect key="frame" x="0.0" y="200" width="375" height="354"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="510"/>
                                         <connections>
                                             <segue destination="9o0-5J-gmn" kind="embed" id="KbH-Kt-DSy"/>
                                         </connections>
@@ -44,7 +44,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Cu8-Se-JKw"/>
                     </view>
-                    <navigationItem key="navigationItem" id="g2l-9C-mui"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="1Vf-Kw-tPO">
+                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="7WC-FN-D0C">
+                            <connections>
+                                <action selector="toggleFilter:" destination="4XL-lb-MCJ" id="uW4-Xq-RVH"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="QvY-4V-lfh"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="filterView" destination="4Ff-my-fcP" id="fHp-V6-qDM"/>
                     </connections>
@@ -74,18 +83,21 @@
         <!--Item-->
         <scene sceneID="m1U-0f-SSP">
             <objects>
-                <viewController id="gfh-Sb-dsn" sceneMemberID="viewController">
+                <viewController id="gfh-Sb-dsn" customClass="MonthlyAssignmentViewController" customModule="LazyA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LGd-vE-HGj" customClass="AssignmentMonthlyView" customModule="LazyA" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="354"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="510"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="TeV-3B-3AR"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="OTl-fB-zmo"/>
+                    <connections>
+                        <outlet property="assignmentMonthlyView" destination="LGd-vE-HGj" id="MUB-0J-BC9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ee-TC-sth" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1940" y="603"/>
+            <point key="canvasLocation" x="1946" y="641"/>
         </scene>
         <!--Assignments-->
         <scene sceneID="SlF-uj-Afs">
@@ -110,18 +122,21 @@
         <!--Item-->
         <scene sceneID="qLH-G3-8AS">
             <objects>
-                <viewController id="Qd3-ex-NSd" sceneMemberID="viewController">
+                <viewController id="Qd3-ex-NSd" customClass="DailyAssignmentCalandarViewController" customModule="LazyA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="64y-Hw-lBp" customClass="AssignmentDailyView" customModule="LazyA" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="354"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="510"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="oJ4-eD-T7h"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="SKv-xv-4Wx"/>
+                    <connections>
+                        <outlet property="dailyAssignmentView" destination="64y-Hw-lBp" id="cxe-2g-BxV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZOg-Bp-SR8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1313" y="603"/>
+            <point key="canvasLocation" x="1321" y="640"/>
         </scene>
     </scenes>
     <resources>

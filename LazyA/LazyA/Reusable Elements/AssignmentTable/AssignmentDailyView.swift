@@ -6,44 +6,37 @@
 //  Copyright © 2018 Jetmax25. All rights reserved.
 //
 
-protocol AssignmentCalandarDataSource : AnyObject {
-    var filter : ((Assignment) -> Bool)? { get set }
-    var assignmentsByDate : [Date? : [Assignment]] { get set }
-    var sortedDates : [Date?] { get set }
-    func updateAssignments()
-}
-
-extension AssignmentCalandarDataSource {
-    func updateAssignments() {
-        let assignments = CourseHandler.shared.getAllAssignments().filter { filter?($0) ?? true }
-        self.assignmentsByDate = assignments.seperatedByDate
-        self.sortedDates = assignmentsByDate.keys.compactMap {$0}.sorted()
-    }
+public protocol AssignmentCalandarDataSource : AnyObject {
+    var filter : ((Assignment) -> Bool)? { get }
 }
 
 import UIKit
 
-final class AssignmentDailyView: ReusableView, AssignmentCalandarDataSource {
+final class AssignmentDailyView: ReusableView, AssignmentCalandarProtocol {
     @IBOutlet weak var assignmentFilterView: AssignmentFilterView!
     @IBOutlet weak var assignmentTableView: UITableView!
     
     var filter : ((Assignment) -> Bool)?
+    
     var assignmentsByDate : [Date? : [Assignment]] = [Date : [Assignment]]()
     var sortedDates = [Date?]()
     
-    var dataSource : AssignmentCalandarDataSource?
+    var dataSource : AssignmentCalandarDataSource? {
+        //If the dataSource is itself then it is also the delegate, otherwise the filterview should be hidden
+        didSet {
+            self.updateDataSource()
+        }
+    }
     
     override func setUp() {
         if dataSource == nil { self.dataSource = self }
         super.setUp()
-        self.assignmentFilterView.delegate = self
     }
 }
 
-
 extension AssignmentDailyView : AssignmentFilterDelegate {
     func assignmentFilterView(assignmentFilterView: AssignmentFilterView, didChangeFilter closure: (Assignment) -> Bool) {
-        self.dataSource?.updateAssignments()
+        self.updateAssignments()
         self.assignmentTableView.reloadData()
     }
 }

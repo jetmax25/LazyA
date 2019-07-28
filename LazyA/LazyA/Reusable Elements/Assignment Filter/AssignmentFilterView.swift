@@ -10,11 +10,11 @@ import UIKit
 
 
 
-protocol AssignmentFilterDelegate : AnyObject {
+public protocol AssignmentFilterDelegate : AnyObject {
     func assignmentFilterView( assignmentFilterView : AssignmentFilterView, didChangeFilter closure : (Assignment) -> Bool )
 }
 
-final class AssignmentFilterView: ReusableView {
+public final class AssignmentFilterView: ReusableView {
     
     override func setUp() {
         super.setUp()

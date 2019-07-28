@@ -17,7 +17,6 @@
 		2735042A219FD16600ABE2FB /* NumberPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27350429219FD16600ABE2FB /* NumberPicker.xib */; };
 		27395CE9219789830040366A /* LazyAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27395CE8219789830040366A /* LazyAViewController.swift */; };
 		27395CEB219796C50040366A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27395CEA219796C50040366A /* Colors.xcassets */; };
-		27395CED21979A1E0040366A /* UIColor_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27395CEC21979A1E0040366A /* UIColor_Extensions.swift */; };
 		27395CF121979B370040366A /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27395CF021979B370040366A /* StringExtensions.swift */; };
 		2745B837205762F400485E6B /* CreateCourse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2745B836205762F400485E6B /* CreateCourse.storyboard */; };
 		2745B839205765E700485E6B /* ComponentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2745B838205765E700485E6B /* ComponentTableViewController.swift */; };
@@ -45,6 +44,8 @@
 		2784B76B20785C11004FE786 /* ComponentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2784B76A20785C11004FE786 /* ComponentTableViewCell.swift */; };
 		27872F20220EAC7F00EECE82 /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27872F1F220EAC7F00EECE82 /* Month.swift */; };
 		27872F22220EB0FF00EECE82 /* SimpleDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27872F21220EB0FF00EECE82 /* SimpleDate.swift */; };
+		27A5530322EE121700AC8856 /* CreateAssignment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27A5530222EE121700AC8856 /* CreateAssignment.storyboard */; };
+		27A5530522EE141300AC8856 /* UIColor_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A5530422EE141300AC8856 /* UIColor_Extensions.swift */; };
 		27B481C4219F9A1A00C9D251 /* LazyALabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B481C3219F9A1A00C9D251 /* LazyALabel.swift */; };
 		27B481C8219F9C1E00C9D251 /* LazyATextDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B481C6219F9C1E00C9D251 /* LazyATextDetailViewCell.swift */; };
 		27B481C9219F9C1E00C9D251 /* LazyATextDetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27B481C7219F9C1E00C9D251 /* LazyATextDetailViewCell.xib */; };
@@ -98,7 +99,6 @@
 		27350429219FD16600ABE2FB /* NumberPicker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberPicker.xib; sourceTree = "<group>"; };
 		27395CE8219789830040366A /* LazyAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyAViewController.swift; sourceTree = "<group>"; };
 		27395CEA219796C50040366A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		27395CEC21979A1E0040366A /* UIColor_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_Extensions.swift; sourceTree = "<group>"; };
 		27395CF021979B370040366A /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		2745B836205762F400485E6B /* CreateCourse.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateCourse.storyboard; sourceTree = "<group>"; };
 		2745B838205765E700485E6B /* ComponentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTableViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +132,8 @@
 		2784B76A20785C11004FE786 /* ComponentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTableViewCell.swift; sourceTree = "<group>"; };
 		27872F1F220EAC7F00EECE82 /* Month.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Month.swift; sourceTree = "<group>"; };
 		27872F21220EB0FF00EECE82 /* SimpleDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDate.swift; sourceTree = "<group>"; };
+		27A5530222EE121700AC8856 /* CreateAssignment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateAssignment.storyboard; sourceTree = "<group>"; };
+		27A5530422EE141300AC8856 /* UIColor_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_Extensions.swift; sourceTree = "<group>"; };
 		27B481C3219F9A1A00C9D251 /* LazyALabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyALabel.swift; sourceTree = "<group>"; };
 		27B481C6219F9C1E00C9D251 /* LazyATextDetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyATextDetailViewCell.swift; sourceTree = "<group>"; };
 		27B481C7219F9C1E00C9D251 /* LazyATextDetailViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LazyATextDetailViewCell.xib; sourceTree = "<group>"; };
@@ -200,7 +202,7 @@
 		27395CEE21979A220040366A /* Colors */ = {
 			isa = PBXGroup;
 			children = (
-				27395CEC21979A1E0040366A /* UIColor_Extensions.swift */,
+				27A5530422EE141300AC8856 /* UIColor_Extensions.swift */,
 			);
 			path = Colors;
 			sourceTree = "<group>";
@@ -312,6 +314,7 @@
 			children = (
 				27E096A7208D0FAE00E57171 /* CreateAssignmentViewController.swift */,
 				27E096AB208D135D00E57171 /* CreateAssignmentViewModel.swift */,
+				27A5530222EE121700AC8856 /* CreateAssignment.storyboard */,
 			);
 			path = "Create Assignment";
 			sourceTree = "<group>";
@@ -440,7 +443,6 @@
 			isa = PBXGroup;
 			children = (
 				27696BB7208BE6CB008B1068 /* Create Assignment */,
-				2745B836205762F400485E6B /* CreateCourse.storyboard */,
 				27FD6F0B207ABE5E0012FA5C /* Create Component */,
 				27FD6F0A207ABE500012FA5C /* Create Course */,
 			);
@@ -510,6 +512,7 @@
 		27FD6F0A207ABE500012FA5C /* Create Course */ = {
 			isa = PBXGroup;
 			children = (
+				2745B836205762F400485E6B /* CreateCourse.storyboard */,
 				27D6CCEB207820B600EB1DAA /* CreateCoursesViewModel.swift */,
 				27D6CCE920781F8900EB1DAA /* CreateCourseTableViewController.swift */,
 				2745B83A2057660100485E6B /* CreateCourseViewController.swift */,
@@ -608,6 +611,7 @@
 				275451C321A07FDB002E3C8B /* TextNumTableViewCell.xib in Resources */,
 				2735042A219FD16600ABE2FB /* NumberPicker.xib in Resources */,
 				275513C220534278001BDBB7 /* LaunchScreen.storyboard in Resources */,
+				27A5530322EE121700AC8856 /* CreateAssignment.storyboard in Resources */,
 				2745B837205762F400485E6B /* CreateCourse.storyboard in Resources */,
 				27B481C9219F9C1E00C9D251 /* LazyATextDetailViewCell.xib in Resources */,
 				27F27DA921A500BE001CC8B8 /* LazyAPickerViewRow.xib in Resources */,
@@ -688,6 +692,7 @@
 				276EB4222081AA9D00EA86D7 /* AppStrings.swift in Sources */,
 				27C12AE621B205330080FB6B /* AssignmentFilterView.swift in Sources */,
 				270C804021B4C99C00FBD336 /* CalandarSimpleViewCell.swift in Sources */,
+				27A5530522EE141300AC8856 /* UIColor_Extensions.swift in Sources */,
 				27D6CCEC207820B600EB1DAA /* CreateCoursesViewModel.swift in Sources */,
 				27F27DA721A4FF2F001CC8B8 /* CoursePicker.swift in Sources */,
 				27D6CCEA20781F8900EB1DAA /* CreateCourseTableViewController.swift in Sources */,
@@ -695,7 +700,6 @@
 				275513EB20534642001BDBB7 /* Course.swift in Sources */,
 				2745B83B2057660100485E6B /* CreateCourseViewController.swift in Sources */,
 				27872F22220EB0FF00EECE82 /* SimpleDate.swift in Sources */,
-				27395CED21979A1E0040366A /* UIColor_Extensions.swift in Sources */,
 				276CA91B21A6442A00B0B00E /* TabContainerViewController.swift in Sources */,
 				275513E720534348001BDBB7 /* Assignment.swift in Sources */,
 				27C12AE821B207E00080FB6B /* CompletionStatus.swift in Sources */,

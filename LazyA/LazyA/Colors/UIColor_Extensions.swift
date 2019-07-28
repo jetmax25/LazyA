@@ -38,7 +38,7 @@ extension UIColor {
     }
     
     struct Pallet {
-         static var Primary : UIColor{
+        static var Primary : UIColor{
             #if TARGET_INTERFACE_BUILDER
             return UIColor(red: 0.459, green: 0.867, blue: 0.867, alpha: 1.0)// An IB-only stand-in color.
             #else
