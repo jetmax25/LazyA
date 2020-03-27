@@ -24,8 +24,7 @@ final class CompletionSegmentedControl: LazyASegmentedControl {
     
     weak var delegate : CompletionSegmentedControlDelegate?
     
-    override func setUp() {
-        super.setUp()
+    func setUp() { 
         var segments = [String]()
         segments.append("All")
 

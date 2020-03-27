@@ -21,14 +21,12 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TGB-FY-LZk">
                                 <rect key="frame" x="8" y="44" width="398" height="808"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assignment Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBW-gP-Tvb">
-                                        <rect key="frame" x="0.0" y="0.0" width="398" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eqC-si-lq4" customClass="AssignmentFilterView" customModule="LazyA" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="128"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1vj-PH-IaL">
-                                        <rect key="frame" x="0.0" y="30.5" width="398" height="737.5"/>
+                                        <rect key="frame" x="0.0" y="138" width="398" height="630"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="37r-wO-isd">
                                                 <rect key="frame" x="0.0" y="0.0" width="398" height="65"/>
@@ -36,7 +34,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="TIB-PH-2bp">
                                                         <rect key="frame" x="0.0" y="0.0" width="398" height="30"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wA2-IL-OTf">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wA2-IL-OTf" customClass="PickledTextField" customModule="PickledSwift">
                                                                 <rect key="frame" x="0.0" y="0.0" width="398" height="30"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -50,7 +48,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="f9C-vb-7va">
                                                         <rect key="frame" x="0.0" y="35" width="398" height="30"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="100" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JA2-PY-bRy">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="100" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JA2-PY-bRy" customClass="PickledTextField" customModule="PickledSwift">
                                                                 <rect key="frame" x="0.0" y="0.0" width="191" height="30"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -59,7 +57,7 @@
                                                                     <action selector="updateWeight:" destination="qDi-Wl-O2r" eventType="editingDidEnd" id="KHw-Fv-oMy"/>
                                                                 </connections>
                                                             </textField>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="90" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TIM-ah-VB5">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="90" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TIM-ah-VB5" customClass="PickledTextField" customModule="PickledSwift">
                                                                 <rect key="frame" x="207" y="0.0" width="191" height="30"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -72,8 +70,8 @@
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4A6-bY-gU9">
-                                                <rect key="frame" x="0.0" y="95" width="398" height="415"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4A6-bY-gU9">
+                                                <rect key="frame" x="0.0" y="95" width="398" height="307.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C23-oC-l98">
                                                         <rect key="frame" x="0.0" y="0.0" width="398" height="20.5"/>
@@ -82,8 +80,8 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="AC3-G2-Ob4">
-                                                        <rect key="frame" x="0.0" y="20.5" width="398" height="394.5"/>
+                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="AC3-G2-Ob4">
+                                                        <rect key="frame" x="0.0" y="20.5" width="398" height="287"/>
                                                         <date key="date" timeIntervalSinceReferenceDate="546040111.17007506">
                                                             <!--2018-04-21 21:48:31 +0000-->
                                                         </date>
@@ -93,20 +91,23 @@
                                                     </datePicker>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="yxj-jO-hkr">
-                                                <rect key="frame" x="0.0" y="540" width="398" height="197.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="yxj-jO-hkr">
+                                                <rect key="frame" x="0.0" y="432.5" width="398" height="197.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set Reminders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtu-Fw-4cj">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set Reminders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtu-Fw-4cj" customClass="LazyALabel" customModule="LazyA" customModuleProvider="target">
                                                         <rect key="frame" x="143.5" y="0.0" width="111.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="u9s-AD-6tA">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="u9s-AD-6tA">
                                                         <rect key="frame" x="106.5" y="25.5" width="185" height="172"/>
                                                         <subviews>
-                                                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BhF-JX-q3b">
+                                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BhF-JX-q3b" customClass="LazyASegmentedControl" customModule="LazyA" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="185" height="29"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="28" id="5HQ-mW-8Km"/>
+                                                                </constraints>
                                                                 <segments>
                                                                     <segment title="All"/>
                                                                     <segment title="Custom"/>
@@ -116,19 +117,19 @@
                                                                     <action selector="setAllReminders:" destination="qDi-Wl-O2r" eventType="valueChanged" id="9UF-v8-hgt"/>
                                                                 </connections>
                                                             </segmentedControl>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LyH-3z-eYF">
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LyH-3z-eYF">
                                                                 <rect key="frame" x="0.0" y="33" width="185" height="139"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BIV-pu-BMb">
                                                                         <rect key="frame" x="0.0" y="0.0" width="185" height="31"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5d-Rh-53u">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5d-Rh-53u" customClass="LazyALabel" customModule="LazyA" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="136" height="31"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ooh-7U-VDm">
+                                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ooh-7U-VDm" customClass="PickledSwitch" customModule="PickledSwift">
                                                                                 <rect key="frame" x="136" y="0.0" width="51" height="31"/>
                                                                                 <connections>
                                                                                     <action selector="setReminder:" destination="qDi-Wl-O2r" eventType="valueChanged" id="PKT-Rx-NcQ"/>
@@ -139,13 +140,13 @@
                                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ukb-MI-xRq">
                                                                         <rect key="frame" x="0.0" y="36" width="185" height="31"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdy-zZ-H2c">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdy-zZ-H2c" customClass="LazyALabel" customModule="LazyA" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="136" height="31"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4UG-K8-ey7">
+                                                                            <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4UG-K8-ey7" customClass="PickledSwitch" customModule="PickledSwift">
                                                                                 <rect key="frame" x="136" y="0.0" width="51" height="31"/>
                                                                                 <connections>
                                                                                     <action selector="setReminder:" destination="qDi-Wl-O2r" eventType="valueChanged" id="hid-Mh-SSw"/>
@@ -156,13 +157,13 @@
                                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="QdH-qY-fCp">
                                                                         <rect key="frame" x="0.0" y="72" width="185" height="31"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 Days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uf-Xf-6MP">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 Days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uf-Xf-6MP" customClass="LazyALabel" customModule="LazyA" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="10.5" width="136" height="20.5"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sqs-ZR-DUb">
+                                                                            <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sqs-ZR-DUb" customClass="PickledSwitch" customModule="PickledSwift">
                                                                                 <rect key="frame" x="136" y="0.0" width="51" height="31"/>
                                                                                 <connections>
                                                                                     <action selector="setReminder:" destination="qDi-Wl-O2r" eventType="valueChanged" id="Fjc-Lx-xey"/>
@@ -173,13 +174,13 @@
                                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="VfG-hb-7lo">
                                                                         <rect key="frame" x="0.0" y="108" width="185" height="31"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBq-SF-j0U">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBq-SF-j0U" customClass="LazyALabel" customModule="LazyA" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="10.5" width="136" height="20.5"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xAO-lk-xLW">
+                                                                            <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xAO-lk-xLW" customClass="PickledSwitch" customModule="PickledSwift">
                                                                                 <rect key="frame" x="136" y="0.0" width="51" height="31"/>
                                                                                 <connections>
                                                                                     <action selector="setReminder:" destination="qDi-Wl-O2r" eventType="valueChanged" id="tIG-7C-cGL"/>
@@ -198,7 +199,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="XF2-r3-c58">
                                         <rect key="frame" x="0.0" y="778" width="398" height="30"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajl-vA-Gbw">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajl-vA-Gbw" customClass="LazyAButton" customModule="LazyA" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="174" height="30"/>
                                                 <color key="backgroundColor" red="0.73320855029999998" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Cancel">
@@ -208,7 +209,7 @@
                                                     <action selector="cancel:" destination="qDi-Wl-O2r" eventType="touchUpInside" id="gg9-ot-1jU"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgW-tj-sSc">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgW-tj-sSc" customClass="LazyAButton" customModule="LazyA" customModuleProvider="target">
                                                 <rect key="frame" x="224" y="0.0" width="174" height="30"/>
                                                 <color key="backgroundColor" red="0.05205208385" green="0.69344860409999998" blue="0.14776168740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Save">

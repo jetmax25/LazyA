@@ -362,7 +362,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="gxx-27-Oh0" firstAttribute="centerY" secondItem="Xak-KR-igw" secondAttribute="centerY" id="9zF-HV-1Ef"/>
+                            <constraint firstItem="gxx-27-Oh0" firstAttribute="centerY" secondItem="Xak-KR-igw" secondAttribute="centerY" priority="750" id="AfW-Is-O6p"/>
                             <constraint firstItem="gxx-27-Oh0" firstAttribute="width" secondItem="Xak-KR-igw" secondAttribute="width" multiplier="3:5" id="JiR-Ue-10g"/>
                             <constraint firstItem="gxx-27-Oh0" firstAttribute="height" secondItem="Xak-KR-igw" secondAttribute="height" multiplier="1:3" id="QUS-yW-7C5"/>
                             <constraint firstItem="gxx-27-Oh0" firstAttribute="top" secondItem="LRo-1x-ETf" secondAttribute="bottom" constant="-10" id="RhK-0O-c4C"/>
@@ -376,6 +376,7 @@
                         <outlet property="courseNameTxtFld" destination="Avm-mH-zwc" id="JlT-uO-hr3"/>
                         <outlet property="gradeSlider" destination="4MB-hw-HCA" id="UE8-gN-Q4A"/>
                         <outlet property="gradeWantedLabel" destination="phV-YZ-Nov" id="OAb-ZP-Pef"/>
+                        <outlet property="infoView" destination="gxx-27-Oh0" id="uwb-b8-gIY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8x2-XU-8dd" userLabel="First Responder" sceneMemberID="firstResponder"/>

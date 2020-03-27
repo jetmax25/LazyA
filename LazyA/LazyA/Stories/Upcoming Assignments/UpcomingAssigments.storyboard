@@ -51,7 +51,11 @@
                                 <action selector="toggleFilter:" destination="4XL-lb-MCJ" id="uW4-Xq-RVH"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="QvY-4V-lfh"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="QvY-4V-lfh">
+                            <connections>
+                                <action selector="addAssignment:" destination="4XL-lb-MCJ" id="eG1-z7-bke"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -97,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ee-TC-sth" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1946" y="641"/>
+            <point key="canvasLocation" x="2007" y="703"/>
         </scene>
         <!--Assignments-->
         <scene sceneID="SlF-uj-Afs">
@@ -136,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZOg-Bp-SR8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1321" y="640"/>
+            <point key="canvasLocation" x="1335" y="703"/>
         </scene>
     </scenes>
     <resources>

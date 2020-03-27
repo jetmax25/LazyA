@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PickledSwift
 
 protocol NumberPickerDelegate : class {
     func numberPicker( numberPicker : NumberPicker, didChange value : Int)

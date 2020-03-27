@@ -90,7 +90,7 @@ struct CreateAssignmentViewModel {
 
         self.timeNotificationValues.filter{ $0.isSet }.forEach {
             content.title = NSString.localizedUserNotificationString(forKey: "\(self.assignment.name) is coming up!", arguments: nil)
-            var dueDateComponents = Calendar.current.dateComponents([.calendar, .year, .month, .day, .hour, .minute], from: date.addingTimeInterval(-$0.time.timeValue))
+            let dueDateComponents = Calendar.current.dateComponents([.calendar, .year, .month, .day, .hour, .minute], from: date.addingTimeInterval(-$0.time.timeValue))
             print(dueDateComponents)
             let trigger = UNCalendarNotificationTrigger(dateMatching: dueDateComponents, repeats: false)
             let request = UNNotificationRequest(identifier: "\(assignment.name)_\($0.time.timeValue))", content: content, trigger: trigger)

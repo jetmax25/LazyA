@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PickledSwift
 
 class TabContainerViewController: UIViewController {
 
@@ -15,7 +16,7 @@ class TabContainerViewController: UIViewController {
     
     override func viewDidLoad() {
         if CourseHandler.shared.getAll().count == 0 {
-            Storyboard.CreateCourse.launch()
+            LazyAStoryboard.CreateCourse.launch()
         }
         super.viewDidLoad()
     }

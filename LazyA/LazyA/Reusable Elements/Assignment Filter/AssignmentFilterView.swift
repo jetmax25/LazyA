@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import PickledSwift
 
 
 public protocol AssignmentFilterDelegate : AnyObject {
@@ -16,9 +16,10 @@ public protocol AssignmentFilterDelegate : AnyObject {
 
 public final class AssignmentFilterView: ReusableView {
     
-    override func setUp() {
+    override public func setUp() {
         super.setUp()
     }
+    
     var assignmentFilter : ((Assignment) -> Bool) {
         return { assignment in
             

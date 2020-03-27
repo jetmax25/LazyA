@@ -7,22 +7,23 @@
 //
 
 import UIKit
+import PickledSwift
 
-class CreateAssignmentViewController: UIViewController {
+class CreateAssignmentViewController: LazyAViewController {
 
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var weightTextField: UITextField!
-    @IBOutlet weak var desiredGradeTextField: UITextField!
+    @IBOutlet weak var nameTextField: PickledTextField!
+    @IBOutlet weak var weightTextField: PickledTextField!
+    @IBOutlet weak var desiredGradeTextField: PickledTextField!
     
     @IBOutlet weak var datePicker: UIDatePicker!
     
     
-    @IBOutlet weak var reminderSegueControl: UISegmentedControl!
+    @IBOutlet weak var reminderSegueControl: LazyASegmentedControl!
     
-    @IBOutlet weak var hourSwitch: UISwitch!
-    @IBOutlet weak var daySwitch: UISwitch!
-    @IBOutlet weak var threeDaySwitch: UISwitch!
-    @IBOutlet weak var weekSwitch: UISwitch!
+    @IBOutlet weak var hourSwitch: PickledSwitch!
+    @IBOutlet weak var daySwitch: PickledSwitch!
+    @IBOutlet weak var threeDaySwitch: PickledSwitch!
+    @IBOutlet weak var weekSwitch: PickledSwitch!
     
     var viewModel : CreateAssignmentViewModel!
     
@@ -46,16 +47,16 @@ class CreateAssignmentViewController: UIViewController {
     }
     
     var allSwitches : [UISwitch] {
-        return [self.hourSwitch, self.daySwitch,self.threeDaySwitch, self.weekSwitch]
+        return [self.hourSwitch, self.daySwitch, self.threeDaySwitch, self.weekSwitch]
     }
     
     @IBAction func chooseDate(_ sender: Any) {
         self.viewModel.setDueDate(date: self.datePicker.date)
     }
     
-    @IBAction func setReminder(_ sender: Any) {
+    @IBAction func setReminder(_ sender: UISwitch) {
         self.reminderSegueControl.selectedSegmentIndex = 1
-        self.viewModel.updateNotificationValue(for: ((sender as! UISwitch).tag))
+        self.viewModel.updateNotificationValue(for: sender.tag)
     }
     
     @IBAction func setAllReminders(_ sender: Any) {
@@ -72,6 +73,7 @@ class CreateAssignmentViewController: UIViewController {
     }
     
     @IBAction func cancel(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func save(_ sender: Any) {

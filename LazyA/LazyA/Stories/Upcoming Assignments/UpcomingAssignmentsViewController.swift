@@ -11,6 +11,10 @@ import UIKit
 class UpcomingAssignmentsViewController: LazyAViewController {
     @IBOutlet weak var filterView: AssignmentFilterView!
     
+    @IBAction func addAssignment(_ sender: Any) {
+        LazyAStoryboard.CreateAssignment.launch(asModal: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.filterView.translatesAutoresizingMaskIntoConstraints = false

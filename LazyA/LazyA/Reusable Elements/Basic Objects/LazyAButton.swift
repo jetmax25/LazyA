@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import PickledSwift
 
 
-class LazyAButton: UIButton {
+final class LazyAButton: PickledButton {
     
     override var isEnabled: Bool {
         didSet {
@@ -17,33 +18,19 @@ class LazyAButton: UIButton {
         }
     }
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setUp()
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setUp()
-    }
-    
-    private func setUp() {
-        self.layer.borderColor = UIColor.black.cgColor
+    func setUp() {
         self.layer.borderWidth = 2
-        
         self.layer.cornerRadius = 10
-        self.setTitleShadowColor(UIColor.black, for: .normal)
-        self.titleLabel?.shadowOffset = CGSize(width: 1.0, height: 1.0)
-        self.setTitleColor(UIColor.Pallet.Text, for: .normal)
-        self.backgroundColor = UIColor.Pallet.Touch
-        
-        //self.titleLabel?.font = self.titleLabel?.font.withSize(24)
-        self.titleLabel?.numberOfLines = 0
-        self.titleLabel?.textAlignment = .center
     }
 
     override func layoutSubviews() {
         super.layoutSubviews()
         setUp()
+    }
+    
+    override final func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        self.titleLabel?.backgroundColor = UIColor.clear
+        self.isSelected.toggle()
     }
 }

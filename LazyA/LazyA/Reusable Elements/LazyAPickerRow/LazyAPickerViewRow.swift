@@ -7,7 +7,8 @@
 //
 
 import UIKit
+import PickledSwift
 
-class LazyAPickerViewRow: ReusableView {
+final public class LazyAPickerViewRow: ReusableView {
     @IBOutlet weak var textLabel: LazyALabel!
 }

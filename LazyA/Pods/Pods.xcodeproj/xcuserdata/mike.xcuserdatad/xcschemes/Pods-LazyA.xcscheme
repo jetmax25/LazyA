@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FD7BA7B5C964C85C09CBDFC15F86CAED"
+               BlueprintIdentifier = "37513F422FB41D48C7447977C631CB73"
                BuildableName = "Pods_LazyA.framework"
                BlueprintName = "Pods-LazyA"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FD7BA7B5C964C85C09CBDFC15F86CAED"
+            BlueprintIdentifier = "37513F422FB41D48C7447977C631CB73"
             BuildableName = "Pods_LazyA.framework"
             BlueprintName = "Pods-LazyA"
             ReferencedContainer = "container:Pods.xcodeproj">

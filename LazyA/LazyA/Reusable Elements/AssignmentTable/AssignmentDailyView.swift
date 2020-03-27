@@ -11,6 +11,7 @@ public protocol AssignmentCalandarDataSource : AnyObject {
 }
 
 import UIKit
+import PickledSwift
 
 final class AssignmentDailyView: ReusableView, AssignmentCalandarProtocol {
     @IBOutlet weak var assignmentFilterView: AssignmentFilterView!

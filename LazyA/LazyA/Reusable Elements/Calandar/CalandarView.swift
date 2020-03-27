@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PickledSwift
 
 protocol CalandarViewDataSource {
     func CalandarView( calandarView : CalandarView, numberOfItemsFor date : SimpleDate ) -> Int

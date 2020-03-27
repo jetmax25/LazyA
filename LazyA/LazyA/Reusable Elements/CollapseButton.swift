@@ -8,6 +8,4 @@
 
 import UIKit
 
-class CollapseButton: UIButton {
-
-}
+class CollapseButton: UIButton {}

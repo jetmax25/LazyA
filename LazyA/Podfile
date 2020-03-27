@@ -7,4 +7,5 @@ target 'LazyA' do
   use_frameworks!
 pod 'Charts'
 pod 'RealmSwift', '~> 3.10'
+pod 'PickledSwift'
 end

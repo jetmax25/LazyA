@@ -8,6 +8,7 @@
 
 import UIKit
 import Charts
+import PickledSwift
 
 
 //protocol CreateComponentDelegate {
@@ -46,7 +47,7 @@ class CreateComponentViewController: LazyAViewController {
             self.classTitleLabel.text = viewModel.courseName
             self.sectionTableView.reloadData()
         } else {
-            Storyboard.TabContainer.launch()
+            LazyAStoryboard.TabContainer.launch()
         }
     }
     

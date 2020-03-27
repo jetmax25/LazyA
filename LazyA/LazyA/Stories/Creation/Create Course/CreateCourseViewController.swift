@@ -12,6 +12,7 @@ import UIKit
 
 class CreateCourseViewController: LazyAViewController {
 
+    @IBOutlet weak var infoView: UIView!
     @IBOutlet weak var courseNameTxtFld: UITextField!
     @IBOutlet weak var courseCodeTxtFld: UITextField!
     @IBOutlet weak var gradeWantedLabel: UILabel!
@@ -33,7 +34,11 @@ class CreateCourseViewController: LazyAViewController {
             gradeSlider.value = Float(course.desiredGrade)
             self.gradeWantedLabel.text = "Goal: \(gradeSlider.value)"
         }
+        print(self.view.constraints.count)
+        self.avoidKeyboard(viewToAvoid: self.infoView)
+        print(self.view.constraints.count)
     }
+    
     
     @IBAction func gradeWantedChanged(_ sender: Any) {
         self.gradeSlider.value = self.gradeSlider.value.rounded()
@@ -43,13 +48,14 @@ class CreateCourseViewController: LazyAViewController {
     @IBAction func close(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+    
     @IBAction func submit(_ sender: Any) {
         if courseNameTxtFld.text?.isEmpty ?? true {
             self.messageAlert(title: "Missing Field", message: "Missing Course Name")
             return
         }
         
-        delegate.updateCourse(grade: Int(gradeSlider.value), name: courseNameTxtFld.text!.capitalizingFirstLetter(), courseCode: courseCodeTxtFld.text)
+        delegate.updateCourse(grade: Int(gradeSlider.value), name: courseNameTxtFld.text!.capitalized, courseCode: courseCodeTxtFld.text)
         self.dismiss(animated: true, completion: nil)
     }
 }

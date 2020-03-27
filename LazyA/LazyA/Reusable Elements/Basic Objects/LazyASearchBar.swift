@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PickledSwift
 
 class LazyASearchBar: UISearchBar {
 
@@ -24,7 +25,7 @@ class LazyASearchBar: UISearchBar {
     }
     
     private func setUp() {
-        self.textField?.textColor = UIColor.Pallet.Text
+        self.textField?.textColor = UIColor.Pallet.text.color
     }
     
     override func layoutSubviews() {

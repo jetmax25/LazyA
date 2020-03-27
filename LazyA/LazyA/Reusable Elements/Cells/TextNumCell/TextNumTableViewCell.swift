@@ -39,7 +39,7 @@ class TextNumTableViewCell: UITableViewCell, EasilyRegisterableCell {
         guard let indexPath = indexPath else {
             return
         }
-        let text = (self.textField.text ?? "").capitalizingFirstLetter()
+        let text = (self.textField.text ?? "").capitalized
         self.textField.text = text
         delegate?.textNumTableViewCell(didUpdateCellAt: indexPath, text: text, num: numberPicker.value)
     }

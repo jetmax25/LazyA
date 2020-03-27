@@ -38,7 +38,7 @@ struct CreateComponentViewModel {
     
     var chartData : PieChartData {
         let dataList = Array(currentCourse!.catagories).map{ return PieChartDataEntry(value: Double($0.weight), label: $0.name) }
-        let dataSet = PieChartDataSet(values: dataList, label: nil)
+        let dataSet = PieChartDataSet(entries: dataList, label: nil)
         dataSet.colors = ChartColorTemplates.colorful()
         return PieChartData(dataSet: dataSet)
     }
